@@ -1,0 +1,701 @@
+/* Desktop to tablet media quaries width 1226px to 1025px */
+
+/*************** First section **************/
+@media (min-width: 1025px) and (max-width: 1135px)  {
+  .buzzy-doc {
+    .connect-n-search {
+      .signup-section {
+        .signup-btn {
+          font-size: 26px;
+        }
+        .fb-signup-btn {
+          width: 171px;
+        }
+      }
+      .search-doctors {
+        .doctors-list {
+          a {
+            padding: 8px 10px;
+            li {
+              h2 {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1025px) and (max-width: 1135px)  {
+  .buzzy-doc {
+    .connect-n-search {
+      .search-doctors {
+        .doctors-list {
+          a {
+            li {
+              h2 {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*************** First section End **************/
+
+
+/*************** Second section **************/
+
+
+/*************** Second section End **************/
+
+
+/*************** Third section **************/
+@media (max-width: 1215px) {
+  .doctor-in-area {
+    .doctor-info {
+      .doctor-content {
+        margin-top: 50px;
+        font: 20px $futura_bold;
+        .address-n-point {
+          padding-top: 10px;
+          .place-name {
+            padding-left: 10px;
+            h5 {
+
+            }
+            h6 {
+              font: 22px $futura_medium;
+            }
+          }
+          .points-of-doctor {
+            padding: 0 10px;
+            .number-points {
+              font: 30px/28px $futura_bold;
+            }
+            .point-text {
+              font: 20px/24px $futura_medium;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1076px) {
+  .overview-n-points {
+    .overview-points {
+      .main-points {
+        li {
+          height: 220px;
+          div {
+            span {
+              font-size: 56px;
+            }
+            h4 {
+              font-size: 28px;
+            }
+            img {
+              width: 105px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*************** Third section End **************/
+
+/*************** Fourth section **************/
+@media (max-width:1145px) {
+  .for-great-patients {
+    .earn-points {
+      .highlights {
+        h1 {
+          font-size: 44px;
+        }
+        ul {
+          li {
+            font-size: 20px;
+            p {
+              background-size: 25px;
+            }
+          }
+        }
+      }
+      .badges {
+        .badgeImg {
+          img {
+            width: 58px;
+          }
+        }
+      }
+    }
+    .my-activity-feeds {
+      .activity {
+        .activity-feeds {
+          ul {
+            li {
+              .userName {
+                font-size: 18px;
+              }
+              .user-small-img {
+                img {
+                  height: 30px;
+                }
+              }
+              .points {
+                font: 28px/40px $futura_bold;
+                img {
+                  max-height: 40px;
+                }
+                .point-num {
+                  font: 14px/14px $futura_bold;
+                  margin-top: 5px;
+                }
+                .point-word {
+                  font: 14px/14px $futura_medium;
+                }
+
+              }
+              p {
+                font: 14px/40px $futura_medium;
+              }
+            }
+          }
+        }
+      }
+      .redeem {
+        a {
+          .heading {
+            font-size: 21px;
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+/*************** Fourth section End **************/
+
+/*************** Sixth section **************/
+@media (max-width: 1231px)  {
+  .analysis-n-points {
+    .doctor-advise-points {
+      .doctors-points {
+        h4 {
+          font-size: 48px;
+          margin-bottom: 25px;
+        }
+        a {
+          font-size: 30px;
+          margin-bottom: 30px;
+        }
+        h6 {
+          margin-bottom: 15px;
+        }
+        ul {
+          li {
+            font-size: 26px;
+            margin-bottom: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1025px) and (max-width: 1135px)  {
+  .analysis-n-points {
+    .doctor-advise-points {
+      .doctors-points {
+        h4 {
+          font-size: 42px;
+          margin-bottom: 20px;
+        }
+        a {
+          font-size: 30px;
+          margin-bottom: 30px;
+        }
+        h6 {
+          margin-bottom: 15px;
+        }
+        ul {
+          li {
+            font-size: 24px;
+            margin-bottom: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+/*************** Sixth section End **************/
+
+/* End Desktop to tablet media quaries */
+
+
+/* Tablet media quaries */
+@media (max-width: 1024px) {
+
+/*************** First section **************/
+  .buzzy-doc {
+    .connect-n-search {
+      padding-bottom: 0;
+      width: 100%;
+      margin: 0 0 0 0;
+      .signup-section {
+        background: rgba(255, 255, 255, 0.5);
+        padding: 25px 0;
+        .signin-heading {
+          font-size: 38px;
+          margin-top: 30px;
+          color: $color2;
+          text-shadow: none;
+        }
+        margin-bottom: 0;
+        .signup-container {
+          max-width: 606px;
+          margin: auto;
+          .signup-btn {
+            font: 38px/62px $futura_bold;
+            padding: 0 50px;
+          }
+          .or {
+            font: 30px/50px $futura_bold;
+            width: 50px;
+          }
+          .fb-signup-btn {
+            width: 230px;
+            height: 62px;
+          }
+        }
+      }
+      .search-doctors {
+        background: #fff;
+        padding: 25px 0 45px;
+        .doctors-dropdown {
+          width: 231px;
+          height: 67px;
+          font: 16px/67px $futura_bold;
+        }
+        .doctor-search-box {
+          background-size: 33px;
+          width: 202px;
+          height: 56px;
+          font-size: 22px;
+        }
+        .search-container {
+          max-width: 454px;
+        }
+        .doctors-list {
+          margin: 25px 5.4% 0;
+          a {
+            .doctor-detials {
+              .doctor-image {
+                img {
+                  width: 100%;
+                }
+              }
+              .doctor-name {
+                h3 {
+                  font-size: 22px;
+                  margin-bottom: 5px;
+                }
+                .rating {
+                  max-width: 180px;
+                  .fullstar {
+                    height: 27px;
+                  }
+                }
+              }
+              .doctor-address {
+                h4 {
+                  font-size: 20px;
+                  margin-top: 7px;
+                }
+                p {
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+    }
+    .slider-container {
+      display: none;
+    }
+    .main-header {
+      .top-button {
+        margin-bottom: 100px;
+      }
+      .logo {
+        display: block;
+        clear: both;
+        max-width: 551px;
+        width: 100%;
+        margin: 0px auto 60px;
+        text-align: center;
+        img {
+          width: 100%;
+          max-width: 551px;
+          margin: 0;
+        }
+      }
+    }
+  }/*************** First section End **************/
+
+  /*************** Second section **************/
+  .overview-n-points {
+    .overview {
+      display: none;
+    }
+    .overview-points {
+      width: 100%;
+      float: none;
+      text-align: center;
+      .main-points {
+        li {
+          float: none;
+          width: 100%;
+          height: auto;
+          border-right: none;
+          border-bottom: 1px solid #fff;
+          padding: 15px 80px / 1024px * 100%;
+
+        }
+        li:nth-last-child(1),
+        li:nth-last-child(2), {
+          border-bottom: 1px solid #fff;
+        }
+        div {
+          line-height: 104px;
+          img {
+            float: right;
+            margin: 0;
+          }
+          span {
+            float: left;
+            line-height: inherit;
+            margin: 0;
+          }
+          h4 {
+            font-size: 44px;
+          }
+        }
+      }
+    }
+  }/*************** Second section End **************/
+
+  /*************** Third section **************/
+  .doctor-in-area {
+    h1 {
+      font: 40px/normal $futura_bold;
+      padding: 40px 58px / 768px * 100% 30px;
+    }
+    .doctor-info-wrap {
+      margin: 0 10.66% 0;
+    }
+    .doctor-info {
+      max-width: 1024px;
+      width: 100%;
+      margin: 40px auto 0;
+      border: 3px solid $color1;
+      padding: 12px 7% 15px 6%;
+      .doctor-img {
+        text-align: left;
+      }
+      .doctor-content {
+        margin-top: 43px;
+        font: 900 30px $futura_bold;
+        margin-top: 55px;
+        h4 {
+
+        }
+        .address-n-point {
+          padding-top: 15px;
+          .place-name {
+            h5 {
+
+            }
+            h6 {
+              font: 30px $futura_medium;
+            }
+          }
+          .points-of-doctor {
+            padding: 0 10px;
+            .number-points {
+              font: 44px/36px $futura_bold;
+            }
+            .point-text {
+              font: 30px/32px $futura_medium;
+            }
+          }
+        }
+
+
+        .first-line {
+          line-height: 40px;
+          margin-top: 0;
+
+          span {
+            font-size: 44px;
+            margin-left: 6px;
+          }
+        }
+        .second-line {
+          font: 30px / 30px $futura_medium;
+
+          span {
+            font: 30px / 30px $futura_medium;
+            margin-left: 38px;
+          }
+        }
+      }
+    }
+    .rating {
+      max-width: 188px;
+      .fullstar {
+        margin-right: 0.9%;
+      }
+    }
+    .map-info-warp {
+      margin: 0 15px;
+      padding-top: 20px;
+      clear: both;
+      .map-info {
+        clear: both;
+        width: 100%;
+        float: none;
+        max-width: 694px;
+        margin: 0 auto 50px;
+        text-align: center;
+      }
+    }
+
+  }/*************** Third section End **************/
+
+  /*************** Fourth section **************/
+  .for-great-patients {
+    .earn-points {
+      width: 100%;
+      float: none;
+      .highlights {
+        h1 {
+          font-size: 52px;
+          max-width: 565px;
+        }
+        ul {
+          max-width: 500px;
+          margin: auto;
+          li {
+            width: 100%;
+            display: block;
+            font-size: 40px;
+            p {
+              background: url("https://dvpizcali3m6.cloudfront.net/img/images_buzzy/tick.png") no-repeat 0px 6px;
+              background-size: 40px;
+              padding-left: 58px;
+            }
+          }
+          li:last-child {
+            padding: 0;
+          }
+        }
+      }
+      .badges {
+        display: none;
+      }
+    }
+    .my-activity-feeds {
+      width: 100%;
+      float: none;
+      padding: 1px 25px / 320px * 100%;
+      .activityWrap {
+        max-width: 635px;
+        margin: auto;
+        .activity {
+          margin: 35px auto;
+          .activity-feed-header {
+            .modified-border-top {
+              border-width: 10px 0 0px 268px;
+            }
+            h4 {
+              font: 30px/48px $futura_bold;
+            }
+            .modified-border-bottom {
+              border-width: 10px 268px 0 0;
+            }
+          }
+          .activity-feeds {
+            ul {
+              li {
+                height: auto;
+                padding: 7px 10px 30px 12px;
+                .user-small-img {
+                  img {
+                    height: 50px;
+                  }
+                }
+                .userName {
+                  font-size: 24px;
+                }
+                p {
+                  font: 22px/70px $futura_medium;
+                }
+                .points {
+                  font: 40px/70px $futura_bold;
+                  .point-num {
+                    font: 22px/22px $futura_bold;
+                    margin-top: 15px;
+                  }
+                  .point-word {
+                    font: 22px/22px $futura_medium;
+                  }
+                  img {
+                    max-height: 100%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .redeem {
+        a {
+          .heading {
+            font-size: 32px;
+          }
+        }
+      }
+    }
+  }
+  /*************** Fourth section End **************/
+
+  /*************** Fifth section **************/
+
+.connect-us {
+  .connect {
+    .connect-links {
+      max-width: 730px;
+      .signUp {
+        font: 52px/75px $futura_bold;
+        padding: 0 52px;
+      }
+      .mid {
+        padding: 0 7px;
+        font: 32px/54px $futura_bold;
+        width: 54px;
+      }
+      .fbConnect {
+        height: 75px;
+        width: 276px;
+      }
+    }
+    .heading {
+      font-size: 46px;
+    }
+  }
+}
+
+  /*************** Fifth section End **************/
+
+  /*************** Sixth section **************/
+  .analysis-n-points {
+    padding: 55px 0 0;
+    .doctor-advise-points {
+      width: 100%;
+      float: none;
+      .doctors-points {
+        max-width: 430px;
+        width: 100%;
+        margin: 0 auto 0;
+        h4 {
+          font-size: 52px;
+          margin-bottom: 20px;
+        }
+        a {
+          font-size: 32px;
+          margin-bottom: 25px;
+        }
+        h6 {
+
+        }
+        ul {
+          li {
+            font-size: 30px;
+            margin-bottom: 25px;
+          }
+        }
+      }
+    }
+    .analysis-imaging {
+      float: none;
+      width: 100%;
+      .img-wrap {
+        padding-right: 110px / 768px * 100%;
+        padding-left: 0;
+        img {
+          display: none;
+        }
+        .cropped-img {
+          display: block;
+        }
+      }
+    }
+  }
+  /*************** Sixth section End **************/
+
+  /*************** Main Footer **************/
+  .main-footer-section .main-footer {
+    padding: 5px 30px 25px;
+
+    .footer-logo {
+      display: none;
+    }
+
+  }
+  /*************** Main Footer End **************/
+
+
+
+}/*************** 1024 and below End **************/
+
+
+
+
+@media (max-width: 870px) {
+
+  .logo {
+    clear: both;
+  }
+
+}
+
+@media (max-width: 780px) {
+  .doctor-in-area {
+    .doctor-info {
+      .doctor-content {
+        font-size: 26px;
+        .first-line {
+          span {
+            font-size: 40px;
+          }
+        }
+        .second-line {
+          span {
+            margin-left: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+

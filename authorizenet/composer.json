@@ -1,0 +1,12 @@
+{
+    "name": "somesh-mukherjee/authorizenet",
+    "require": {
+        "authorizenet/authorizenet": "~1.8"
+    },
+    "authors": [
+        {
+            "name": "somesh",
+            "email": "somesh.mukherjee@sourcefuse.com"
+        }
+    ]
+}

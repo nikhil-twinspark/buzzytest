@@ -1,0 +1,539 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline
+}
+html {
+    line-height: 1
+}
+ol, ul {
+    list-style: none
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle
+}
+.aboutUs{ position: fixed;z-index:101; background: #2FB889; overflow: hidden; transform: rotate(90deg);  -ms-transform:rotate(90deg); /* IE 9 */  -webkit-transform: rotate(90deg); top: 295px; left: -56px; /* padding: 10px; */ /* color: white; */}
+.aboutUs a{ display:block; color: white; padding: 10px 20px; text-transform: uppercase;}
+q, blockquote {
+    quotes: none
+}
+q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none
+}
+a img {
+    border: none
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+    display: block
+}
+a {
+    color: #767676;
+    text-decoration: none
+}
+body {
+    font-family: 'Avenir-md';
+
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 962px;
+    display: block
+}
+.pull-right {
+    float: right !important
+}
+.Clearfix {
+    clear: both
+}
+.pull-left {
+    float: left !important
+}
+#topNav {
+    background: #f3f3f3;
+    padding: 0px 0px;
+
+}
+.grid50 {
+    width: 50%
+}
+.grid60 {
+    width: 60%
+}
+.grid100 {
+    width: 100%
+}
+.grid40 {
+    width: 40%
+}
+.marginleft15 {
+    margin-left: 15px
+}
+.marginbottom15 {
+    margin-bottom: 15px
+}
+.userName p {
+    font-size: 14px;
+    color: #767676;
+    margin-top: 13px;
+    word-wrap: break-word;
+}
+.topContact {
+    text-align: right;
+    width: 77% !important;
+}
+.topContact ul {
+    font-size: 14px;
+    color: #767676;
+    float: left;
+    margin-top: 13px
+}
+.topContact ul.topInfo li {
+    display: inline-block;
+    margin-right: 10px
+}
+.topContact ul.topInfo li.email a {
+    background: url(https://dvpizcali3m6.cloudfront.net/img/email.png) no-repeat left center;
+    padding: 0 0 0 25px
+}
+.topContact ul.topInfo li.phone p {
+    background: url(https://dvpizcali3m6.cloudfront.net/img/phone.png) no-repeat left center;
+    padding: 0 0 0 20px
+}
+.topContact .topbtn {
+    float: right
+}
+.topContact .topbtn span {
+    display: block;
+    float: left;
+    margin-right: 2px
+}
+.topContact .topbtn span.Instr a {
+    display: block;
+    background: url(https://dvpizcali3m6.cloudfront.net/img/question.png) no-repeat center #435464;
+    padding: 20px
+}
+.topContact .topbtn span.logout a {
+    display: block;
+    background: url(https://dvpizcali3m6.cloudfront.net/img/logout.png) no-repeat center #2FB889;
+    padding: 20px
+}
+.header {
+    overflow: hidden;
+    padding: 40px 0px
+}
+.header .searchArea {
+    text-align: right;
+    margin-top: 15px
+}
+.header .searchArea form input {
+    border: 1px solid #6f6f6f;
+    border-radius: 10px;
+    padding: 5px 25px;
+    width: 80%;
+    font-size: 11px;
+}
+.contArea { min-height:500px;}
+.contArea .tabBox {
+    border-top: 5px solid #435464;
+    background: #f9f9f9;
+}
+.contArea .tabBox ul li {
+    float: left;
+    margin-right: 20px
+}
+.contArea .tabBox ul li a {
+    color: #4c4c4e;
+    font-size: 14px;
+    padding: 10px;
+    display: block
+}
+.contArea .tabBox ul li a.active {
+    border-bottom: 5px solid #2FB889
+}
+.adminsuper {
+    margin: 0;
+    padding:5px;
+}
+.adminsuper table tr {
+    background: #f7f7f7;
+    border-bottom: 5px solid #FFF
+}
+.adminsuper table tr td {
+    text-align: center;
+    color: #9c9c9d;
+    padding: 10px;
+    border-right: 2px solid #FFF;
+    width: auto;
+}
+.adminsuper table tr td:last-child {
+    border: none
+}
+.adminsuper table tr td.client {
+
+    color: #FFF;
+    text-align: center;
+    border-right: 2px solid #FFF
+}
+.adminsuper table tr td.client a{ color:#FFF; text-decoration:none;}
+.adminsuper table tr td.campaign {
+//background: #2FB889;
+    color: #FFF;
+    text-align: center;
+    border-right: 2px solid #FFF
+}
+.adminsuper table tr td.aptn {
+    background: #2FB889;
+    color: #FFF;
+    text-align: center;
+    border-right: 2px solid #FFF
+}
+.adminsuper table tr td.deletbtn {
+    padding: 0px
+}
+.adminsuper table tr td.deletbtn form#Campaigns input{
+    background: #435464;
+    display: block;
+    padding: 13px 33px;
+    border: none;
+    color: #FFF;
+    cursor: pointer
+}
+.adminsuper table tr td.addOption { padding: 0px }
+.adminsuper table tr td.addOption form#RewardLists input{
+    background: #435464;
+    display: inline-block;
+    padding: 13px 33px;
+    border: none;
+    color: #FFF;
+    cursor: pointer;
+    width:85%;
+}
+.adminsuper table tr td.editbtn {
+    padding: 0px
+}
+.adminsuper table tr td.editbtn form#Campaigns input {
+    background: #435464;
+    display: block;
+    padding: 13px 25px;
+    border: none;
+    color: #FFF;
+    cursor: pointer
+}
+.adminsuper table tr td.veiwbtn {
+    padding: 0px
+}
+.adminsuper table tr td.veiwbtn a.info-tooltip {
+    background: #435464;
+    display: block;
+    padding: 13px 30px;
+    border: none;
+    color: #FFF;
+    cursor: pointer
+}
+.adminsuper table tr td.managementbtn {
+    padding: 0px
+}
+.adminsuper table tr td.managementbtn a {
+    background: #435464;
+//display: block;
+    padding: 13px 15px;
+    margin-bottom: 10px;
+    border: none;
+    color: #FFF;
+    cursor: pointer
+}
+form.admin .groupAdmin {
+    margin: 30px 0px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+    position: relative;
+}
+form.admin .groupAdmin2 {
+    margin: 30px 0px;
+
+    padding-bottom: 10px;
+    position: relative;
+}
+form.admin .groupAdmin2 label {
+    font-size: 16px;
+    color: #6e6e6f;
+    width: 150px;
+    margin: 10px 12px 0px 0px;
+    /* text-align: right; */
+    font-size: 16px;
+    float: left;
+    font-weight: 500;
+}
+.adminsuper form.admin .groupAdmin2 label span.star {
+    color: #FF0000;
+}
+form.admin .groupAdmin1 {
+    margin: 30px 0px;
+    position: relative;
+    padding-bottom: 10px;
+}
+form.admin .submit input{
+    background: #6e6f6f;
+    padding: 5px 50px;
+    text-align: center;
+    color: #fff;
+    float: right;
+    box-shadow: none;
+    border: none
+
+}
+form.admin .groupAdmin label {
+    font-size: 16px;
+    color: #6e6e6f;
+    width: 150px;
+    margin: 10px 12px 0px 0px;
+    /* text-align: right; */
+    font-size: 16px;
+    float: left;
+    font-weight: 500;
+}
+form.admin .groupAdmin strong input {
+    float :left;
+}
+form.admin .groupAdmin strong label {
+    margin: 3px 12px 0 12px;
+}
+form.admin .groupAdmin input {
+    display: inline-block;
+    background: #f7f7f7;
+    padding: 10px;
+    border: none;
+    box-shadow: none;
+    color: #9c9c9d;
+    padding-right: 0;
+    max-width: 183px;
+}
+.form_box form.admin .groupAdmin input, .form_box form.admin .groupAdmin select{ width:30%; max-width:30%;}
+form.admin .groupAdmin select {
+    display: inline-block;
+    background: #f7f7f7;
+    padding: 5px;
+    width: 77%;
+    max-width: 77%;
+    border: none;
+    box-shadow: none;
+    color: #9c9c9d;
+    border: 1px solid #e0e0e0; background: #fff;
+    box-sizing: border-box;  -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background: #fff;
+}
+form.admin button {
+    background: #6e6f6f;
+    padding: 5px 50px;
+    text-align: center;
+    color: #fff;
+    float: right;
+    box-shadow: none;
+    border: none
+}
+.adminsuper form.admin .groupAdmin label span.star {
+    color: #FF0000;
+}
+table.addOption { width:100%; }
+.adminsuper table.addOption tr { background:none ;}
+table.addOption tr td { padding:0px !important; background:none !important;}
+table.addOption tr td a.info-tooltip{ float: right; padding: 10px 10px 10px 12px;background: #6e6f6f;
+    color: #FFF;}
+table.addOption tr td a.info-tooltip:hover {background:#585858; }
+
+a.sorting {color:#fff;}
+
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+    cursor: not-allowed;
+    background-color: #eee;
+    opacity: 1;
+}
+.hand-icon {cursor: pointer;}
+
+.error {
+    color: #FF0000;
+    display: block;
+    float: none;
+    margin-left: 120px;
+    margin-top: 5px;
+    text-align: left;
+    width: 100%;
+}
+.transactionform form.formBox .formGroup label.error { color: #FF0000; display: block; float: none; text-align: left; width: 100%;}
+.message { color:red; display: block; clear: both; margin: 12px 12px 10px;}
+a.icon-top, a.hand-icon {
+    padding: 0px 7px 2px;
+    color: #000;
+    position: absolute;
+    margin-left: -22px;
+    margin-top: -15px;
+    background: #e0e0e0;
+}
+form.admin .groupAdmin img {
+    display: block;
+}
+.wid_100 { width:100%;}
+#login.login_staff form.loginBox .formGroup input { width:30%;}
+#login.login_staff form.loginBox .formGroup label { text-align:left;}
+input:focus{ outline:none;}
+::-webkit-file-upload-button { cursor:pointer; }
+.patient_name {color: #435464; padding-left: 10px;}
+
+.adminsuper table tr td.aptn select {
+    max-width: 250px;
+}
+.adminsuper table tr td.aptn select {max-width: 250px;}
+.adminsuper table tr td.client select {max-width: 120px;}
+.adminsuper table tr td.campaign select {max-width: 120px;}
+.aptn select {max-width: 150px;}
+#mySel2 { max-width:120px;}
+.search_init.text_filter.form-control{max-width:112px;}
+.text_filter.form-control.search_init{ max-width:112px;}
+.adminsuper table tr td.veiwbtn { padding:2px;}
+.promo_check {display:block; float:none;width: 100%;clear: both; padding-left:119px;}
+.promo_check  input {width: 13px !IMPORTANT; display: inline-block;/* float: left; */display: inline-block;padding-top: 10px; vertical-align: middle;}
+.promo_check label {float: none!important;width: 80%!important;}
+.breadcrumb_staff{font-size: 14px; border-bottom:1px solid #f4f2f2; border-top:1px solid #f4f2f2; padding: 5px 10px; clear:both;}
+
+.breadcrumb_staff b { color: #435464 ; font-size: 16px;}
+.breadcrumb_staff a{color: #2a6496; text-decoration:none;}
+.breadcrumb_staff a:hover{color: #2a6496; text-decoration:underline;}
+.left-align{ text-align:left;}
+.left-align span { font-size:13px;}
+.form_box{}
+.wid-100 { width:100%;}
+.inst_heading b{ color: #000000; font-size: 20px; border-bottom: 1px solid #e0e0e0; display: block; padding-bottom: 5px; margin-bottom: 5px;}
+.contArea{height:100%;}
+.contArea iframe{ width:100%; min-height: 500px;}
+.message_box { background: none repeat scroll 0 0 #f7f7f7;
+    color: #666666;
+    font-size: 14px;
+    margin-bottom: 20px;
+    padding: 10px;  box-shadow: 0 0 0 1px #CCCCCC;}
+.add_profile {
+    overflow: hidden; margin: 5px;
+}
+.add_profile a{ color:#FFF !important; text-decoration:none;}
+.icon-add{
+    background: none repeat scroll 0 0 #808080;
+    color: #FFFFFF;
+    display: table;
+    float: right;
+    padding: 7px 10px;
+    text-align: right;
+}
+#ProfileFieldAddForm .add_profile{
+    position:absolute;
+    left: 450px;
+    top: -5px;
+    background: #e0e0e0;
+    padding: 12px 15px;
+    cursor: pointer;
+}
+
+#ProfileFieldAddForm.admin .groupAdmin1 {
+    margin: 10px 0px;
+    padding-bottom: 10px;
+}
+.ind_manage div.x-btn{
+	left: inherit;
+	right: 18%;
+	top: 5px;
+	}
+.x-btn{
+    position:absolute;
+    left: 455px;
+    top: 0px;
+    background: #e0e0e0;
+    padding: 12px 15px;
+    cursor: pointer;
+}
+.user_login.ie_8_left{
+    max-width:160px;
+    padding-right: 5px;
+}
+.ie_8_right{
+    width: 740px;
+    padding-left:0;
+}
+#example tfoot td {
+    background: #2FB889;
+}
+/* page title */
+.staff_title { float: left;}
+.staff_title h3 {
+    background: none repeat scroll 0 0 #435464;
+    color: #FFFFFF;
+    font-size: 19px;
+    padding: 8px 27px 5px;
+    text-align: center;
+}
+
+#demo { padding: 15px;
+    background: #F3F3F3;
+    border: 1px solid #e0e0e0;
+    float: right;
+    width: 370px;
+    margin-top: 10px;
+
+}
+#optionval{
+    width: 58%;
+    padding: 0px;
+}
+#optionval input { max-width: 50%;}
+#options { margin: 0px; width: 100%;}
+#demo input {
+    margin: 0px 10px 0px 0px;
+}
+.radio_prev{
+    padding-top: 10px;
+}
+.radio_prev .col-xs-6 { padding: 0px; margin-bottom: 10px;}
+.radio_prev .col-xs-6 input { width: auto; float: left; height: 15px;  padding: 0px !important; margin: -2px 7px 0px 0px !important;}
+.radio_prev .col-xs-6 label  {width: auto !important; float: left;   padding: 0px !important; margin: 0px !important;}
+.report{
+    list-style: disc outside none;
+    margin-top: 20px;
+    margin-left: 45px;
+}
+.reportol{
+    list-style: disc outside none;
+    margin-left: 30px;
+    margin-top: 6px;
+}
+form#settingform_foradmin #option input#allow {
+  width: 20px;
+  margin: 15px 0px;
+}
+
+
+.rightclintdiv{ float:left; margin-top: 17px;}
+
+.adminsuper table tr td.managementbtn a:nth-child(3n+3) {
+    margin-right: 4px;
+}
+.rewardPoints{padding: 1px 7px; background: #d60000; border-radius: 3px; color:#fff; position: absolute;
+top: 9px; right: 0px;}
+.rewardPoints.new:after{width: 0;
+height: 0;
+border-left: 5px solid transparent;
+border-right: 5px solid transparent;
+border-top: 5px solid #d60000; content:''; position:absolute; bottom:-4px; left:5px}
+
+.rewardPoints.new{ position:absolute; top: 3px; font-size: 9px; padding: 0px 4px; right: 25px;}
+.ind_manage textarea { max-width:570px;}
+div.x-btn.add-more { right: 6%; }
+

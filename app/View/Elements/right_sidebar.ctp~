@@ -1,0 +1,334 @@
+<?php
+
+$sessionstaff = $this->Session->read('staff'); ?>
+
+<div class="pull-left col-md-12 col-sm-12 col-xs-12 rightcol">
+    <div class="balance_box_header">
+                                        <?php echo 'Current Balance';  ?>
+    </div>
+    <div class="balancebox">
+		  <?php
+                  
+                    $existingtretment=array();
+          foreach($sessionstaff['customer_info']['treatment_over'] as $tret){
+              $existingtretment[]=$tret['treatment_id'];
+          }
+                  $treatmentrunning=0;
+                  foreach($sessionstaff['customer_info']['visitcheck'] as $treat){
+                                            if(in_array($treat['UpperLevelSetting']['id'],$existingtretment)){
+                                                $treatmentrunning++;
+                                                
+                                            }
+                                            }
+                                          
+			  		//echo "<pre>";print_r($sessionstaff['customer_info']);die;
+			
+                            $exppoint=$sessionstaff['customer_info']['total_points'];
+                           $pt=explode('(',$exppoint);
+			  	if(count($pt)>1){
+                                    
+                                    $gp=rtrim($pt[1],')');
+                                 ?>
+
+        <div class="balance clearfix">
+            <span class="balanceheading">BuzzyDoc Points</span>
+            <span class="balancePoint">
+           <?php if($gp==''){ echo 0; }else{ echo $gp; }?>
+            </span>
+        </div>
+          <?php if($sessionstaff['is_buzzydoc']==0){ ?>
+        <div class="balance clearfix">
+            <span class="balanceheading">Legacy Points</span>
+            <span class="balancePoint">
+           <?php if($pt[0]==''){ echo 0; }else{ echo $pt[0]; }?>
+            </span>
+        </div>
+
+
+          <?php } ?>
+
+
+                                <?php }else{ ?>
+        <div class="balance clearfix">
+            <span class="balanceheading">Balance</span>
+            <span class="balancePoint">
+           <?php if($sessionstaff['customer_info']['total_points']==''){ echo 0; }else{ echo $sessionstaff['customer_info']['total_points']; }?>
+            </span>
+        </div>
+                                <?php } ?>
+
+    </div>
+</div>
+<div class="">&nbsp;</div>
+<div class="pull-left col-md-12 col-sm-12 col-xs-12 rightcol margin-top">
+    <?php 
+
+    
+    if($treatmentrunning>0 && ($sessionstaff['clinic_id']==CLINIC1 || $sessionstaff['clinic_id']==CLINIC2 || $sessionstaff['clinic_id']==CLINIC3)){ ?>
+    <div class="balance_box_header btn btn-sm btn-info" id="id-btn-dialog-end" style="cursor:pointer;"><?php echo 'End Of Treatment';  ?></div>
+    <?php } ?>
+
+</div>
+<div class="">&nbsp;</div>
+       <?php if(!empty($sessionstaff['customer_info']['visithistory']) && ($sessionstaff['clinic_id']==CLINIC1 || $sessionstaff['clinic_id']==CLINIC2 || $sessionstaff['clinic_id']==CLINIC3)){ ?>
+
+<!-- #section:elements.tab.position -->
+<div class="tabbable tabs-left">
+
+
+    <div class="tab-content">
+                         <?php 
+                        $nv=1;
+                        $phase1='';
+                        $phase2='';
+                        $phase3='';
+                        $vi1=0;
+                        foreach ($sessionstaff['customer_info']['visithistory'] as $data=>$vhistory) {
+                        
+                           
+                            ?>
+
+        <p>
+        <div class="page-header">
+            <h1> <?php echo $data; ?> </h1>
+        </div>
+
+                                <?php
+                                 
+                            $levecomp=0;
+                                foreach($vhistory['record'] as $vs){
+                                if($vs['perfect']=='Perfect')
+                                   $levecomp++; 
+                            }
+                            $totalcomp=$levecomp;
+                            $totalvisitcomp=($totalcomp*100)/$vhistory['treatment_details']['total_visits'];
+                           
+                        
+                          ?>
+        <table width="100%" border="0" cellpadding="0" cellspacing="0" id="sample-table-1" class="table table-striped table-bordered table-hover" >
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-xs-8">
+                        <!-- #section:elements.progressbar -->
+                             <?php 
+                             $p==0;
+                             foreach($vhistory['treatment_details']['phase_distribution'] as $phaseset){
+                                 if($p==0)
+                                                    $css=' progress-bar-success';
+                                                if($p==1)
+                                                    $css=' progress-bar-warning';
+                                                if($p==2)
+                                                    $css=' progress-bar-purple';
+                                                if($p==3)
+                                                    $css=' progress-danger';
+                                                if($p==4)
+                                                    $css=' progress-bar-pink';
+                                             
+                                                //echo "<pre>";print_r($phase);
+                                                 if($levecomp>$phaseset['PhaseDistribution']['visits'] && $levecomp>0){
+                            $phase=100;
+                            $levecomp=$levecomp-$phaseset['PhaseDistribution']['visits'];
+                            
+                            }else if($levecomp>0){
+                            $phase=($levecomp*100)/$phaseset['PhaseDistribution']['visits'];
+                            $levecomp=$levecomp-$phaseset['PhaseDistribution']['points'];   
+                            }else{
+                             $phase=0;
+                            $levecomp=0;      
+                            }
+                                                ?>
+                                           
+                                            <div class="progress pos-rel" data-percent="<?php echo $phaseset['PhaseDistribution']['phase_name']; ?> (<?php echo round($phase,1); ?>%) ">
+                                                <div class="progress-bar<?php echo $css; ?>" style="width:<?php echo $phase; ?>%;"></div>
+
+                                            </div>
+                                            <?php
+                                            if($p==4)
+                                                $p=0;
+                                 $p++;             
+                            }$p=0; ?>
+                    </div><!-- /.col -->
+                    <div class="col-xs-4 center">
+                        <!-- #section:plugins/charts.easypiechart -->
+                        <div class="easy-pie-chart percentage" data-percent="<?php echo $totalvisitcomp; ?>" data-color="#D15B47">
+                            <span class="percent"><?php echo round($totalvisitcomp); ?></span>%
+                        </div>
+                                        <?php echo $totalcomp."/".$vhistory['treatment_details']['total_visits']; ?>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.col -->
+        </table>
+
+                            <?php
+        $nv++; ?></p>
+
+
+<?php $vi1++;} ?>
+    </div>
+</div>
+
+<!-- /section:elements.tab.position -->
+
+
+
+
+<?php } ?>
+
+
+
+<div id="dialog-message_endtreatment" class="hide">
+
+
+    <div class="row inquerybox1">
+        <!--<div class="col-xs-12 clearfix inquerybox2">-->
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 enquiry_box">
+
+            <form action="" method="POST" name="end_treatment_form" id='end_treatment_form' >
+                <table border='0' width='100%'>
+                    <tr>
+                        <td>Treatment<span style='color:red;'>*</span> </td>
+                        <td>
+                            <div class="relative">
+
+
+                                <input type="hidden" id="treatment_user_id" name="treatment_user_id" value="<?php echo $sessionstaff['customer_info']['User']['id'] ?>">
+                                <select id="active_treatment_id" name="active_treatment_id">
+                                        <?php 
+                                      
+        
+                                        foreach($sessionstaff['customer_info']['visitcheck'] as $treat){
+                                            if(in_array($treat['UpperLevelSetting']['id'],$existingtretment)){
+                                            ?>
+                                    <option value="<?php echo $treat['UpperLevelSetting']['id']; ?>"><?php echo $treat['UpperLevelSetting']['treatment_name']; ?></option>
+                                            <?php }} ?>
+                                </select>
+                                <div class="fix"></div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td><input type="button" value='End Of Treatment' id='end_treatment' class="btn btn-primary buttondflt back_icon btn-sm"  onclick="return activatetreatment();"></td>
+                    </tr>
+                    <tr>
+                        <td  colspan='2'><span id='treatment_status_div' style="display:none"><?php echo $this->html->image('ajax-loader.gif');?> &nbsp;Please wait...</span></td>
+                    </tr>
+                    <tr>
+                        <td colspan='2' id='treatment_error' style='color:green;margin-left:100px;'></td>
+                    </tr>
+
+                </table>
+            </form>
+        </div>
+
+
+        <!--</div>-->
+
+    </div>
+
+
+
+
+</div>   <!--popup--> 
+<script>
+
+
+    function activatetreatment() {
+        var r = confirm("Are you sure to End of treatment for this patient?");
+        if (r == true)
+        {
+            var treatment_id = $('#active_treatment_id').val();
+            var user_id = $('#treatment_user_id').val();
+            $("#treatment_status_div").show();
+            var datasrc = "treatment_id=" + treatment_id + '&user_id=' + user_id;
+
+            $.ajax({
+                type: "POST",
+                data: datasrc,
+                url: "<?=Staff_Name?>PatientManagement/deactivatetreatment/",
+                success: function(result) {
+                    if (result == '') {
+                        $("#treatment_status_div").hide();
+                        alert('End of treatment successfully');
+                        location.reload();
+//                            $("#treatment_error").text('End of treatment successfully');
+//                            $('#treatment_h3_' + treatment_id).css("display", "none");
+//                            $('#treatment_div_' + treatment_id).css("display", "none");
+//                            $('#active_treatment_id').html(result);
+//                            $('#id-btn-dialog-end').css("display", "none");
+                    } else {
+                        $("#treatment_status_div").hide();
+                        alert('End of treatment successfully');
+                        location.reload();
+//                            $("#treatment_error").text('End of treatment successfully');
+//                            $('#treatment_div_' + treatment_id).css("display", "none");
+//                            $('#treatment_h3_' + treatment_id).css("display", "none");
+//                            $('#active_treatment_id').html(result);
+                    }
+                }
+            });
+        } else {
+            return false;
+        }
+
+
+    }
+
+    $("#id-btn-dialog-end").on('click', function(e) {
+//        $("#treatment_error").text('');
+        e.preventDefault();
+
+        var dialog = $("#dialog-message_endtreatment").removeClass('hide').dialog({
+            modal: true,
+            title: "End Of Treatment:",
+            title_html: true,
+        });
+
+    });
+
+
+//    $(document).ready(function() {
+//
+//        $('#end_treatment_form').validate({
+//            showErrors: function(errorMap, errorList) {
+//                if (errorList.length) {
+//                    var s = errorList.shift();
+//                    var n = [];
+//                    n.push(s);
+//                    this.errorList = n;
+//                }
+//                this.defaultShowErrors();
+//            },
+//            submitHandler: function(form) {
+//                $("#treatment_status_div").show();
+//                var datasrc = "treatment_id=" + treatment_id + '&user_id=' + user_id;
+//
+//                $.ajax({
+//                    type: "POST",
+//                    data: datasrc,
+//                    url: "<?=Staff_Name?>PatientManagement/deactivatetreatment/",
+//                    success: function(result) {
+//                        if (result == '') {
+//                            $("#treatment_error").text('End of treatment successfully');
+//                            $('#treatment_' + treatment_id).css("display", "none");
+//                            ;
+//                            $('#id-btn-dialog-end').css("display", "none");
+//                            ;
+//                        } else {
+//                            $("#treatment_error").text('End of treatment successfully');
+//                            $('#treatment_' + treatment_id).css("display", "none");
+//                            ;
+//                            $('#treatment_id').val(result);
+//                            ;
+//                        }
+//                    }
+//                });
+//            }
+//
+//        });
+//    });
+</script>
+
+
+

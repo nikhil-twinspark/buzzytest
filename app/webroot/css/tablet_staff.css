@@ -1,0 +1,33 @@
+.adminsuper table tr td {
+	text-align: center;
+	color: #9c9c9d;
+	padding: 10px;
+	border-right: 2px solid #FFF;
+}
+.transactionform form.formBox .formGroup select{ width:80%; float: left;}
+.transactionform form.formBox .formGroup select.valid{max-height:65px;}
+@media (max-width: 992px) {.emailBox label { margin-bottom:10px;} #login { width:100%;} .transactionform form.formBox .formGroup textarea { width:100%;} .wid_100 { width:auto;} .modal-body{ width:100%;} .popup .rowcont .modal-header .closebtn{ right:-18px;}}
+@media (min-width: 768px) and (max-width: 992px) {
+.header .searchArea form input { width:100%;}
+.transactionform form.formBox .formGroup input { width:80%;}
+form.admin .groupAdmin select{ width:76.5%}
+}
+@media (max-width: 768px){
+	.header .searchArea form input { width:100%; padding-left:10px; padding-right:10px;}
+	#topNav { height:auto;}
+	.txt-center{ text-align:center;}
+	.user_login {border-bottom: 1px solid #e0e0e0; padding-bottom: 5px; margin-bottom: 5px;}
+	.transactionform form.formBox .formGroup label { padding-left: 0; padding-bottom: 5PX;}
+	.balancebox { margin-left:5px;}
+	.balance_box_header{margin: 50px 0 15px 5px;}
+	.transactionform form.formBox .formGroup input, .transactionform form.formBox .formGroup select { width:100%;}
+	.gender_form input{ width:15% !important;}
+	.form-group.rad_btn .check-box { width:100%; display:block;}
+	form.admin .groupAdmin select, form.admin .groupAdmin input.editable{ width:70%}
+	.headBox_customer h1 input {padding: 5px 30px;}
+	.emailBox input { width:auto;}
+	.customer ul li label { width:89%;}
+	.promo_check { padding-left:0;}
+	.promo_check input[type="checkbox"]{ width:13px !important; margin-right: 7px;}
+	
+}

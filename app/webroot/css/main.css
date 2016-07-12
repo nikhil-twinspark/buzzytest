@@ -1,0 +1,4428 @@
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=81e6310d-a4fa-45af-a573-5c86d47cddc9");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+html {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+q, blockquote {
+    quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none;
+}
+
+a img {
+    border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+
+@font-face {
+    font-family: "FuturaW01-MediumCondens";
+    src: url("../fonts/c9bb15b9-5c4a-477b-8e2d-1924c3ef942d.eot?#iefix");
+    src: url("../fonts/c9bb15b9-5c4a-477b-8e2d-1924c3ef942d.eot?#iefix") format("eot"), url("../fonts/286ca836-0e48-43ba-9f12-8ba861fafeda.woff") format("woff"), url("Fonts/40e2893b-b4c0-4b91-aa42-4ab0be867d25.ttf") format("truetype"), url("Fonts/275744c1-8dd1-40d7-ae52-17728b66a3dc.svg#275744c1-8dd1-40d7-ae52-17728b66a3dc") format("svg");
+}
+@font-face {
+    font-family: "FuturaW01-ExtraBoldCond_774896";
+    src: url("../fonts/bec66ca3-753a-469a-b153-fdd9e3ea7ce4.eot?#iefix");
+    src: url("../fonts/bec66ca3-753a-469a-b153-fdd9e3ea7ce4.eot?#iefix") format("eot"), url("../fonts/04733668-9f3f-4f2f-a534-14fb44683f83.woff") format("woff"), url("Fonts/1f9bced0-1224-4785-9553-68fcbac00914.ttf") format("truetype"), url("Fonts/23d05127-305c-4753-8f3a-16d8109db5ca.svg#23d05127-305c-4753-8f3a-16d8109db5ca") format("svg");
+}
+/*************** Common Modal window **************/
+/*
+Colorbox Core Style:
+The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+#cboxWrapper {
+    max-width: none;
+}
+
+#cboxOverlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+#cboxMiddleLeft, #cboxBottomLeft {
+    clear: left;
+}
+
+#cboxContent {
+    position: relative;
+}
+
+#cboxLoadedContent {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+#cboxTitle {
+    margin: 0;
+}
+
+#cboxLoadingOverlay, #cboxLoadingGraphic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow {
+    cursor: pointer;
+}
+
+.cboxPhoto {
+    float: left;
+    margin: auto;
+    border: 0;
+    display: block;
+    max-width: none;
+    -ms-interpolation-mode: bicubic;
+}
+
+.cboxIframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+#colorbox, #cboxContent, #cboxLoadedContent {
+    box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+}
+
+/*
+User Style:
+Change the following styles to modify the appearance of Colorbox.  They are
+ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay {
+    background: url(https://dvpizcali3m6.cloudfront.net/img/images_buzzy/overlay.png) repeat 0 0;
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+}
+
+#colorbox {
+    outline: 0;
+}
+
+#cboxTopLeft {
+    width: 21px;
+    height: 21px;
+    background: url(https://dvpizcali3m6.cloudfront.net/img/images_buzzy/controls.png) no-repeat -101px 0;
+}
+
+#cboxTopRight {
+    width: 21px;
+    height: 21px;
+    background: url(https://dvpizcali3m6.cloudfront.net/img/images_buzzy/controls.png) no-repeat -130px 0;
+}
+
+#cboxBottomLeft {
+    width: 21px;
+    height: 21px;
+    background: url(https://dvpizcali3m6.cloudfront.net/img/images_buzzy/controls.png) no-repeat -101px -29px;
+}
+
+#cboxBottomRight {
+    width: 21px;
+    height: 21px;
+    background: url(https://dvpizcali3m6.cloudfront.net/img/images_buzzy/controls.png) no-repeat -130px -29px;
+}
+
+#cboxMiddleLeft {
+    width: 21px;
+    background: url(https://dvpizcali3m6.cloudfront.net/img/images_buzzy/controls.png) left top repeat-y;
+}
+
+#cboxMiddleRight {
+    width: 21px;
+    background: url(https://dvpizcali3m6.cloudfront.net/img/images_buzzy/controls.png) right top repeat-y;
+}
+
+#cboxTopCenter {
+    height: 21px;
+    background: url(https://dvpizcali3m6.cloudfront.net/img/images_buzzy/border.png) 0 0 repeat-x;
+}
+
+#cboxBottomCenter {
+    height: 21px;
+    background: url(https://dvpizcali3m6.cloudfront.net/img/images_buzzy/border.png) 0 -29px repeat-x;
+}
+
+#cboxContent {
+    background: #fff;
+    overflow: hidden;
+}
+
+.cboxIframe {
+    background: #fff;
+}
+
+#cboxError {
+    padding: 50px;
+    border: 1px solid #ccc;
+}
+
+#cboxLoadedContent {
+    margin-top: 20px;
+}
+
+#cboxTitle {
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    color: #949494;
+    display: none !important;
+}
+
+#cboxCurrent {
+    position: absolute;
+    bottom: 4px;
+    left: 58px;
+    color: #949494;
+}
+
+#cboxLoadingOverlay {
+    background: url(https://dvpizcali3m6.cloudfront.net/img/images_buzzy/loading_background.png) no-repeat center center;
+}
+
+#cboxLoadingGraphic {
+    background: url(https://dvpizcali3m6.cloudfront.net/img/images_buzzy/loading.gif) no-repeat center center;
+}
+
+/* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
+#cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    width: auto;
+    background: none;
+}
+
+/* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
+#cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {
+    outline: 0;
+}
+
+#cboxSlideshow {
+    position: absolute;
+    bottom: 4px;
+    right: 30px;
+    color: #0092ef;
+}
+
+#cboxPrevious {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url(https://dvpizcali3m6.cloudfront.net/img/images_buzzy/controls.png) no-repeat -75px 0;
+    width: 25px;
+    height: 25px;
+    text-indent: -9999px;
+}
+
+#cboxPrevious:hover {
+    background-position: -75px -25px;
+}
+
+#cboxNext {
+    position: absolute;
+    bottom: 0;
+    left: 27px;
+    background: url(https://dvpizcali3m6.cloudfront.net/img/images_buzzy/controls.png) no-repeat -50px 0;
+    width: 25px;
+    height: 25px;
+    text-indent: -9999px;
+}
+
+#cboxNext:hover {
+    background-position: -50px -25px;
+}
+
+#cboxClose {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(https://dvpizcali3m6.cloudfront.net/img/images_buzzy/controls.png) no-repeat -25px 0;
+    width: 25px;
+    height: 25px;
+    text-indent: -9999px;
+}
+
+#cboxClose:hover {
+    background-position: -25px -25px;
+}
+
+/*
+The following fixes a problem where IE7 and IE8 replace a PNG's alpha transparency with a black fill
+when an alpha filter (opacity change) is set on the element or ancestor element.  This style is not applied to or needed in IE9.
+See: http://jacklmoore.com/notes/ie-transparency-problems/
+*/
+.cboxIE #cboxTopLeft,
+.cboxIE #cboxTopCenter,
+.cboxIE #cboxTopRight,
+.cboxIE #cboxBottomLeft,
+.cboxIE #cboxBottomCenter,
+.cboxIE #cboxBottomRight,
+.cboxIE #cboxMiddleLeft,
+.cboxIE #cboxMiddleRight {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
+}
+
+/*************** Common Modal window End **************/
+/*= Common Styles
+------------------------------------------------------------------------*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'FuturaW01-MediumCondens';
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+    outline: none;
+}
+a:active {
+    text-decoration: none;
+    outline: none;
+}
+a:focus {
+    text-decoration: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+.left {
+    float: left !important;
+}
+
+.right {
+    float: right !important;
+}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.clear {
+    clear: both;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+    filter: chroma(color=#000000);
+}
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+}
+
+.transition {
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.scroll-none {
+    overflow: hidden !important;
+}
+
+/*************** Variables **************/
+/* Green */
+/* Blue */
+/* Navy-Blue */
+/* Grey */
+/* Grey */
+/* Green background */
+/* Blue background */
+/* Navy-Blue background */
+/* Dark-grey background */
+/*************** Variables Ends **************/
+/*************** Main-Header **************/
+.main-header {
+    background: #2fb889;
+    padding: 6px 0 7px;
+}
+
+.main-logo {
+    float: left;
+    margin-right: 2.77325%;
+    margin-left: 6.03589%;
+    width: 14.68189%;
+}
+.main-logo img {
+    display: block;
+    width: 100%;
+}
+
+.menu-btn {
+    background: url("https://dvpizcali3m6.cloudfront.net/img/images_buzzy/menu_icon2x.png") no-repeat 0px 0px;
+    background-size: contain;
+    cursor: pointer;
+    display: none;
+    float: right;
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+}
+
+.top-navigation li {
+    float: left;
+    margin-top: 9px;
+    margin-right: 1.49254%;
+}
+.top-navigation li a {
+    color: #fff;
+    display: block;
+    font: 18px "FuturaW01-MediumCondens";
+    -moz-transition: linear 0.3s 0s;
+    -o-transition: linear 0.3s 0s;
+    -webkit-transition: linear 0.3s;
+    -webkit-transition-delay: 0s;
+    transition: linear 0.3s 0s;
+}
+.top-navigation li a .header-point-icon {
+    max-width: 26px;
+    position: relative;
+    top: -5px;
+    vertical-align: middle;
+}
+.top-navigation li a .point-header {
+    display: inline-block;
+    font: 18px "FuturaW01-ExtraBoldCond_774896";
+    color: #435464;
+}
+.top-navigation li a:hover {
+    color: #435464;
+}
+.top-navigation li:last-child {
+    margin-right: 0;
+}
+.top-navigation li a.active {
+    color: #435464;
+}
+
+.search-box {
+    background: #fff url("https://dvpizcali3m6.cloudfront.net/img/images_buzzy/magnifying_glass.png") no-repeat 98% 8px ;
+    background-size: 21px;
+    border: none;
+    color: #a7a7a7;
+    float: right;
+    font: 18px "FuturaW01-MediumCondens";
+    padding-right: 26px;
+    padding-left: 46px;
+    margin-right: 6.03589%;
+    width: 251px;
+    height: 39px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+input[type="search"].search-box {
+     background: url("https://dvpizcali3m6.cloudfront.net/img/images_buzzy/magnifying_glass.png") no-repeat scroll 98% 8px / 21px auto #FFFFFF;
+    border: medium none;
+    border-radius: 10px 10px 10px 10px !important;
+    color: #A7A7A7;
+    float: right;
+    font: 18px "FuturaW01-MediumCondens";
+    height: 39px;
+    margin-right: 6.03589%;
+    padding-left: 46px;
+    padding-right: 26px;
+    width: 251px;
+    
+}
+.search-box:focus {
+    outline: none;
+}
+
+.search-box[placeholder] {
+    text-overflow: ellipsis;
+}
+
+.search-box::-moz-placeholder {
+    text-overflow: ellipsis;
+}
+
+/* firefox 19+ */
+.search-box:-moz-placeholder {
+    text-overflow: ellipsis;
+}
+
+/*************** Main-Header End **************/
+/*************** ----- Reuseable Elements ----- **************/
+.row {
+    max-width: 1226px;
+    margin: 0 auto;
+}
+
+/*************** Common Dropdown **************/
+.dropdown-wrap {
+    width: 100%;
+    height: inherit;
+    line-height: inherit;
+    position: relative;
+}
+
+.dropdown-wrap .dropdown-value {
+    background: url("https://dvpizcali3m6.cloudfront.net/img/images_buzzy/dropdown_bg.png") no-repeat 0 0;
+    background-size: contain;
+    display: block;
+    width: inherit;
+    height: inherit;
+    font-size: inherit;
+    position: absolute;
+    line-height: inherit;
+    right: 0;
+    top: 0;
+    text-indent: 12px;
+    z-index: 1;
+}
+
+.dropdown-wrap select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    font-family: "FuturaW01-ExtraBoldCond_774896";
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    line-height: inherit;
+    opacity: 0;
+    padding: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.dropdown-wrap select option {
+    font-size: inherit;
+    font-family: "FuturaW01-MediumCondens";
+}
+
+/*************** Common Dropdown End **************/
+.two-cols-wrap {
+    margin-top: 50px;
+    padding-bottom: 25px;
+    /*  .left-module,
+    .right-module {
+    background-color: #fff;
+  }*/
+}
+.two-cols-wrap .left-module .left-module-listing li:last-child {
+    margin-bottom: 35px;
+}
+
+/*************** left-module **************/
+.left-module {
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.45);
+    float: left;
+    position: relative;
+    padding: 0 5.28771% 0 3.42146%;
+    margin-right: 3.42577%;
+    margin-left: 6.03589%;
+    max-width: 643px;
+    width: 52.44698%;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.left-module-heading {
+    position: relative;
+    margin-top: -20px;
+}
+
+.modified-border-top {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 0 0px 196px;
+    border-color: transparent transparent transparent #2fb888;
+    content: "";
+    text-indent: -9999px;
+    -moz-transform: scale(0.9999);
+}
+
+.modified-border-bottom {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 196px 0 0;
+    border-color: #2fb888 transparent transparent transparent;
+    content: "";
+    background: url("https://dvpizcali3m6.cloudfront.net/img/images_buzzy/feed_header_bg.png") no-repeat 0px -5px;
+    background-size: cover;
+    padding-bottom: 40px;
+    text-indent: -9999px;
+    -moz-transform: scale(0.9999);
+}
+
+.left-module-title-heading {
+    padding: 0 30px 0 12px;
+    font: 26px/40px "FuturaW01-ExtraBoldCond_774896";
+    color: #fff;
+    float: left;
+    background: #2fb889;
+}
+
+.left-module-listing li {
+    float: left;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.left-module-listing li .listing-point {
+    color: #2fb889;
+    float: right;
+    font: 32px/56px "FuturaW01-ExtraBoldCond_774896";
+    text-align: right;
+    width: 21.8894%;
+}
+.left-module-listing li .listing-point .badgeImg {
+    width: 57.89474%;
+    float: right;
+    line-height: normal;
+}
+.left-module-listing li .listing-point .badgeImg img {
+    max-height: 100%;
+    width: 100%;
+}
+.left-module-listing li .listing-point .point-num {
+    color: inherit;
+    font: 16px/14px "FuturaW01-ExtraBoldCond_774896";
+    text-align: left;
+    margin-top: 12px;
+    padding: 0;
+}
+.left-module-listing li .listing-point .point-word {
+    color: inherit;
+    font: 16px/16px "FuturaW01-MediumCondens";
+    text-align: left;
+    padding: 0;
+}
+.left-module-listing li .data-container {
+    background: url("https://dvpizcali3m6.cloudfront.net/img/images_buzzy/listing_bg.png") no-repeat;
+    background-size: contain;
+    float: left;
+    padding: 6px 10px 17px;
+    width: 77.51278%;
+}
+.left-module-listing li .data-container .doc-small-img {
+    min-width: 40px;
+    max-height: 40px;
+    margin-right: 5px;
+    float: left;
+    text-align: center;
+}
+.left-module-listing li .data-container .doc-small-img img {
+    max-height: 40px;
+}
+.left-module-listing li .data-container .doc-place-name {
+    float: left;
+    font: 18px "FuturaW01-ExtraBoldCond_774896";
+    color: #00aaf7;
+}
+.left-module-listing li .data-container .listing-description {
+    padding-top: 25px;
+    text-align: left;
+}
+.left-module-listing li .date-detail {
+    color: #00aaf7;
+    float: right;
+    font: 18px "FuturaW01-ExtraBoldCond_774896";
+    padding-top: 20px;
+}
+.left-module-listing li:last-child {
+    margin-bottom: 49px;
+}
+
+/****************** by sahoo **********************************/
+
+.left-module .more-activity-expand-btn-wrap {
+    margin-bottom: 30px;
+    text-align: center;
+}
+/****************** by sahoo **********************************/
+.left-module .more-activity-expand-btn {
+    background: none repeat scroll 0 0 #2fb889;
+    border: 0 none;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px 0 rgba(0, 0, 0, 0.45);
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font: 18px/40px "FuturaW01-ExtraBoldCond_774896";
+    outline: medium none;
+    padding: 0 30px;
+    transition: all 0.3s linear 0s;
+}
+.more-activity-expand-btn:hover {
+    background: none repeat scroll 0 0 #435464;
+    color: #fff;
+}
+.more-activity-expand-btn:active {
+    box-shadow: none;
+}
+
+
+/*************** left-module End **************/
+/*************** right-module **************/
+.right-module {
+    float: right;
+    margin-right: 6.03589%;
+    max-width: 31.56607%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 2px 4px 5px 0px rgba(33, 33, 33, 0.45);
+}
+
+.right-module-main-heading {
+    background: #435464;
+    color: #fff;
+    font: 16px/45px "FuturaW01-ExtraBoldCond_774896";
+    text-align: center;
+}
+
+.right-module-listing li {
+    padding: 22px 15px;
+    border-bottom: 1px solid #3d3d3d;
+}
+.right-module-listing li:last-child {
+    border-bottom: none;
+}
+
+.clinic-img {
+    max-width: 40px;
+    max-height: 75px;
+    float: left;
+    margin-right: 7.56303%;
+}
+.clinic-img img {
+    max-width: 40px;
+}
+
+.clinic-info {
+    float: left;
+    width: 50.42017%;
+}
+
+.clinic-name {
+    color: #435464;
+    font: 16px "FuturaW01-ExtraBoldCond_774896";
+    margin-top: 5px;
+}
+
+.clinic-address {
+    color: #a7a7a7;
+    font: 18px "FuturaW01-MediumCondens";
+    margin-bottom: 10px;
+}
+
+.rating {
+    max-width: 135px;
+}
+.rating .fullstar {
+    background: url("https://dvpizcali3m6.cloudfront.net/img/images_buzzy/fullstar.png") no-repeat;
+    background-size: contain;
+    cursor: default;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}
+.rating .fullstar:last-child {
+    margin-right: 0;
+}
+.rating .greystar {
+    background: url("https://dvpizcali3m6.cloudfront.net/img/images_buzzy/greystar.png") no-repeat;
+    background-size: contain;
+    cursor: default;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}
+.rating .greystar:last-child {
+    margin-right: 0;
+}
+.view-profile-box {
+    float: right;
+    max-width: 95px;
+}
+.view-profile-box .profile-btn {
+    display: inline-block;
+    background: #2fb889;
+    color: #fff;
+    font: 13px/24px "FuturaW01-ExtraBoldCond_774896";
+    padding: 0 10px;
+    margin-bottom: 15px;
+    box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.45);
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    -moz-transition: linear 0.3s 0s;
+    -o-transition: linear 0.3s 0s;
+    -webkit-transition: linear 0.3s;
+    -webkit-transition-delay: 0s;
+    transition: linear 0.3s 0s;
+}
+.view-profile-box .profile-btn:hover {
+    background: #435464;
+    color: #fff;
+}
+.view-profile-box .profile-btn:active {
+    box-shadow: none;
+}
+.view-profile-box .currency-thumb {
+    max-height: 32px;
+}
+.view-profile-box .clinic-points {
+    color: #fecc09;
+    float: right;
+    font: 22px/32px "FuturaW01-ExtraBoldCond_774896";
+}
+
+/*************** right-module End **************/
+/*************** ----- Reuseable Elements End ----- **************/
+/*************** The Buzz **************/
+.top-buzz-bg {
+    background: url("https://dvpizcali3m6.cloudfront.net/img/images_buzzy/the_buzz_bg.jpg") no-repeat;
+    background-size: cover;
+    padding: 77px 0 39px;
+}
+
+/*************** The Buzz End **************/
+/***** Doctor-Profile & Practice-Profile *****/
+.relevant-details {
+    background: #dedede;
+}
+
+.relevant-adjust {
+    margin: 0 6.03589% 0;
+    padding-top: 43px;
+}
+
+.details-wrap {
+    background: #fff;
+    padding: 0 0 25px;
+    -moz-box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.45);
+    -webkit-box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.45);
+    box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.45);
+}
+
+.relevant-header {
+    background: #435464;
+    border-bottom: 8px solid #2fb889;
+    color: #fff;
+    margin-bottom: 25px;
+    padding: 10px 28px;
+    font: 26px "FuturaW01-MediumCondens";
+    text-transform: uppercase;
+}
+.relevant-header .header-link {
+    color: #00aaf7;
+    display: inline-block;
+    font: 22px "FuturaW01-MediumCondens";
+    /*margin-top: 3px;*/
+    text-transform: capitalize;
+}
+.relevant-header .header-link:hover {
+    text-decoration: underline;
+}
+
+.detials-info {
+    float: left;
+    width: 46.19666%;
+    margin-right: 0.46382%;
+}
+
+.main-thumb {
+    max-width: 20.08032%;
+    margin: 0 5.02008%;
+    float: left;
+}
+
+.thumb-picture {
+    max-width: 100%;
+    max-height: 136px;
+}
+
+.detials-info-all-text {
+    float: left;
+    width: 38.17671%;
+}
+
+.detials-info-all-text-alt {
+    float: left;
+    width: 65.26104%;
+}
+
+.thumb-name {
+    font: 28px "FuturaW01-ExtraBoldCond_774896";
+    color: #435464;
+    margin-bottom: 3px;
+}
+
+.likes-toggle {
+    display: none;
+}
+
+.thumb-info {
+    font-size: 0;
+}
+.thumb-info li {
+    border-right: 1px solid #a7a7a7;
+    padding: 0 8px;
+    color: #a7a7a7;
+    display: inline-block;
+    font: 20px "FuturaW01-MediumCondens";
+    margin-bottom: 3px;
+}
+.thumb-info li:first-child {
+    padding-left: 0;
+}
+.thumb-info li:last-child {
+    padding-right: 0;
+    border-right: 0;
+}
+
+.address-heading,
+.address-heading1{
+    font: 20px "FuturaW01-ExtraBoldCond_774896";
+    color: #435464;
+    margin-bottom: 3px;
+    max-width: 300px;
+    word-break: break-all;
+}
+
+.address-detials,
+.address-detials1 {
+    font: 20px "FuturaW01-MediumCondens";
+    color: #a7a7a7;
+}
+
+.address-details-phone,
+.address-details-fax {
+    font: 20px "FuturaW01-MediumCondens";
+    color: #a7a7a7;
+}
+.address-details-phone .legend,
+.address-details-fax .legend {
+    font: 20px "FuturaW01-ExtraBoldCond_774896";
+    color: #2fb889;
+}
+
+.address-direction {
+    font: 20px "FuturaW01-MediumCondens";
+    color: #435464;
+    // text-decoration: underline;
+}
+.address-direction:hover {
+    //text-decoration: none;
+}
+
+.details-sub-info {
+    float: left;
+    min-width: 140px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.thumb-likes {
+    font: 18px "FuturaW01-ExtraBoldCond_774896";
+    color: #2fb889;
+}
+.thumb-likes .tumb-likes-num {
+    font: 18px "FuturaW01-MediumCondens";
+    color: #a7a7a7;
+}
+
+.btn-listing li {
+    text-align: center;
+}
+.btn-listing li a {
+    display: inline-block;
+    color: #00aaf7;
+    font: 14px/22px "FuturaW01-ExtraBoldCond_774896";
+    text-decoration: underline;
+}
+.btn-listing li a:hover {
+    text-decoration: none;
+}
+
+.main-buttons {
+    float: left;
+    min-width: 238px;
+    position: relative;
+    width: 22.07792%;
+    /*margin-right: 80px/1078px * 100%;*/
+}
+#savedocbtn-status{
+    left: 44%;
+    position: absolute;
+    top: -20px;
+    z-index: 5;
+}
+.main-buttons a {
+    background: #2fb889;
+    color: #fff;
+    display: inline-block;
+    font: 14px/35px "FuturaW01-ExtraBoldCond_774896";
+    padding: 0 10px;
+    margin: 0 15px 15px 0;
+    text-align: center;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -moz-box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.45);
+    -webkit-box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.45);
+    box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.45);
+    -moz-transition: linear 0.3s 0s;
+    -o-transition: linear 0.3s 0s;
+    -webkit-transition: linear 0.3s;
+    -webkit-transition-delay: 0s;
+    transition: linear 0.3s 0s;
+}
+.main-buttons > a {
+    min-width: 54px !important;
+    margin: 0 7px 15px 0;
+
+}
+.main-buttons a.clicked {
+    background: #cdcdcd;
+    -moz-box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.1);
+}
+.main-buttons a.clicked:hover {
+    background: #cdcdcd;
+}
+.main-buttons a.clicked:active {
+    -moz-box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.1);
+}
+.main-buttons a:hover {
+    background: #435464;
+}
+.main-buttons a:active {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.main-buttons a:nth-child(3), .main-buttons a:nth-child(4) {
+    margin-right: 0;
+}
+.main-buttons .main-btn-4 {
+    padding: 0 31px;
+}
+.main-buttons .main-btn-5 {
+    padding: 0 44px;
+}
+.main-buttons .main-social-icons {
+    font-size: 0;
+    max-width: 235px;
+    margin: auto;
+}
+.main-buttons .main-social-icons li {
+    font-size: 16px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 8px;
+}
+.main-buttons .main-social-icons li a {
+    background: none;
+    display: block;
+    line-height: 10px;
+    margin: 0;
+    max-width: 25px;
+    padding: 0;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.main-buttons .main-social-icons li a img {
+    width: 100%;
+}
+.main-buttons .main-social-icons li:last-child {
+    margin-right: 0;
+}
+
+.sub-details {
+    float: right;
+    min-width: 215px;
+    width: 23.65492%;
+}
+.sub-details .top-5-chars {
+    font: 20px "FuturaW01-ExtraBoldCond_774896";
+    color: #435464;
+    margin-bottom: 15px;
+}
+
+.sub-details-inner {
+    padding-right: 11.76471%;
+}
+
+.check-ins-heading {
+    color: #2fb889;
+    font: 22px/32px "FuturaW01-ExtraBoldCond_774896";
+    margin-bottom: 10px;
+    position: relative;
+    text-align: center;
+}
+.check-ins-heading .check-ins-tooltip {
+    background: #00aaf7;
+    color: #fff;
+    font: 15px/14px "FuturaW01-MediumCondens";
+    opacity: 0;
+    padding: 3px 40px 3px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    -moz-transition: linear 0.4s 0s;
+    -o-transition: linear 0.4s 0s;
+    -webkit-transition: linear 0.4s;
+    -webkit-transition-delay: 0s;
+    transition: linear 0.4s 0s;
+}
+.check-ins-heading:hover .check-ins-tooltip {
+    opacity: 1;
+}
+
+.point-with-thumb {
+    display: inline-block;
+    line-height: 18px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.point-thumb {
+    max-width: 30px;
+}
+
+.points-number {
+    color: #fecc09;
+    display: inline-block;
+    vertical-align: top;
+    font: 22px/32px "FuturaW01-ExtraBoldCond_774896";
+}
+
+.check-ins-listing {
+    font-size: 0;
+}
+.check-ins-listing li {
+    color: #a7a7a7;
+    display: inline-block;
+    vertical-align: top;
+    font: 20px "FuturaW01-MediumCondens";
+    width: 50%;
+    border-bottom: 1px solid #a7a7a7;
+    text-align: center;
+    padding-top: 25px;
+}
+.check-ins-listing li .relevant-point,
+.check-ins-listing li .relevant-point-2nd {
+    display: block;
+    color: #435464;
+    font: 26px "FuturaW01-ExtraBoldCond_774896";
+    margin: 5px 0 10px;
+}
+.check-ins-listing li .relevant-point-2nd {
+    color: #2fb889;
+}
+.check-ins-listing li:nth-child(odd) {
+    border-right: 1px solid #a7a7a7;
+}
+.check-ins-listing li:nth-last-of-type(-n+2) {
+    border-bottom: 0;
+}
+
+.all-tabs-wrap {
+    clear: left;
+    float: left;
+    width: 75.5102%;
+}
+
+.all-tabs-container {
+    margin: 15px 20px 0;
+}
+
+.chars-listing li {
+    background: #b1b1b1;
+    color: #fff;
+    cursor: pointer;
+    line-height: 30px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    position: relative;
+    text-align: center;
+    width: 170px;
+    -moz-border-radius: 0px 10px 10px 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px 10px 10px 0px;
+    -moz-box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.5);
+}
+.chars-listing li .relevant-point {
+    background: #00aaf7;
+    text-align: center;
+    float: left;
+    font: 16px/30px "FuturaW01-ExtraBoldCond_774896";
+    display: inline-block;
+    min-width: 30px;
+    margin-right: 5px;
+    padding: 0 5px;
+    transform: scale(0.998, 0.999);
+    text-shadow: 1px 2px 2px rgba(33, 33, 33, 0.45);
+}
+.chars-listing li .relevant-point-hover {
+    background: #00aaf7;
+    color: #fff;
+    display: block;
+    font: 14px/30px "FuturaW01-ExtraBoldCond_774896";
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    -moz-border-radius: 0px 10px 10px 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px 10px 10px 0px;
+    -moz-transition: linear 0.3s 0s;
+    -o-transition: linear 0.3s 0s;
+    -webkit-transition: linear 0.3s;
+    -webkit-transition-delay: 0s;
+    transition: linear 0.3s 0s;
+}
+.chars-listing li.active {
+    background: #939393;
+}
+.chars-listing li.active .relevant-point {
+    background: #0081FF;
+}
+.chars-listing li:after, .chars-listing li:before {
+    content: " ";
+    display: table;
+}
+.chars-listing li:after {
+    clear: both;
+}
+.chars-listing li:hover .relevant-point-hover {
+    opacity: 1;
+}
+
+.rating-tab .rating-overview {
+    margin-bottom: 10px;
+}
+.rating-tab .rating-n-rate-wrap .rating-adjust {
+    float: left;
+    margin-top: 10px;
+    margin-right: 25px;
+}
+.rating-tab .rate-out-of {
+    color: #2fb889;
+    font: 18px "FuturaW01-ExtraBoldCond_774896";
+}
+.rating-tab .rate-doctor {
+    background: #2fb889;
+    color: #fff;
+    display: inline-block;
+    font: 14px/35px "FuturaW01-ExtraBoldCond_774896";
+    padding: 0 10px;
+    margin: 0 0 15px 0;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -moz-box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.45);
+    -webkit-box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.45);
+    box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.45);
+    -moz-transition: linear 0.3s 0s;
+    -o-transition: linear 0.3s 0s;
+    -webkit-transition: linear 0.3s;
+    -webkit-transition-delay: 0s;
+    transition: linear 0.3s 0s;
+}
+
+.rating-tab .rate-doctor:hover {
+    background: #435464;
+}
+.rating-tab .rate-doctor:active {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.rating-tab a.clicked {
+    background: none repeat scroll 0 0 #CDCDCD;
+    box-shadow: 2px 4px 5px 0 rgba(0, 0, 0, 0.1);
+}
+.rating-tab a.clicked:hover{
+    background: #CDCDCD;
+    box-shadow: 2px 4px 5px 0 rgba(0, 0, 0, 0.1);
+}
+.overview-tab .main-text {
+    color: #a7a7a7;
+    margin-bottom: 30px;
+}
+
+.overview-tab .point-listing {
+    font-size: 0;
+    margin-bottom: 15px;
+}
+.overview-tab .point-listing li {
+    background: url("https://dvpizcali3m6.cloudfront.net/img/images_buzzy/tick.png") no-repeat 0 5px;
+    background-size: 15px;
+    color: #a7a7a7;
+    display: inline-block;
+    font: 18px "FuturaW01-MediumCondens";
+    margin-bottom: 5px;
+    padding-left: 34px;
+    width: 50%;
+}
+
+.other-chars-tab .other-chars-listing {
+    font-size: 0;
+}
+.other-chars-tab .other-chars-listing li {
+    background: #b1b1b1;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font: 16px "FuturaW01-MediumCondens";
+    line-height: 30px;
+    margin-bottom: 25px;
+    margin-left: 10px;
+    position: relative;
+    text-align: center;
+    width: 22%;
+    -moz-border-radius: 0px 10px 10px 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px 10px 10px 0px;
+    -moz-box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.5);
+}
+.other-chars-tab .other-chars-listing li .relevant-point {
+    background: #00aaf7;
+    text-align: center;
+    float: left;
+    font: 16px/30px "FuturaW01-ExtraBoldCond_774896";
+    display: inline-block;
+    min-width: 30px;
+    margin-right: 5px;
+    padding: 0 5px;
+    transform: scale(0.998, 0.999);
+    text-shadow: 1px 2px 2px rgba(33, 33, 33, 0.45);
+}
+.other-chars-tab .other-chars-listing li .relevant-point-hover {
+    background: #00aaf7;
+    color: #fff;
+    display: block;
+    font: 14px/30px "FuturaW01-ExtraBoldCond_774896";
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    -moz-border-radius: 0px 10px 10px 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px 10px 10px 0px;
+    -moz-transition: linear 0.3s 0s;
+    -o-transition: linear 0.3s 0s;
+    -webkit-transition: linear 0.3s;
+    -webkit-transition-delay: 0s;
+    transition: linear 0.3s 0s;
+}
+.other-chars-tab .other-chars-listing li.active {
+    background: #939393;
+}
+.other-chars-tab .other-chars-listing li.active .relevant-point {
+    background: #0081FF;
+}
+.other-chars-tab .other-chars-listing li:after, .other-chars-tab .other-chars-listing li:before {
+    content: " ";
+    display: table;
+}
+.other-chars-tab .other-chars-listing li:after {
+    clear: both;
+}
+.other-chars-tab .other-chars-listing li:first-child, .other-chars-tab .other-chars-listing li:nth-child(5n+5) {
+    margin-left: 0;
+}
+.other-chars-tab .other-chars-listing li:hover .relevant-point-hover {
+    opacity: 1;
+}
+
+.promotions-tab {
+    color: #a7a7a7;
+    font: 18px "FuturaW01-MediumCondens";
+}
+
+.reviews-tab .reviewer-heading {
+    color: #435464;
+    font: 20px "FuturaW01-ExtraBoldCond_774896";
+    margin-bottom: 8px;
+}
+.reviews-tab .review-txt-n-img-wrap {
+    margin-bottom: 25px;
+}
+.reviews-tab .point-heading {
+    color: #4354C2;
+    font: 22px "FuturaW01-ExtraBoldCond_774896";
+    margin-bottom: 8px;
+}
+.reviews-tab .review-txt-wrap {
+    float: left;
+    border-bottom: 1px solid #a7a7a7;
+    padding-bottom: 25px;
+    width: 87.44993%;
+}
+.reviews-tab .reviewer-picture-wrap {
+    float: right;
+    padding: 10px;
+    max-width: 80px;
+}
+.reviews-tab .reviewer-picture {
+    width: 100%;
+}
+.reviews-tab .view-more-wrap {
+    text-align: center;
+}
+.reviews-tab .view-more {
+    color: #fff;
+    display: inline-block;
+    background: #2fb889;
+    font: 16px/35px "FuturaW01-ExtraBoldCond_774896";
+    padding: 0 30px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -moz-box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.45);
+    -webkit-box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.45);
+    box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.45);
+    -moz-transition: linear 0.3s 0s;
+    -o-transition: linear 0.3s 0s;
+    -webkit-transition: linear 0.3s;
+    -webkit-transition-delay: 0s;
+    transition: linear 0.3s 0s;
+}
+.reviews-tab .view-more:hover {
+    background: #435464;
+}
+.reviews-tab .view-more:active {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.doctors-tab .all-doctors-list li {
+    padding: 10px 0 10px;
+}
+.doctors-tab .all-doctors-list .doctor-img-wrap {
+    max-width: 75px;
+    float: left;
+    margin-right: 20px;
+}
+.doctors-tab .all-doctors-list .doctor-img-wrap .doctor-img {
+    width: 100%;
+}
+.doctors-tab .all-doctors-list .doctor-details-wrap {
+    float: left;
+}
+.doctors-tab .all-doctors-list .doctor-name {
+    color: #435464;
+    font: 20px/normal "FuturaW01-ExtraBoldCond_774896";
+    margin-bottom: 5px;
+}
+.doctors-tab .all-doctors-list .doctor-short-info {
+    font-size: 0;
+    margin-bottom: 5px;
+}
+.doctors-tab .all-doctors-list .doctor-short-info li {
+    border-right: 1px solid #a7a7a7;
+    display: inline-block;
+    font: 14px "FuturaW01-MediumCondens";
+    padding: 0 5px;
+}
+.doctors-tab .all-doctors-list .doctor-short-info li:first-child {
+    padding-left: 0;
+}
+.doctors-tab .all-doctors-list .doctor-short-info li:last-child {
+    border-right: 0;
+}
+.doctors-tab .all-doctors-list .view-full-profile {
+    clear: both;
+    color: #00aaf7;
+    display: inline-block;
+    font: 16px "FuturaW01-ExtraBoldCond_774896";
+    text-decoration: underline;
+    -moz-transition: linear 0.3s 0s;
+    -o-transition: linear 0.3s 0s;
+    -webkit-transition: linear 0.3s;
+    -webkit-transition-delay: 0s;
+    transition: linear 0.3s 0s;
+}
+.doctors-tab .all-doctors-list .view-full-profile:hover {
+    text-decoration: none;
+}
+
+.offices-tab {
+    font: 20px "FuturaW01-MediumCondens";
+}
+.offices-tab .offices-tab-heading {
+    font: 20px "FuturaW01-ExtraBoldCond_774896";
+    color: #435464;
+    margin-bottom: 30px;
+}
+.offices-tab .location-info {
+    float: left;
+    width: 33%;
+}
+.offices-tab .location-info .map-pointer {
+    max-width: 30px;
+    margin-right: 20px;
+    float: left;
+}
+.offices-tab .location-info .location-info-text {
+    float: left;
+}
+.offices-tab .location-info .location-name {
+    color: #00aaf7;
+    font: 20px "FuturaW01-MediumCondens";
+}
+.offices-tab .location-info .location-address {
+    font: 16px "FuturaW01-MediumCondens";
+}
+.offices-tab .location-info .location-phone {
+    font: 16px "FuturaW01-MediumCondens";
+}
+.offices-tab .location-info .phone-legend {
+    color: #2fb889;
+    font: 16px "FuturaW01-ExtraBoldCond_774896";
+}
+.offices-tab .location-info .location-fax {
+    font: 16px "FuturaW01-MediumCondens";
+}
+.offices-tab .location-info .fax-legend {
+    color: #2fb889;
+    font: 16px "FuturaW01-ExtraBoldCond_774896";
+}
+.offices-tab .location-info .location-direction {
+    color: #00aaf7;
+    font: 16px "FuturaW01-MediumCondens";
+}
+.offices-tab .google-map {
+    float: left;
+    height: 260px;
+    width: 320px;
+    border: 3px solid #2fb889;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-shadow: 5px 9px 10px 0px rgba(33, 33, 33, 0.45);
+    -webkit-box-shadow: 5px 9px 10px 0px rgba(33, 33, 33, 0.45);
+    box-shadow: 5px 9px 10px 0px rgba(33, 33, 33, 0.45);
+}
+
+.tab-rating {
+    display: inline-block;
+    position: relative;
+    top: 3px;
+}
+
+.alternate-txt {
+    display: none;
+}
+
+.tab-menu-listing {
+    font-size: 0;
+}
+.tab-menu-listing li {
+    display: inline-block;
+}
+.tab-menu-listing li a {
+    border: 1px solid #a7a7a7;
+    border-right: 0;
+    font: 20px/40px "FuturaW01-ExtraBoldCond_774896";
+    color: #2fb889;
+    padding: 0 10px;
+    display: block;
+    -moz-transition: linear 0.3s 0s;
+    -o-transition: linear 0.3s 0s;
+    -webkit-transition: linear 0.3s;
+    -webkit-transition-delay: 0s;
+    transition: linear 0.3s 0s;
+}
+.tab-menu-listing li a:active {
+    background: #435464;
+    color: #fff;
+    font: 20px/40px "FuturaW01-ExtraBoldCond_774896";
+}
+.tab-menu-listing li:last-child {
+    border-right: 0;
+    border-right: 1px solid #a7a7a7;
+}
+
+.tab-container {
+    color: #a7a7a7;
+    font: 16px "FuturaW01-MediumCondens";
+    padding: 15px 10px;
+}
+
+.r-tabs {
+    margin: 15px 20px 0;
+}
+
+.r-tabs .r-tabs-nav {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+.r-tabs .r-tabs-tab {
+    display: inline-block;
+    margin: 0;
+    list-style: none;
+}
+.r-tabs .r-tabs-tab .r-tabs-anchor {
+    border: 1px solid #a7a7a7;
+    border-right: 0;
+    font: 20px/40px "FuturaW01-ExtraBoldCond_774896";
+    color: #2fb889;
+    padding: 0 10px;
+    display: block;
+}
+.r-tabs .r-tabs-tab:last-child {
+    border-right: 0;
+    border-right: 1px solid #a7a7a7;
+}
+
+.tab-sub-txt {
+    color: #a7a7a7;
+    display: inline-block;
+    font-family: "FuturaW01-MediumCondens";
+    font-size: inherit;
+    line-height: normal;
+}
+
+.r-tabs .r-tabs-panel {
+    padding: 15px 10px;
+    display: none;
+    color: #a7a7a7;
+    font: 18px "FuturaW01-MediumCondens";
+}
+
+.r-tabs .r-tabs-accordion-title {
+    display: none;
+}
+
+.r-tabs .r-tabs-panel.r-tabs-state-active {
+    display: block;
+}
+
+.r-tabs-state-active {
+    border: 0 !important;
+}
+.r-tabs-state-active a.r-tabs-anchor {
+    background: #435464;
+    color: #fff !important;
+    display: block !important;
+    line-height: 40px !important;
+}
+.r-tabs-state-active a.r-tabs-anchor .tab-sub-txt {
+    color: #fff;
+    display: inline-block;
+    font-family: "FuturaW01-MediumCondens";
+    font-size: inherit;
+    line-height: normal;
+}
+
+.r-tabs-state-disabled {
+    /*border: 1px solid $color4 !important;
+    border-right: 0 !important; */
+}
+.r-tabs-state-disabled a.r-tabs-anchor {
+    background: #fff;
+    color: #fff !important;
+    line-height: 40px !important;
+}
+
+.alternate-tab-class {
+    background-color: #fff !important;
+    font: 20px/40px "FuturaW01-ExtraBoldCond_774896" !important;
+    border: 1px solid #a7a7a7;
+    border-right: 0;
+}
+.setting-view {
+  padding-top: 55px;
+}
+.setting-cal {
+    background-color:rgba(255, 255, 255, 0.7);
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    box-shadow: 0px 2px 2px #CAC4C4;
+     -webkit-box-shadow:0px 2px 2px #CAC4C4;
+     -moz-box-shadow:0px 2px 2px #CAC4C4;
+    margin-bottom: 75px;
+}
+.setting-view .result-view-profile-btn-wrap {
+   text-align: right;
+   float: none !important;
+}
+.setting-view .result-view-profile-btn-wrap a {
+      color: #fff;
+
+}
+.setting-view .result-view-profile-btn-wrap input {
+    border: none;
+    padding: 10px 50px;
+    display: inline-block;
+    width: 178px;
+
+}
+
+.update-notification .notifi-reloader {
+    margin-right: 15px;
+    
+}
+.load-more-btn {
+  text-align: right;
+}
+.load-more-btn button.result-view-profile-btn  {
+    border: none;
+    padding: 0 50px;
+    display: inline-block;
+
+}
+.load-more-btn a.load-more i.refresh-icon {
+     background: url("https://dvpizcali3m6.cloudfront.net/img/images_buzzy/refresh-icon.png") no-repeat;
+     height: 20px;
+     width: 20px;
+     display: inline-block;
+     vertical-align: middle;
+    margin-top: -4px;
+}
+.setting-cal .checkbox {
+   margin-bottom: 20px;
+
+}
+.setting-cal .checkbox:last-child {
+       margin-bottom: 0;
+}
+.setting-cal .result-view-profile-btn-wrap {
+
+}
+.setting-cal .checkbox span.lbl {
+   color: #435464;
+   font-family: FuturaW01-MediumCondens;
+   font-size: 16px;
+
+ }
+.setting-cal .left-module-heading {
+   position: absolute;
+   top: -32px;
+}
+.setting-cal .left-module-heading .left-module-title-heading {
+         margin: 0;
+         font-size: 20px;
+         line-height: 24px;
+
+}
+.setting-cal .left-module-heading .modified-border-top {
+          border-width: 8px 0 0px 150px;
+}
+.setting-cal .left-module-heading .modified-border-bottom {
+             border-width: 8px 150px 0 0;
+
+}
+.refer-frnd .left-module-heading .modified-border-top {
+            border-width: 8px 0 0px 274px;
+}
+.refer-frnd .left-module-heading .modified-border-bottom {
+                 border-width: 8px 272px 0 0;
+
+}
+.switch-child .left-module-heading .modified-border-top {
+            border-width: 8px 0 0px 253px;
+}
+.switch-child .left-module-heading .modified-border-bottom {
+      border-width: 8px 253px 0 0;
+}
+ .setting-cal input[type=checkbox].ace+.lbl::before, input[type=radio].ace+.lbl::before {
+    color: #435464;
+    min-width: 27px;
+    height: 27px;
+    line-height: 27px;
+    background: #E2E2E2;
+    font-size: 16px;
+    margin-right: 15px;
+
+ }
+.refer-frnd table.table thead tr {
+    background: #EAEAEA;
+    color: #435464;
+
+}
+.refer-frnd table.table thead tr th {
+    text-align: center;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    padding: 7px 0px;
+    font-family: FuturaW01-MediumCondens;
+    font-size: 16px;
+    font-weight: normal;
+}
+.refer-frnd table.table thead tr th.sorting_asc {
+     background-image: linear-gradient(to bottom, #2FB889 0px, #2FB889 100%) !important;
+    
+}
+.refer-frnd table.table thead tr th.sorting_desc {
+     background-image: linear-gradient(to bottom, #2FB889 0px, #2FB889 100%) !important;
+    
+}
+.refer-frnd table.table tbody tr td {
+   border: none;
+   font-family: FuturaW01-MediumCondens;
+   font-size: 14px;
+   color: #435464;
+   height:50px;
+   vertical-align: middle;
+  
+}
+
+.refer-frnd table.table tbody tr td img {
+     height: 25px;
+     width: auto;
+    
+}
+
+.refer-frnd table.table tbody tr td a {
+   color: #2fb889;
+
+}
+
+.refer-frnd table.table tbody tr td .switch-btn {
+    background: #2fb889;
+    padding: 1px 16px;
+    color: #fff;
+    font-size: 14px;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px #ABABAB;
+    border: none;
+}
+
+.doc-form .left-module-heading .modified-border-top {
+                border-width: 8px 0 0px 227px;
+}
+.doc-form .left-module-heading .modified-border-bottom {
+           border-width: 8px 227px 0 0;
+}
+.doc-form ul.doc-links li {
+   margin-bottom: 5px;
+}
+.doc-form ul.doc-links li a {
+    font-family: FuturaW01-MediumCondens;
+    font-size: 16px;
+    color: #435464
+}
+.doc-form ul.doc-links li i {
+    background: url("https://dvpizcali3m6.cloudfront.net/img/images_buzzy/doc-bullet.png") no-repeat;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin-right: 10px;
+
+}
+.modal-dialog.notification-table {
+    max-width:  900px;
+    width: auto;
+
+}
+.notification-table .modal-header {
+   background: #435464;
+   color: #fff;
+
+}
+.notification-table .modal-header h4 {
+        font-family: FuturaW01-MediumCondens;
+        font-size: 16px;
+}
+.notification-table .modal-header button.close {
+            opacity: 1;
+}
+.notification-table .modal-header button.close span {
+           color: #fff;
+           font-size: 45px;
+}
+.notification-table .modal-body {
+   padding-top: 0;
+}
+.notification-table .modal-body .row {
+     margin-right: -15px;
+     margin-left: -15px;
+}
+.notification-table .modal-body thead th .notification-head-select {
+   max-width: 65%;
+}
+.notification-table .modal-body thead th .notification-head-text {
+  margin-top: 6px;
+}
+.notification-table .modal-body thead th {
+    background: #dfdfdf;
+    text-align: center;
+    padding: 12px 0px;
+    font-family: FuturaW01-MediumCondens;
+    font-size: 16px;
+    font-weight: normal;
+    color: #435464;
+}
+
+.notification-table .modal-body tbody td {
+       background: #f8f8f8;
+       border-top: 1px solid #d2d2d2;
+       border-bottom: 1px solid #d2d2d2;
+       border-right: 1px solid #d2d2d2;
+       color: #435464;
+       font-family: FuturaW01-MediumCondens;
+       font-size: 14px;
+}
+.notification-table .modal-body tbody td:last-child {
+       border-right: none;
+
+}
+.notification-chbx {
+       font-family: FuturaW01-MediumCondens;
+       font-size: 14px;
+}
+.notification-chbx label.checkbox-heading {
+      font-size: 14px;
+      color: #435464;
+      line-height: 40px;
+
+}
+
+
+.notification-chbx .radio label {
+     margin-bottom: 10px;
+}
+.notification-chbx .radio input[type=checkbox].ace+.lbl::before, input[type=radio].ace+.lbl::before {
+     color: #1f795a !important;
+}
+.notification-chbx .setnext {
+    background: #2fb889;
+    padding: 10px 30px;
+    color: #fff;
+    font: 14px/35px "FuturaW01-ExtraBoldCond_774896";
+
+}
+
+
+.notification-form  input {
+   height: 45px;
+   border-color: #c4c4c4;
+   color: #435464;
+   padding: 15px;
+   margin-bottom: 20px;
+   width: 100%;
+}
+.notification-form textarea {
+   height: 175px !important;
+   border-color: #c4c4c4;
+   color: #435464;
+   padding: 15px;
+}
+.notification-form textarea::-webkit-input-placeholder {
+  color: #435464;
+}
+.notification-form .col-md-6 input::-webkit-input-placeholder {
+    color: #435464;
+}
+
+.notification-form .col-md-6 input::-webkit-input-placeholder:before {
+    content: "*";
+    color: #ff0101;
+    font-size: 14px;
+    font-family: FuturaW01-MediumCondens;
+}
+.notification-form .col-md-6 input::-webkit-input-placeholder:before {
+    content: "*";
+    color: #ff0101;
+    font-size: 14px;
+    font-family: FuturaW01-MediumCondens;
+}
+.notification-form .col-md-6 input:-moz-placeholder:before {
+    content: "*";
+    color: #ff0101;
+    font-size: 14px;
+    font-family: FuturaW01-MediumCondens;
+}
+.notification-form .col-md-6 input::-moz-placeholder:before {
+    content: "*";
+    color: #ff0101;
+    font-size: 14px;
+    font-family: FuturaW01-MediumCondens;
+}
+.setting-details .top-buzz-bg {   
+   padding-top: 0;
+  
+}
+.notification-form .col-md-6 input:-moz-placeholder:before {
+    content: "*";
+    color: #ff0101;
+    font-size: 14px;
+    font-family: FuturaW01-MediumCondens;
+}
+.notification-form .col-md-6 input:-moz-placeholder {
+    color: #435464;
+}
+.notification-form .col-md-6 input::-moz-placeholder {
+    color: #435464;
+}
+.notification-form .col-md-6 input:-ms-input-placeholder {
+    color: #435464;
+}
+.notification-table .modal-footer {
+    background: #fff;
+    border-top: none;
+}
+.notification-table .modal-footer input {
+  border: none;
+  padding: 10px 30px;
+
+}
+.notification-table .modal-footer .result-view-profile-btn:hover {
+   color: #fff;
+}
+/* Accordion responsive breakpoint */
+@media only screen and (max-width: 767px) {
+    .r-tabs {
+        border-bottom: 1px solid #a7a7a7;
+    }
+
+    .r-tabs .r-tabs-nav {
+        display: none;
+    }
+
+    .r-tabs .r-tabs-accordion-title {
+        display: block;
+    }
+    .r-tabs .r-tabs-accordion-title .r-tabs-anchor {
+        border: 1px solid #a7a7a7;
+        border-bottom: 0;
+        display: block;
+        text-align: center;
+        color: #2fb889;
+        font: 18px/40px "FuturaW01-ExtraBoldCond_774896";
+    }
+
+    .r-tabs-state-active a.r-tabs-anchor {
+        border: 0 !important;
+        line-height: 42px !important;
+    }
+
+    .r-tabs-panel {
+        border-left: 1px solid #a7a7a7 !important;
+        border-right: 1px solid #a7a7a7 !important;
+    }
+
+    .setting-cal .load-more-btn .load-more {
+      margin: 10px 0;
+    }
+    .setting-cal .load-more-btn .result-view-profile-btn pull-right {
+       width: 100%;
+    }
+    .setting-cal .left-module-heading .left-module-title-heading {
+          font-size: 14px;
+
+    }
+    .table-area {
+       overflow-x: scroll;
+
+    }
+    .notifaction .left-module-heading .modified-border-bottom {
+           border-width: 8px 128px 0 0;
+   }
+    .notifaction .left-module-heading .modified-border-top {
+        border-width: 8px 0 0px 127px;
+  }
+
+    .doc-form .left-module-heading .modified-border-bottom {
+    border-width: 8px 175px 0 0;
+   }
+    .doc-form .left-module-heading .modified-border-top {
+    border-width: 8px 0 0px 179px;
+  }
+
+  .refer-frnd .left-module-heading .modified-border-bottom {
+    border-width: 8px 212px 0 0;
+ }
+ .refer-frnd .left-module-heading .modified-border-top {
+    border-width: 8px 0 0px 212px;
+}
+     .switch-child .left-module-heading .modified-border-bottom {
+    border-width: 8px 245px 0 0;
+  }
+    .switch-child .left-module-heading .modified-border-top {
+    border-width: 8px 0 0px 244px;
+  }
+  .setting-view .result-view-profile-btn-wrap input {
+    font-size: 12px;
+    padding: 10px 0;
+  }
+ .load-more-btn {
+    margin: 10px 0 0;
+     padding: 0 !important;
+ }
+ .load-more-btn button.result-view-profile-btn {
+
+    display: inline-block;
+    font-size: 12px;
+
+ }
+}
+.rating-modal-heading {
+    font: 20px "FuturaW01-ExtraBoldCond_774896";
+    color: #435464;
+    margin-bottom: 10px;
+    padding-top: 5px;
+}
+
+.slider-wrap {
+    margin-bottom: 10px;
+}
+
+.rating-description {
+    border: 1px solid #d6d6d6;
+    color: #666;
+    height: 80px;
+    margin-bottom: 15px;
+    min-width: 287px;
+    padding: 5px;
+    resize: none;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.slider-num-wrap {
+    background: url("https://dvpizcali3m6.cloudfront.net/img/images_buzzy/rating_arrow.png") no-repeat left 14px;
+    float: left;
+    padding: 0 0 0 12px;
+    text-align: center;
+    width: 100px;
+}
+
+.slider-num-inner {
+    background: #747474;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    padding: 0 0 4px;
+}
+
+.rating-display-num {
+    background: #747474;
+    border: 0;
+    color: #fecc09;
+    font: 20px "FuturaW01-ExtraBoldCond_774896";
+    padding: 0 5px;
+    text-align: center;
+    width: 45px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.rating-sub-text {
+    font: 16px "FuturaW01-MediumCondens";
+    display: block;
+    text-align: center;
+    color: #fff;
+}
+
+.slider-hr-ruler-warp {
+    float: left;
+    margin-top: 18px;
+    width: 150px;
+}
+
+.slider-hr-ruler {
+    max-width: 130px;
+    margin: 0 15px;
+}
+
+.slider-submit-btn-wrap {
+    clear: both;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.slider-submit-btn {
+    border: 0;
+    background: #2fb889;
+    color: #fff;
+    cursor: pointer;
+    font: 18px/40px "FuturaW01-ExtraBoldCond_774896";
+    outline: none;
+    padding: 0 30px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -moz-box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.45);
+    -webkit-box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.45);
+    box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.45);
+    -moz-transition: linear 0.3s 0s;
+    -o-transition: linear 0.3s 0s;
+    -webkit-transition: linear 0.3s;
+    -webkit-transition-delay: 0s;
+    transition: linear 0.3s 0s;
+}
+.slider-submit-btn:hover {
+    background: #435464;
+}
+.slider-submit-btn:active {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/***** End Doctor-Profile & Practice-Profile *****/
+/******************** Top-Docs ********************/
+.top-docs-bg {
+    background: url("https://dvpizcali3m6.cloudfront.net/img/images_buzzy/top_docs_bg.jpg") no-repeat;
+    background-size: cover;
+}
+
+.top-docs-container {
+    margin: 0 6.03589% 0;
+    padding: 43px 0 25px;
+}
+
+.top-docs-heading {
+    background: #435464;
+    border-bottom: 8px solid #2fb889;
+    color: #fff;
+    margin-bottom: 25px;
+    padding: 10px 28px;
+    font: 26px "FuturaW01-MediumCondens";
+    text-transform: uppercase;
+}
+.top-docs-heading .header-link {
+    color: #00aaf7;
+    display: inline-block;
+    font: 22px "FuturaW01-MediumCondens";
+    margin-top: 3px;
+    text-transform: none;
+}
+.top-docs-heading .header-link:hover {
+    text-decoration: underline;
+}
+
+
+.top-docs-details-wrap {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 0 0 25px;
+    -moz-box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.45);
+    -webkit-box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.45);
+    box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.45);
+}
+.more-activity-expand-btn-wrap {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.more-activity-expand-btn {
+    background: none repeat scroll 0 0 #2fb889;
+    border: 0 none;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px 0 rgba(0, 0, 0, 0.45);
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font: 18px/40px "FuturaW01-ExtraBoldCond_774896";
+    outline: medium none;
+    padding: 0 30px;
+    text-align: center;
+    transition: all 0.3s linear 0s;
+}
+.more-activity-expand-btn:hover {
+    background: none repeat scroll 0 0 #435464;
+    color: #fff;
+}
+.more-activity-expand-btn:active {
+    box-shadow: none;
+}
+
+.form-wrap {
+    margin-bottom: 50px;
+}
+
+.form-left-section {
+    min-width: 705px;
+    width: 72.95362%;
+    float: left;
+    padding-left: 4.1744%;
+    text-align: center;
+}
+
+.form-heading {
+    color: #435464;
+    font: 14px "FuturaW01-ExtraBoldCond_774896";
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.select-box-left {
+    float: left;
+}
+
+.select-box-right {
+    float: right;
+}
+
+select.select-doctor-type,
+select.choose-insurance {
+    color: #435464;
+    font: 13px/28px "FuturaW01-MediumCondens";
+    width: 190px;
+}
+select.select-doctor-type option,
+select.choose-insurance option {
+    color: #435464;
+    background: #f5f6f6;
+    border-bottom: 1px solid #c3c4c4;
+    font: 13px/28px "FuturaW01-MediumCondens";
+}
+
+.radio-btn-wrap {
+    color: #435464;
+    display: inline-block;
+    padding: 5px 5px  0;
+    max-width: 360px;
+    min-width: 275px;
+    vertical-align: top;
+    width: 100%;
+    float: left;
+}
+.radio-btn-wrap label {
+    padding-right: 5px;
+    font: 14px "FuturaW01-MediumCondens";
+}
+
+.form-right-section {
+    width: 16.41929%;
+    float: right;
+}
+
+.change-zipcode {
+    border: 3px solid #435464;
+    background: rgba(255, 255, 255, 0.5) url("https://dvpizcali3m6.cloudfront.net/img/images_buzzy/magnifying_glass.png") no-repeat 5px 5px;
+    background-size: 25px;
+    color: #435464;
+    font: 16px/40px "FuturaW01-MediumCondens";
+    float: right;
+    margin: 20px 14.12429% 0 0;
+    padding: 0 5px 0 40px;
+    height: 42px;
+    width: 152px;
+    text-align: center;
+    vertical-align: middle;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+.change-zipcode:focus {
+    outline: none;
+}
+
+.change-zipcode::-webkit-input-placeholder {
+    color: #435464;
+}
+
+.change-zipcode:-moz-placeholder {
+    color: #000;
+}
+
+.change-zipcode::-moz-placeholder {
+    color: #000;
+}
+
+.change-zipcode:-ms-input-placeholder {
+    color: #435464;
+}
+
+/************** by sahoo *******************************/
+.doctor-search-result-helper,
+.practice-search-result-helper
+{
+    background: #f2f2f2;
+    font-size: 22px;
+    margin: 0 4.1744%;
+    padding: 5px 5px 5px 10px;
+
+    margin-bottom: 20px;
+}
+
+.filter-search-results {
+    margin-bottom: 50px;
+    padding-left: 4.1744%;
+    max-width: 808px;
+}
+
+.result-img-wrap {
+    border: 1px solid #a7a7a7;
+    float: left;
+    margin-right: 4.70297%;
+    min-width: 105px;
+    max-width: 105px;
+    padding: 5px;
+    text-align: center;
+}
+.result-img-wrap .result-img {
+    width: 100%;
+}
+
+.result-detail {
+    float: left;
+    width: 81.36483%;
+}
+
+.result-heading {
+    color: #435464;
+    display: inline-block;
+    font: 28px "FuturaW01-ExtraBoldCond_774896";
+    margin-right: 20px;
+    max-width: 305px;
+}
+
+.result-heading a,
+.result-heading a:active {
+    color: #435464;
+}
+
+.result-points-n-num {
+    display: inline-block;
+    line-height: 18px;
+    margin-right: 5px;
+    max-width: 125px;
+    text-align: center;
+    vertical-align: top;
+}
+.result-points-n-num .result-point-thumb {
+    max-width: 30px;
+}
+.result-points-n-num .result-point-num {
+    color: #fecc09;
+    display: inline-block;
+    vertical-align: top;
+    font: 22px/32px "FuturaW01-ExtraBoldCond_774896";
+}
+
+.result-address {
+    font: 20px "FuturaW01-MediumCondens";
+    color: #a7a7a7;
+    margin-bottom: 10px;
+}
+
+.result-view-profile-btn-wrap {
+    float: right;
+}
+
+.result-view-profile-btn {
+    background: #2fb889;
+    color: #fff;
+    display: inline-block;
+    font: 14px/35px "FuturaW01-ExtraBoldCond_774896";
+    padding: 0 35px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -moz-box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.45);
+    -webkit-box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.45);
+    box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.45);
+    -moz-transition: linear 0.3s 0s;
+    -o-transition: linear 0.3s 0s;
+    -webkit-transition: linear 0.3s;
+    -webkit-transition-delay: 0s;
+    transition: linear 0.3s 0s;
+}
+.result-view-profile-btn:hover {
+    background: #435464;
+}
+.result-view-profile-btn:active {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.result-doctor-list {
+    font-size: 0;
+    margin-bottom: 10px;
+}
+.result-doctor-list li {
+    display: inline-block;
+    font: 17px "FuturaW01-ExtraBoldCond_774896";
+    color: #435464;
+    margin-right: 1%;
+}
+
+.result-main-btn {
+    font-size: 0;
+}
+.result-main-btn li {
+    display: inline-block;
+    font: 20px/40px "FuturaW01-ExtraBoldCond_774896";
+}
+.result-main-btn li a {
+    border: 1px solid #a7a7a7;
+    border-right: 0;
+    font: 20px/40px "FuturaW01-ExtraBoldCond_774896";
+    color: #2fb889;
+    padding: 0 10px;
+    display: block;
+}
+.result-main-btn li a .sub-txt {
+    color: #a7a7a7;
+    display: inline-block;
+    font-family: "FuturaW01-MediumCondens";
+    font-size: inherit;
+    line-height: normal;
+}
+.result-main-btn li:last-child {
+    border-right: 1px solid #a7a7a7;
+}
+
+/******************** End Top-Docs ********************/
+/******************** Terms-and-Conditions ********************/
+.article-content {
+    color: #666;
+    padding: 5px 15px;
+}
+.article-content .main-heading {
+    color: #435464;
+    font: 24px "FuturaW01-ExtraBoldCond_774896";
+    margin-bottom: 15px;
+}
+.article-content .sub-heading {
+    color: #435464;
+    font: 20px "FuturaW01-ExtraBoldCond_774896";
+    margin-bottom: 10px;
+}
+.article-content .text-content {
+    font: 16px "FuturaW01-MediumCondens";
+    margin-bottom: 20px;
+}
+.article-content .highlighted-text {
+    color: #2fb889;
+}
+.article-content .wheighted-text {
+    font: 14px "FuturaW01-ExtraBoldCond_774896";
+    margin-bottom: 20px;
+}
+.article-content .margin-adj {
+    margin-bottom: 0;
+}
+
+/******************** End Terms-and-Conditions ********************/
+/*************** Main-Footer **************/
+.main-footer {
+    background: #3d3d3d;
+    padding: 30px 0 30px;
+}
+
+.footer-logo {
+    float: left;
+    margin-right: 2.77325%;
+    margin-left: 6.03589%;
+    width: 14.68189%;
+}
+.footer-logo img {
+    display: block;
+    width: 100%;
+}
+
+.bottom-navigation li {
+    float: left;
+    margin-top: 9px;
+    margin-right: 1.49254%;
+}
+.bottom-navigation li a {
+    color: #fff;
+    display: block;
+    font: 18px "FuturaW01-MediumCondens";
+    -moz-transition: linear 0.3s 0s;
+    -o-transition: linear 0.3s 0s;
+    -webkit-transition: linear 0.3s;
+    -webkit-transition-delay: 0s;
+    transition: linear 0.3s 0s;
+}
+.bottom-navigation li a .footer-point-icon {
+    max-width: 26px;
+    position: relative;
+    top: -5px;
+    vertical-align: middle;
+}
+.bottom-navigation li a .point-footer {
+    display: inline-block;
+    font: 18px "FuturaW01-ExtraBoldCond_774896";
+    color: #2fb889;
+}
+.bottom-navigation li a:hover {
+    color: #2fb889;
+}
+.bottom-navigation li:last-child {
+    margin-right: 0;
+}
+
+.terms-n-conditions {
+    clear: both;
+    color: #fff;
+    font: 12px "FuturaW01-MediumCondens";
+    padding: 15px 0 5px;
+    text-align: center;
+}
+.terms-n-conditions a {
+    border-left: 1px solid #fff;
+    color: inherit;
+    display: inline-block;
+    margin-left: 5px;
+    padding-left: 5px;
+    text-decoration: underline;
+}
+.terms-n-conditions a:hover {
+    text-decoration: none;
+}
+
+/*************** Main-Footer End **************/
+/* Desktop to tablet media quaries width 1226px to 1025px */
+/*************** The-Buzz **************/
+@media (max-width: 1145px) {
+    .left-module-listing li .listing-point {
+        font: 30px/50px "FuturaW01-ExtraBoldCond_774896";
+    }
+    .left-module-listing li .listing-point .point-num {
+        font: 14px/12px "FuturaW01-ExtraBoldCond_774896";
+    }
+    .left-module-listing li .listing-point .point-word {
+        font: 14px/14px "FuturaW01-MediumCondens";
+    }
+    .left-module-listing li .data-container .doc-place-name {
+        font: 16px "FuturaW01-ExtraBoldCond_774896";
+    }
+    .left-module-listing li .data-container .listing-description {
+        font-size: 14px;
+    }
+    .left-module-listing li .date-detail {
+        font: 16px "FuturaW01-ExtraBoldCond_774896";
+    }
+    .right-module-main-heading {
+        font: 14px/45px "FuturaW01-ExtraBoldCond_774896";
+    }
+
+    .clinic-img {
+        max-height: 65px;
+    }
+    .clinic-img img {
+        max-height: 65px;
+    }
+
+    .clinic-name {
+        font: 14px "FuturaW01-ExtraBoldCond_774896";
+    }
+
+    .clinic-address {
+        font: 16px "FuturaW01-MediumCondens";
+    }
+
+    .view-profile-box {
+        max-width: 85px;
+    }
+    .view-profile-box .profile-btn {
+        font: 12px/24px "FuturaW01-ExtraBoldCond_774896";
+        padding: 0 7px;
+    }
+    .view-profile-box .currency-thumb {
+        max-height: 28px;
+    }
+    .view-profile-box .clinic-points {
+        font: 20px/28px "FuturaW01-ExtraBoldCond_774896";
+    }
+
+    .rating .fullstar {
+        height: 17px;
+        width: 17px;
+    }
+}
+/*************** The-Buzz End **************/
+/*************** Doctor-Profile & Practice-Profile **************/
+@media (min-width: 768px) and (max-width: 1180px) {
+    .detials-info {
+        width: 48.2%;
+    }
+
+    .thumb-name {
+        font: 22px "FuturaW01-ExtraBoldCond_774896";
+    }
+
+    .address-detials,
+    .address-detials1,
+    .address-details-phone,
+    .address-details-fax,
+    .address-direction {
+        font: 18px "FuturaW01-MediumCondens";
+    }
+
+    .address-details-phone .legend,
+    .address-details-fax .legend {
+        font: 18px "FuturaW01-ExtraBoldCond_774896";
+    }
+
+    .detials-info-all-text {
+        width: 38%;
+    }
+
+    .detials-info-all-text-alt {
+        float: left;
+        width: 65.26104%;
+    }
+
+    .details-sub-info {
+        padding-top: 6px;
+    }
+
+    .thumb-likes {
+        font: 16px "FuturaW01-ExtraBoldCond_774896";
+    }
+    .thumb-likes .tumb-likes-num {
+        font: 16px "FuturaW01-MediumCondens";
+    }
+
+    .btn-listing li a {
+        font: 12px "FuturaW01-ExtraBoldCond_774896";
+    }
+
+    .main-buttons {
+        min-width: 205px;
+    }
+    .main-buttons .main-btn-4 {
+        padding: 0 32px;
+    }
+
+    .main-buttons a {
+        font: 12px/35px "FuturaW01-ExtraBoldCond_774896";
+        margin: 0 10px 15px 0;
+    }
+
+    .check-ins-heading {
+        font: 18px/22px "FuturaW01-ExtraBoldCond_774896";
+        margin-bottom: 20px;
+    }
+    .check-ins-heading .check-ins-tooltip {
+        padding: 3px 10px 3px;
+    }
+
+    .point-thumb {
+        max-width: 20px;
+    }
+
+    .points-number {
+        font: 18px/22px "FuturaW01-ExtraBoldCond_774896";
+    }
+
+    .check-ins-listing li {
+        font: 18px "FuturaW01-MediumCondens";
+        padding-top: 15px;
+    }
+    .check-ins-listing li .relevant-point {
+        font: 22px "FuturaW01-ExtraBoldCond_774896";
+    }
+
+    .rating-tab .rate-out-of {
+        font-size: 16px;
+    }
+    .rating-tab .rate-doctor {
+        font: 12px/30px "FuturaW01-ExtraBoldCond_774896";
+    }
+
+    .overview-tab .main-text {
+        margin-bottom: 15px;
+    }
+    .overview-tab .point-heading {
+        font-size: 16px;
+    }
+    .overview-tab .point-listing li {
+        font-size: 16px;
+        padding-left: 30px;
+    }
+
+    .reviews-tab .reviewer-heading {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    .reviews-tab .review-txt-wrap {
+        width: 85.38588%;
+    }
+    .reviews-tab .view-more {
+        font: 12px/30px "FuturaW01-ExtraBoldCond_774896";
+        padding: 0 20px;
+    }
+
+    .doctors-tab .all-doctors-list .doctor-img-wrap {
+        max-width: 60px;
+    }
+    .doctors-tab .all-doctors-list .doctor-name {
+        font-size: 16px;
+    }
+    .doctors-tab .all-doctors-list .view-full-profile {
+        font-size: 16px;
+    }
+
+    .r-tabs .r-tabs-tab .r-tabs-anchor {
+        font: 16px/32px "FuturaW01-ExtraBoldCond_774896";
+    }
+
+    .r-tabs-state-active a.r-tabs-anchor {
+        line-height: 32px !important;
+    }
+
+    .tab-container,
+    .r-tabs .r-tabs-panel {
+        font: 16px "FuturaW01-MediumCondens";
+    }
+}
+/*************** Doctor-Profile & Practice-Profile End **************/
+/****************************** End Desktop to tablet media quaries *****************************/
+/****************************** Main Tablet media quaries *****************************/
+/*************** Common Header-n-Footer **************/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .main-logo,
+    .footer-logo {
+        width: auto;
+    }
+}
+/*************** End Common Header-n-Footer **************/
+/*************** The-Buzz **************/
+@media (max-width: 1024px) {
+    .top-buzz-bg {
+        padding: 77px 0 0px;
+    }
+
+    .search-box {
+        display: none;
+    }
+
+    .left-module:before,
+    .left-module:after {
+        content: " ";
+        display: table;
+    }
+
+    .left-module:after {
+        clear: both;
+    }
+
+    .left-module {
+        float: none;
+        margin: 0 auto 0;
+        max-width: 643px;
+        width: 83.72396%;
+    }
+
+    .left-module-listing li {
+        margin-bottom: 35px;
+    }
+    .left-module-listing li .listing-point {
+        font: 32px/56px "FuturaW01-ExtraBoldCond_774896";
+    }
+    .left-module-listing li .listing-point .point-num {
+        font: 18px/20px "FuturaW01-ExtraBoldCond_774896";
+    }
+    .left-module-listing li .listing-point .point-word {
+        font: 18px/20px "FuturaW01-MediumCondens";
+    }
+    .left-module-listing li .data-container .doc-small-img {
+        margin-top: 15px;
+    }
+    .left-module-listing li .data-container .doc-place-name {
+        font: 20px "FuturaW01-ExtraBoldCond_774896";
+    }
+    .left-module-listing li .data-container .listing-description {
+        font-size: 18px;
+        padding-top: 30px;
+    }
+    .left-module-listing li .date-detail {
+        font: 20px "FuturaW01-ExtraBoldCond_774896";
+    }
+
+    .right-module {
+        background: #e9e9e9;
+        float: none;
+        padding: 40px 7.94271% 70px;
+        margin: 45px auto 0;
+        max-width: 100%;
+    }
+
+    .right-module-inner {
+        background: #fff;
+        margin: 0 auto 0;
+        max-width: 643px;
+        width: 100%;
+    }
+
+    .right-module-main-heading {
+        font: 28px/75px "FuturaW01-ExtraBoldCond_774896";
+    }
+
+    .view-profile-box {
+        max-width: 135px;
+    }
+    .view-profile-box .profile-btn {
+        font: 18px/36px "FuturaW01-ExtraBoldCond_774896";
+        padding: 0 15px;
+        margin-bottom: 15px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+    }
+    .view-profile-box .currency-thumb {
+        max-height: 53px;
+    }
+    .view-profile-box .clinic-points {
+        font: 32px/53px "FuturaW01-ExtraBoldCond_774896";
+    }
+
+    .clinic-img {
+        max-width: 65px;
+        max-height: 125px;
+        margin-right: 4.40457%;
+    }
+    .clinic-img img {
+        max-width: 65px;
+        max-height: 125px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .clinic-name {
+        font: 28px "FuturaW01-ExtraBoldCond_774896";
+    }
+
+    .clinic-address {
+        font: 32px "FuturaW01-MediumCondens";
+        margin-bottom: 10px;
+    }
+
+    .rating {
+        max-width: 224px;
+    }
+    .rating .fullstar {
+        height: 33px;
+        width: 33px;
+        margin-right: 3.57143%;
+    }
+}
+/*************** The-Buzz End **************/
+/*************** Doctor-Profile & Practice-Profile **************/
+@media (max-width: 1024px) and (min-width: 768px) {
+    .relevant-adjust {
+        margin: 0;
+        padding-top: 30px;
+    }
+
+    .relevant-header {
+        font: 26px "FuturaW01-MediumCondens";
+    }
+
+    .detials-info {
+        width: 64%;
+        max-width: 71.4995%;
+    }
+
+    .detials-info-all-text {
+        max-width: 205px;
+        width: 42.70833%;
+    }
+
+    .detials-info-all-text-alt {
+        float: left;
+        max-width: 325px;
+        width: 65.26104%;
+    }
+
+    .details-sub-info {
+        min-width: 140px;
+        text-align: left;
+    }
+
+    .thumb-likes {
+        display: inline-block;
+        margin-top: 6px;
+    }
+
+    .main-thumb {
+        max-width: 70px;
+    }
+
+    .main-thumb {
+        max-width: 100px;
+    }
+
+    .thumb-name {
+        font: 28px/normal "FuturaW01-ExtraBoldCond_774896";
+    }
+
+    .address-detials {
+        font: 20px "FuturaW01-MediumCondens";
+    }
+    .address-detials1 {
+        font: 20px "FuturaW01-MediumCondens";
+    }
+
+    .btn-listing {
+        display: none;
+    }
+
+    .main-buttons {
+        float: right;
+        margin-right: 4.46872%;
+        min-width: 230px;
+    }
+    .main-buttons a {
+        font: 14px/36px "FuturaW01-ExtraBoldCond_774896";
+        padding: 0 9px;
+    }
+    .main-buttons a:nth-child(4) {
+        padding: 0 33px 0;
+        margin-bottom: 20px;
+    }
+
+    .sub-details {
+        clear: both;
+        float: none;
+        width: 100%;
+    }
+
+    .sub-details-inner {
+        padding: 25px 14px 10px;
+    }
+
+    .top-5-chars {
+        margin-bottom: 10px;
+        padding-left: 10px;
+    }
+
+    .chars-listing {
+        font-size: 0;
+    }
+    .chars-listing li {
+        display: inline-block;
+        font: 16px/30px "FuturaW01-MediumCondens";
+        margin-bottom: 5px;
+        width: 130px;
+    }
+
+    .check-ins-heading {
+        color: #a7a7a7;
+        float: left;
+        font: 16px/16px "FuturaW01-MediumCondens";
+        width: 20%;
+    }
+    .check-ins-heading .check-ins-tooltip {
+        padding: 10px 2px;
+    }
+
+    .point-with-thumb {
+        display: block;
+    }
+
+    .check-ins-listing li {
+        width: 20%;
+        border-left: 1px solid #a7a7a7;
+        border-right: 0;
+        border-bottom: 0;
+        font: 16px "FuturaW01-MediumCondens";
+        padding: 0px 0 0 10px;
+        text-align: left;
+    }
+    .check-ins-listing li .relevant-point,
+    .check-ins-listing li .relevant-point-2nd {
+        font: 20px "FuturaW01-ExtraBoldCond_774896";
+        margin: 2px 0 1px;
+    }
+    .check-ins-listing li:nth-child(odd) {
+        border-right: 0;
+    }
+
+    .all-tabs-wrap {
+        width: 100%;
+        float: none;
+    }
+
+    .tab-rating {
+        display: inline-block;
+        position: relative;
+        top: 3px;
+    }
+    .tab-rating .fullstar {
+        height: 17px;
+        width: 17px;
+        margin-right: 0;
+    }
+
+    .rating-tab .rating-adjust {
+        display: inline-block;
+        position: relative;
+        top: 3px;
+    }
+    .rating-tab .rating-adjust .fullstar {
+        height: 17px;
+        width: 17px;
+        margin-right: 0;
+    }
+
+    .r-tabs .r-tabs-tab .r-tabs-anchor {
+        font: 18px/40px "FuturaW01-ExtraBoldCond_774896";
+        padding: 0 10px;
+    }
+
+    .r-tabs-state-active a.r-tabs-anchor {
+        font: 18px/40px "FuturaW01-ExtraBoldCond_774896" !important;
+    }
+}
+/*************** Doctor-Profile & Practice-Profile End **************/
+/*************** Top-Docs **************/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .top-docs-container {
+        margin: 0 3.99467% 0;
+    }
+
+    .form-left-section {
+        float: none;
+        margin: auto;
+        min-width: 690px;
+        padding: 0 2.17391% 0;
+        width: 100%;
+    }
+
+    select.select-doctor-type,
+    select.choose-insurance {
+        color: #435464;
+        font: 12px/24px "FuturaW01-MediumCondens";
+        width: 170px;
+    }
+
+    .radio-btn-wrap {
+        padding: 0;
+        max-width: 280px;
+        margin: auto;
+    }
+
+    .form-right-section {
+        clear: both;
+        float: none;
+        margin: 0 auto;
+        padding-top: 25px;
+        width: 100%;
+    }
+
+    .change-zipcode {
+        background: rgba(255, 255, 255, 0.5) url("https://dvpizcali3m6.cloudfront.net/img/images_buzzy/magnifying_glass.png") no-repeat 5px 5px;
+        background-size: 25px;
+        color: #435464;
+        display: block;
+        font: 16px/40px "FuturaW01-MediumCondens";
+        float: none;
+        margin: 0 auto 0;
+        padding: 0 5px 0 40px;
+        height: 42px;
+        width: 152px;
+    }
+
+    .filter-search-results {
+        padding: 0 2.1744% 0;
+        max-width: 100%;
+    }
+
+    .result-img-wrap {
+        max-width: 85px;
+    }
+
+    .result-detail {
+        width: 81.3%;
+    }
+    .result-detail-top-row{
+        margin-bottom: 10px;
+    }
+    .result-heading {
+        font: 22px "FuturaW01-ExtraBoldCond_774896";
+    }
+
+    .result-points-n-num .result-point-thumb {
+        max-width: 25px;
+    }
+    .result-points-n-num .result-point-num {
+        font: 18px/27px "FuturaW01-ExtraBoldCond_774896";
+    }
+
+    .result-view-profile-btn-wrap .result-view-profile-btn {
+        font: 12px/30px "FuturaW01-ExtraBoldCond_774896";
+        padding: 0 30px;
+    }
+
+    .result-address {
+        font: 16px "FuturaW01-MediumCondens";
+        margin-bottom: 5px;
+    }
+
+    .result-doctor-list {
+        margin-bottom: 5px;
+    }
+    .result-doctor-list li {
+        font: 14px "FuturaW01-ExtraBoldCond_774896";
+    }
+
+    .result-main-btn li a {
+        font: 16px/30px "FuturaW01-ExtraBoldCond_774896";
+    }
+}
+/*************** Top-Docs End **************/
+/****************************** End Main Tablet media quaries *****************************/
+/*************** Common Header-n-Footer **************/
+@media (max-width: 767px) {
+    .main-logo {
+        margin: 0 10px 0;
+        width: auto;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .top-navigation {
+        clear: both;
+        background: rgba(47, 184, 137, 0.9);
+        display: none;
+        position: absolute;
+        width: 100%;
+        z-index: 5;
+        top: 53px;
+    }
+    .top-navigation li {
+        float: none;
+        width: 100%;
+        margin-top: 9px;
+        text-align: center;
+    }
+    .top-navigation li a {
+        color: #fff;
+        display: block;
+        font: 18px/35px "FuturaW01-MediumCondens";
+    }
+    .top-navigation li a .point-header {
+        /*color: #fff;*/
+    }
+    .top-navigation li a:hover {
+        background: #139468;
+        color: #fff;
+    }
+    .top-navigation li a .header-point-icon {
+        top: -2px;
+    }
+
+    .main-footer {
+        padding: 5px 0;
+    }
+
+    .footer-logo {
+        display: none;
+    }
+
+    .bottom-navigation li {
+        float: none;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+    .bottom-navigation li a {
+        font: 18px/35px "FuturaW01-MediumCondens";
+    }
+    .bottom-navigation li a:hover {
+        background: #222;
+    }
+    .bottom-navigation li a .footer-point-icon {
+        top: -2px;
+    }
+}
+/*************** End Common Header-n-Footer **************/
+/*************** Common Elements **************/
+@media (max-width: 767px) {
+    .two-cols-wrap .left-module .left-module-listing li:last-child {
+        margin-bottom: 10px;
+    }
+}
+/*************** End Common Elements **************/
+/*************** The Buzz **************/
+@media (max-width: 767px) {
+    .top-buzz-bg {
+        padding: 40px 0 25px;
+        background: #dedede;
+    }
+
+    .left-module {
+        background: #fff;
+        padding: 0 10px 0;
+        max-width: 767px;
+        margin: 0 10px 0;
+        width: auto;
+    }
+
+    .modified-border-top {
+        border-width: 5px 0 0px 140px;
+    }
+
+    .modified-border-bottom {
+        border-width: 5px 140px 0 0;
+        padding-bottom: 30px;
+    }
+
+    .left-module-title-heading {
+        font: 16px/22px "FuturaW01-ExtraBoldCond_774896";
+        padding: 0 40px 0 10px;
+    }
+
+    .left-module-listing li {
+        margin-bottom: 5px;
+    }
+    .left-module-listing li .listing-point {
+        font: 18px/56px "FuturaW01-ExtraBoldCond_774896";
+        max-width: 70px;
+        width: 100%;
+    }
+    .left-module-listing li .listing-point .point-num {
+        font: 14px/16px "FuturaW01-ExtraBoldCond_774896";
+        margin-top: 5px;
+    }
+    .left-module-listing li .listing-point .point-word {
+        font: 14px/14px "FuturaW01-MediumCondens";
+    }
+    .left-module-listing li .listing-point .badgeImg {
+        width: 51.42857%;
+    }
+    .left-module-listing li .date-detail {
+        padding: 0 0 2px;
+        font-size: 12px;
+    }
+    .left-module-listing li .data-container {
+        background: url("https://dvpizcali3m6.cloudfront.net/img/images_buzzy/listing_bg.png") no-repeat bottom;
+        background-size: cover;
+        width: 100%;
+    }
+    .left-module-listing li .data-container .doc-place-name {
+        font-size: 14px;
+    }
+    .left-module-listing li .data-container .listing-description {
+        font-size: 14px;
+        padding-top: 25px;
+    }
+    .left-module-listing li:last-child {
+        margin-bottom: 10px;
+    }
+
+    .right-module {
+        margin: 25px 10px 0;
+        padding: 0;
+        max-width: 767px;
+        width: auto;
+    }
+
+    .right-module-inner {
+        margin: 0;
+        max-width: 767px;
+    }
+
+    .right-module-main-heading {
+        padding: 10px;
+        font: 16px/22px "FuturaW01-ExtraBoldCond_774896";
+    }
+
+    .right-module-listing {
+        padding: 0;
+    }
+    .right-module-listing li {
+        padding: 10px;
+    }
+
+    .clinic-img {
+        max-width: 30px;
+        margin-right: 1.90114%;
+    }
+
+    .clinic-name {
+        font-size: 12px;
+        margin: 0 0 3px;
+    }
+
+    .clinic-address {
+        font-size: 12px;
+        margin: 0 0 7px;
+    }
+
+    .rating .fullstar {
+        height: 15px;
+        width: 15px;
+        margin-right: 0;
+    }
+    .rating .greystar {
+        height: 15px;
+        width: 15px;
+        margin-right: 0;
+    }
+    .view-profile-box {
+        max-width: 78px;
+    }
+    .view-profile-box .profile-btn {
+        padding: 0 5px;
+        font: 12px/22px "FuturaW01-ExtraBoldCond_774896";
+        margin-bottom: 10px;
+    }
+    .view-profile-box .currency-thumb {
+        max-width: 25px;
+    }
+    .view-profile-box .clinic-points {
+        font: 20px/25px "FuturaW01-ExtraBoldCond_774896";
+    }
+    .more-activity-expand-btn:hover {
+        background: #2fb889;
+        color: #fff;
+    }
+}
+/*************** The Buzz End **************/
+/*************** Doctor Profile & Practice Profile **************/
+@media (max-width: 767px) {
+    .relevant-adjust {
+        max-width: 767px;
+        margin: 0 10px 0;
+        padding-top: 20px;
+        width: auto;
+    }
+
+    .relevant-header {
+        border-width: 5px;
+        font-size: 22px;
+        padding: 7px 10px 7px;
+    }
+
+    .detials-info {
+        float: none;
+        width: 100%;
+        margin: 0 0 20px;
+        text-align: center;
+    }
+
+    .main-details {
+        float: none;
+        width: 100%;
+    }
+    .thumb-picture {
+        max-height: 44px;
+        max-width: 100%;
+    }
+
+    .main-thumb {
+        float: none;
+        margin: 0 auto;
+        max-width: 70px;
+        width: 100%;
+    }
+
+    .detials-info-all-text {
+        float: none;
+        max-width: 100%;
+        width: auto;
+        text-align: center;
+    }
+
+    .details-sub-info {
+        display: none;
+    }
+
+    .detials-text {
+        text-align: center;
+    }
+
+    .thumb-name {
+        font-size: 20px;
+    }
+
+    .likes-toggle {
+        display: block;
+        margin: 0 auto 5px;
+    }
+
+    .main-buttons {
+        float: none;
+        margin: 0 auto 20px;
+        max-width: 240px;
+        width: 100%;
+    }
+
+    .sub-details {
+        float: none;
+        max-width: 240px;
+        width: 100%;
+        margin: 0 auto 25px;
+        text-align: center;
+    }
+
+    .sub-details-inner {
+        padding: 0;
+    }
+
+    .chars-listing li {
+        width: 236px;
+        margin-left: 0;
+    }
+
+    .all-tabs-wrap {
+        clear: none;
+        float: none;
+        width: 100%;
+    }
+
+    .all-tabs-container {
+        margin: 0 10px 0;
+    }
+
+    .rating-tab .rate-out-of {
+        font: 16px "FuturaW01-ExtraBoldCond_774896";
+    }
+
+    .overview-tab .main-text {
+        margin-bottom: 15px;
+    }
+    .overview-tab .point-heading {
+        font: 18px "FuturaW01-ExtraBoldCond_774896";
+        margin-bottom: 10px;
+    }
+    .overview-tab .point-listing li {
+        display: block;
+        width: auto;
+        font-size: 16px;
+        padding-left: 25px;
+    }
+
+    .other-chars-tab .other-chars-listing {
+        width: 240px;
+        margin: 0 auto;
+    }
+    .other-chars-tab .other-chars-listing li {
+        display: block;
+        font: 16px/30px "FuturaW01-MediumCondens";
+        margin: 0 0 10px;
+        width: auto;
+    }
+    .other-chars-tab .other-chars-listing li:last-child {
+        margin-bottom: 5px;
+    }
+
+    .reviews-tab .review-txt-n-img-wrap {
+        margin-bottom: 15px;
+    }
+    .reviews-tab .review-txt-wrap {
+        width: 100%;
+        padding-bottom: 10px;
+        border-bottom: 1px dashed #a7a7a7;
+    }
+    .reviews-tab .reviewer-picture-wrap {
+        display: none;
+    }
+    .reviews-tab .view-more-wrap {
+        margin-bottom: 15px;
+    }
+
+    .doctors-tab .all-doctors-list > li {
+        margin-bottom: 10px;
+        border-bottom: 1px dashed #a7a7a7;
+    }
+    .doctors-tab .all-doctors-list > li .doctor-img-wrap {
+        float: none;
+        margin: 0 auto;
+        max-width: 75px;
+    }
+    .doctors-tab .all-doctors-list > li .doctor-details-wrap {
+        float: none;
+        text-align: center;
+    }
+    .doctors-tab .all-doctors-list > li:last-child {
+        margin-bottom: 0px;
+        border-bottom: 0;
+    }
+
+    .offices-tab .offices-tab-heading {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .offices-tab .location-info-n-map {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .offices-tab .location-info-n-map #map-canvas {
+
+        width: 270px !important;
+        margin: auto;
+
+    }
+    .offices-tab .location-info {
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .offices-tab .location-info .map-pointer {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .offices-tab .location-info .location-info-text {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .offices-tab .google-map {
+        float: none;
+        width: 100%;
+        height: 200px;
+        text-align: center;
+        border: 0;
+        box-shadow: none;
+    }
+
+    .r-tabs .r-tabs-panel {
+        font: 16px "FuturaW01-MediumCondens";
+        padding: 10px 5px;
+    }
+}
+/*************** End Doctor Profile & Practice Profile **************/
+/*************** Top-Docs **************/
+@media (max-width: 767px) {
+    .top-docs-container {
+        margin: 0 3% 0;
+        padding: 15px 0 15px;
+    }
+
+    .top-docs-heading {
+        margin-bottom: 25px;
+        padding: 10px 28px;
+        font: 14px "FuturaW01-MediumCondens";
+    }
+    .top-docs-heading .header-link{
+        font: 14px "FuturaW01-MediumCondens";
+        margin-top: 0;
+    }
+
+    .form-wrap {
+        margin-bottom: 20px;
+    }
+
+    .form-left-section {
+        margin-bottom: 10px;
+        min-width: 285px;
+        padding: 0 2.17391% 0;
+        width: 100%;
+    }
+
+    .form-heading {
+        font: 18px "FuturaW01-ExtraBoldCond_774896";
+    }
+    .select-box-left,
+    .select-box-right {
+        float: none;
+        width: 100%;
+    }
+    .radio-box-1{
+        display: block;
+        margin-bottom: 10px;
+    }
+    .radio-box-2{
+        display: block;
+    }
+    select.select-doctor-type,
+    select.choose-insurance {
+        color: #435464;
+        font: 6px/12px "FuturaW01-MediumCondens";
+
+    }
+    select.select-doctor-type option,
+    select.choose-insurance option {
+        font: 8px "FuturaW01-MediumCondens";
+    }
+
+    .radio-btn-wrap {
+        display: block;
+        float: none;
+        padding: 0;
+        min-width: 190px;
+        max-width: 190px;
+        margin: 10px auto 10px;
+        text-align: left;
+        width: 100%;
+    }
+    .radio-btn-wrap input[type="radio"] {
+        height: 13px;
+        margin: 0 5px 0 0;
+        width: 13px;
+    }
+    .radio-btn-wrap label {
+        padding-right: 3px;
+        font: 14px "FuturaW01-MediumCondens";
+        margin-left: -3px;
+    }
+
+    .form-right-section {
+        clear: both;
+        float: none;
+        margin: 0 auto;
+        padding-top: 10px;
+        width: 100%;
+    }
+
+    .change-zipcode {
+        background: rgba(255, 255, 255, 0.5) url("https://dvpizcali3m6.cloudfront.net/img/images_buzzy/magnifying_glass.png") no-repeat 5px 4px;
+        background-size: 22px;
+        border-width: 2px;
+        color: #435464;
+        display: block;
+        font: 18px/40px "FuturaW01-MediumCondens";
+        float: none;
+        margin: 0 auto 0;
+        padding: 0 5px 0 30px;
+        height: 40px;
+        text-indent: -25px;
+        width: 235px;
+    }
+
+    .filter-search-results {
+        padding: 0 2% 15px;
+        margin: 0 10px 20px 10px;
+        max-width: 100%;
+        border-bottom: 1px dashed #949494;
+    }
+
+    .result-img-wrap {
+        float: none;
+        max-width: 105px;
+        margin: 0 auto 5px;
+    }
+    .result-img-wrap .thumb-picture {
+        max-height: 100%;
+    }
+
+    .result-detail {
+        width: 100%;
+    }
+    .result-detail-top-row {
+
+    }
+
+    .result-heading {
+        display: block;
+        font: 18px "FuturaW01-ExtraBoldCond_774896";
+        margin: 0 auto 5px;
+        text-align: center;
+    }
+    .result-points-n-num {
+        margin: 0 auto 0;
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+    }
+    .result-point-num {
+
+    }
+    .address-heading {
+        font: 16px "FuturaW01-ExtraBoldCond_774896";
+        max-width: 100%;
+        text-align: center;
+
+
+    }
+    .address-heading1 {
+        font: 9px "FuturaW01-ExtraBoldCond_774896";
+        max-width: 260px;
+        margin: 0 auto 3px;
+
+
+    }
+    .address-detials{
+        font: 18px "FuturaW01-MediumCondens";
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 5px;
+
+    }
+    .address-detials1{
+        font: 10px "FuturaW01-ExtraBoldCond_774896";
+        max-width: 260px;
+        margin: 0 auto 3px;
+
+    }
+    .result-points-n-num .result-point-thumb {
+        max-width: 22px;
+    }
+    .result-points-n-num .result-point-num {
+        font: 20px/24px "FuturaW01-ExtraBoldCond_774896";
+    }
+
+    .result-view-profile-btn-wrap .result-view-profile-btn {
+        font: 6px/15px "FuturaW01-ExtraBoldCond_774896";
+        padding: 0 15px;
+        display: none;
+    }
+
+    .result-address {
+        font: 9px "FuturaW01-MediumCondens";
+        margin-bottom: 5px;
+    }
+
+    .result-doctor-list {
+        margin-bottom: 5px;
+    }
+    .result-doctor-list li {
+        font: 12px "FuturaW01-ExtraBoldCond_774896";
+        margin-right: 0;
+        text-align: center;
+        width: 100%;
+    }
+    .result-main-btn li {
+        display: block;
+    }
+    .result-main-btn li a {
+        border-bottom: none;
+        border-right: 1px solid #a7a7a7;
+        font: 16px/40px "FuturaW01-ExtraBoldCond_774896";
+        padding: 0 2px;
+        text-align: center;
+    }
+    .result-main-btn li:last-child a {
+        border-right: none;
+        border-bottom: 1px solid #a7a7a7;
+
+    }
+    .result-main-btn li a .rating {
+        position: relative;
+        top: 4px;
+    }
+    .result-main-btn li a .rating .fullstar {
+        height: 20px;
+        width: 20px;
+    }
+    .result-main-btn li a .rating .greystar {
+        height: 20px;
+        width: 20px;
+    }
+
+}
+
+
+/*************** Top-Docs End **************/
+
+/*****************for session out modal*****/
+.login-form {
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+
+    background: #f3f3f3;
+    border: 1px solid #fff;
+    border-radius: 5px;
+
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+
+/*******************
+HEADER
+*******************/
+
+.login-form .header {
+    padding: 10px 30px 10px;
+}
+
+.login-form .header h1 {
+    font-family: 'Bree Serif', serif;
+    font-weight: 300;
+    font-size: 31px;
+    line-height:34px;
+    color: #414848;
+    text-align: center;
+    text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+    margin-bottom: 10px;
+}
+
+.login-form .header span {
+    font-size: 11px;
+    line-height: 16px;
+    color: #678889;
+    text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+}
+
+/*******************
+CONTENT
+*******************/
+
+.login-form .content {
+    padding: 0 30px 15px 30px;
+    text-align: center;
+}
+.login-form .asterisk-info {
+    color: #666;
+}
+
+.login-form .content-col-1,
+.login-form .content-col-2 {
+    float: left;
+    width: 49%;
+    margin-right: 5px;
+}
+.login-form .content-col-2 {
+    margin-right: 0;
+}
+.radio-btn-wrap {
+    /*margin: 10px 0;*/
+    color: #666;
+}
+
+
+/* Input field */
+.login-form .content .input,
+.login-form .content select {
+    width: 188px;
+    padding: 10px;
+    margin-bottom: 10px;
+
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #9d9e9e;
+    text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
+    -moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
+    -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
+}
+.login-form .err-msg {
+    color: #f00;
+}
+
+/* Second input field */
+.login-form .content .password, .login-form .content .pass-icon {
+    /* margin-top: 25px; */
+}
+
+.login-form .content .input:hover {
+    background: #dfe9ec;
+    color: #414848;
+}
+
+.login-form .content .input:focus {
+    background: #dfe9ec;
+    color: #414848;
+
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.25);
+    -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.25);
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.25);
+}
+/*******************
+FOOTER
+*******************/
+
+.login-form .footer {
+    padding: 28px 30px 26px 30px;
+    overflow: auto;
+    background: #d4dedf;
+    border-top: 1px solid #fff;
+    text-align: center;
+    box-shadow: inset 0 1px 0 rgba(0,0,0,0.15);
+    -moz-box-shadow: inset 0 1px 0 rgba(0,0,0,0.15);
+    -webkit-box-shadow: inset 0 1px 0 rgba(0,0,0,0.15);
+}
+
+/* Login button */
+.login-form .footer .button {
+    padding: 11px 25px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 300;
+    font-size: 22px;
+    color: #fff;
+    text-shadow: 0px 1px 0 rgba(0,0,0,0.25);
+    background: #56c2e1;
+    border: 1px solid #46b3d3;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: inset 0 0 2px rgba(256,256,256,0.75);
+    -moz-box-shadow: inset 0 0 2px rgba(256,256,256,0.75);
+    -webkit-box-shadow: inset 0 0 2px rgba(256,256,256,0.75);
+}
+.login-form .footer .button:hover {
+    background: #3f9db8;
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.login-form .footer .button:focus {
+    position: relative;
+    bottom: -1px;
+    background: #56c2e1;
+    box-shadow: inset 0 1px 6px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: inset 0 1px 6px rgba(255, 255, 255, 0.75);
+    -webkit-box-shadow: inset 0 1px 6px rgba(255, 255, 255, 0.75);
+}
+
+/* Register button */
+.login-form .footer .register {
+    display: block;
+    float: right;
+    padding: 10px;
+    margin-right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Bree Serif', serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #414848;
+    text-shadow: 0px 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.login-form .footer .register:hover {
+    color: #3f9db8;
+}
+
+.login-form .footer .register:focus {
+    position: relative;
+    bottom: -1px;
+}
+@media (max-width: 767px) {
+    .login-form .content-col-1,
+    .login-form .content-col-2 {
+        float: none;
+        width: 100%;
+        margin-right: 5px;
+    }
+    .login-form .content-col-1 input[type="text"],
+    .login-form .content-col-1 input[type="email"],
+    .login-form .content-col-1 input[type="password"],
+    .login-form .content-col-1 input[type="tel"],
+    .login-form .content-col-1 select,
+    .login-form .content-col-2 input[type="text"],
+    .login-form .content-col-2 input[type="email"],
+    .login-form .content-col-2 input[type="password"],
+    .login-form .content-col-2 input[type="tel"],
+    .login-form .content-col-2 select {
+        width: 100% !important;
+    }
+
+
+}
+/*************** Modal box for login **************/
+
+
+
+/*************** bootstrap Modal box **************/
+.modal-open {
+    overflow: hidden;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    display: none;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+}
+.modal.fade .modal-dialog {
+    -webkit-transition: -webkit-transform .3s ease-out;
+    -o-transition:      -o-transform .3s ease-out;
+    transition:         transform .3s ease-out;
+    -webkit-transform: translate(0, -25%);
+    -ms-transform: translate(0, -25%);
+    -o-transform: translate(0, -25%);
+    transform: translate(0, -25%);
+}
+.modal.in .modal-dialog {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 6px;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+}
+.modal-backdrop {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #000;
+}
+.modal-backdrop.fade {
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+.modal-backdrop.in {
+    filter: alpha(opacity=50);
+    opacity: .5;
+}
+.modal-header {
+    min-height: 16.42857143px;
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.modal-header .close {
+    margin-top: -2px;
+}
+.modal-title {
+    margin: 0;
+    line-height: 1.42857143;
+}
+.modal-body {
+    position: relative;
+}
+.modal-footer {
+    padding: 15px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+}
+.modal-footer .btn + .btn {
+    margin-bottom: 0;
+    margin-left: 5px;
+}
+.modal-footer .btn-group .btn + .btn {
+    margin-left: -1px;
+}
+.modal-footer .btn-block + .btn-block {
+    margin-left: 0;
+}
+.modal-scrollbar-measure {
+    position: absolute;
+    top: -9999px;
+    width: 50px;
+    height: 50px;
+    overflow: scroll;
+}
+@media (min-width: 768px) {
+    .modal-dialog {
+        width: 500px;
+        margin: 30px auto;
+    }
+    .modal-content {
+        -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    }
+    .modal-sm {
+        width: 300px;
+    }
+}
+@media (min-width: 992px) {
+    .modal-lg {
+        width: 900px;
+    }
+}
+
+.modal-footer:before,
+.modal-footer:after {
+    display: table;
+    content: " ";
+}
+.modal-footer:after {
+    clear: both;
+}
+.close {
+    padding: 0px 3px 0px;
+    height: 28px;
+    width: 28px;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #3e5368;
+    border-radius: 50%;
+    line-height: 24px;
+    color: #FF3A00;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    z-index: 9;
+    cursor: pointer;
+}
+.close span {
+    font-size: 2em;
+}
+
+/*************** end bootstrap Modal box **************/
+
+
+       .pointsBox ul
+{
+    margin:5px 0 0;
+    padding:0;
+    border-top:1px solid #ccc
+}
+.pointsBox ul li
+{
+    padding-bottom:5px;
+    padding-top:10px;
+    border-bottom:1px solid #ccc
+}
+.pointsBox ul li span
+{
+    display:inline-table;
+    width:45%;
+    word-wrap:break-word
+}
+.pointsBox ul li span:last-child
+{
+    min-width:40%;
+    padding-left:10%;
+    font-weight:700
+}
+
+.quicklebel {
+    display: block;
+    margin-bottom: 10px;
+}
+.recommendlebal {
+     display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.recom-description {
+    border: 1px solid #d6d6d6;
+    color: #666;
+    height: 30px;
+    margin-bottom: 15px;
+    min-width: 287px;
+    padding: 5px;
+    resize: none;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+    #setnext
+{
+    /*position:absolute;*/
+    right:-40px;
+    top:15px
+}
+    #setnext a
+{
+    background:url(https://dvpizcali3m6.cloudfront.net/img/reward_imges/refer_btn.png) no-repeat;
+    width:30px;
+    height:30px;
+    display:block;
+    background-size:80%
+}
+    #setnext a:after
+{
+    content:'Click to Change Message';
+    display:block;
+    width:136px;
+    height:24px;
+    background:#3f7ae8;
+    color:#fff;
+    margin-left:10px;
+    padding-top:5px;
+    padding-left:5px;
+    padding-right:5px
+}
+
+/* Redeem Popup*/
+
+.redeemContainer {
+}
+.redeemBox {
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -mox-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    float:left;
+    padding:15px;
+  background: none repeat scroll 0 0 #F9F9F9;
+    float: left;
+    margin: 0.5%;
+    padding: 15px;
+    width: 32.2%;
+}
+.redeemClear {
+    clear:both;
+}
+.redeemBox .productPoints {
+ color: #435464;
+    display: block;
+    font: 20px "FuturaW01-ExtraBoldCond_774896";
+}
+.needRedeemPoints {
+    font-size: 16px;
+    height: 44px;
+    padding: 12px 0;
+}
+.redeemBox h3 {
+        color: #A7A7A7;
+    display: inline-block;
+    font: 16px "FuturaW01-MediumCondens";
+
+    line-height: 18px;
+    min-height: 40px;
+    overflow: hidden;
+}
+.redeemButtom button {
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    transition: background-color 0.15s ease 0s, border-color 0.15s ease 0s, opacity 0.15s ease 0s;
+    vertical-align: middle;
+   background-color: #87B87F !important;
+    border: 5px solid #87B87F;
+    color: #FFFFFF;
+    cursor: pointer;
+    width:100%;
+    padding: 4px 9px;
+    margin-top:7px;
+}
+.redeemButtom button:hover {
+    background-color: #629B58 !important;
+    border-color: #87B87F;
+}
+
+#redeemload {
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -150px;
+    position: absolute;
+    top: 50%;
+}
+
+.details-wrap.cf h3 {
+    color: #435464;
+    font: 20px "FuturaW01-ExtraBoldCond_774896";
+    margin: 10px 0 0 0;
+}
+.details-wrap.cf textarea {
+    padding: 12px;
+}
+
+.tab-container.reviews-tab ul {
+    padding-top: 20px;
+}
+.left-module-listing.ratereview li .data-container {
+    background-size: cover;
+}

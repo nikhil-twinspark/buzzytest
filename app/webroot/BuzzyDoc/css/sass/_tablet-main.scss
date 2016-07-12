@@ -1,0 +1,526 @@
+/* Desktop to tablet media quaries width 1226px to 1025px */
+
+/*************** The-Buzz **************/
+@media (max-width: 1145px) {
+  .left-module-listing {
+    li {
+      .listing-point {
+        font: 30px/50px $futura_bold;
+        .point-num {
+          font: 14px/12px $futura_bold;
+        }
+        .point-word {
+          font: 14px/14px $futura_medium;
+        }
+      }
+      .data-container {
+        .doc-place-name {
+          font: 16px $futura_bold;
+        }
+        .listing-description {
+          font-size: 14px;
+        }
+      }
+      .date-detail {
+        font: 16px $futura_bold;
+      }
+    }
+  }
+
+
+  .right-module-main-heading {
+    font: 14px/45px $futura_bold;
+  }
+  .clinic-img {
+    max-height: 65px;
+    img {
+      max-height: 65px;
+    }
+  }
+  .clinic-name {
+    font: 14px $futura_bold;
+  }
+  .clinic-address {
+    font: 16px $futura_medium;
+  }
+  .view-profile-box {
+    max-width: 85px;
+    .profile-btn {
+      font: 12px/24px $futura_bold;
+      padding: 0 7px;
+    }
+    .currency-thumb {
+      max-height: 28px;
+    }
+    .clinic-points {
+      font: 20px/28px $futura_bold;
+    }
+  }
+  .rating {
+    .fullstar {
+      height: 17px;
+      width: 17px;
+    }
+  }
+
+}
+/*************** The-Buzz End **************/
+
+
+
+/*************** Doctor-Profile **************/
+@media (min-width: 768px) and (max-width: 1180px){
+  .detials-info {
+    width: 48.2%;
+  }
+  .thumb-name {
+    font: 22px $futura_bold;
+  }
+  .address-detials,
+  .address-details-phone,
+  .address-details-fax,
+  .address-direction {
+    font: 18px $futura_medium;
+  }
+  .address-details-phone .legend,
+  .address-details-fax .legend {
+    font: 18px $futura_bold;
+  }
+  .detials-info-all-text {
+    width: 38%;
+  }
+  .detials-info-all-text-alt {
+    float: left;
+    width: 325px / 498px * 100%;
+  }
+  .details-sub-info {
+    padding-top: 6px;
+  }
+  .thumb-likes {
+    font: 16px $futura_bold;
+
+    .tumb-likes-num {
+      font: 16px $futura_medium;
+    }
+  }
+
+  .btn-listing li a {
+    font: 12px $futura_bold;
+  }
+  .main-buttons {
+    min-width: 205px;
+
+    .main-btn-4 {
+      padding: 0 32px;
+    }
+  }
+  .main-buttons a {
+    font: 12px/35px $futura_bold;
+    margin: 0 10px 15px 0;
+  }
+  .check-ins-heading {
+    font: 18px/22px $futura_bold;
+    margin-bottom: 20px;
+
+    .check-ins-tooltip {
+      padding: 3px 10px 3px;
+    }
+  }
+  .point-with-thumb {
+
+  }
+  .point-thumb {
+    max-width: 20px;
+  }
+  .points-number{
+    font: 18px/22px $futura_bold;
+  }
+  .check-ins-listing li {
+    font: 18px $futura_medium;
+    padding-top: 15px;
+
+    .relevant-point {
+      font: 22px $futura_bold;
+    }
+  }
+
+
+
+  .rating-tab {
+    .rate-out-of {
+      font-size: 16px;
+    }
+    .rate-doctor {
+      font: 12px/30px $futura_bold;
+    }
+  }
+  .overview-tab {
+    .main-text {
+      margin-bottom: 15px;
+    }
+    .point-heading {
+      font-size: 16px;
+    }
+    .point-listing li {
+      font-size: 16px;
+      padding-left: 30px;
+    }
+  }
+  .other-chars-tab {
+
+  }
+  .promotions-tab {
+
+  }
+  .reviews-tab {
+    .reviewer-heading {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+    .review-txt-wrap {
+      width: 520px / 609px * 100%;
+    }
+    .view-more {
+      font: 12px/30px $futura_bold;
+      padding: 0 20px;
+    }
+
+  }
+  .doctors-tab {
+    .all-doctors-list {
+
+      .doctor-img-wrap {
+        max-width: 60px;
+      }
+      .doctor-name {
+      font-size: 16px;
+      }
+
+      .view-full-profile {
+        font-size: 16px;
+      }
+    }
+  }
+  .offices-tab {
+
+  }
+
+
+  .r-tabs .r-tabs-tab .r-tabs-anchor {
+    font: 16px/32px $futura_bold;
+  }
+  .r-tabs-state-active a.r-tabs-anchor {
+    line-height:  32px !important;
+  }
+
+  .tab-container,
+  .r-tabs .r-tabs-panel {
+    font: 16px $futura_medium;
+  }
+
+
+
+
+
+}
+/*************** Doctor-Profile End **************/
+
+
+/* End Desktop to tablet media quaries */
+
+
+
+/* Tablet media quaries */
+
+/*************** Common Header-n-Footer **************/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main-logo,
+  .footer-logo {
+    width: auto;
+  }
+}
+/*************** End Common Header-n-Footer **************/
+
+
+/*************** The-Buzz **************/
+@media (max-width: 1024px) {
+  .top-buzz-bg {
+    padding: 77px 0 0px;
+  }
+  .search-box {
+    display: none;
+  }
+  .left-module:before,
+  .left-module:after {
+    content: " ";
+    display: table;
+  }
+  .left-module:after {
+    clear: both;
+  }
+  .left-module {
+    float: none;
+    margin: 0 auto 0;
+    max-width: 643px;
+    width: 643px / 768px * 100%;
+  }
+
+  .left-module-listing {
+    li {
+      margin-bottom: 35px;
+      .listing-point {
+        font: 32px/56px $futura_bold;
+        .point-num {
+          font: 18px/20px $futura_bold;
+        }
+        .point-word {
+          font: 18px/20px $futura_medium;
+        }
+      }
+      .data-container {
+        .doc-small-img {
+          margin-top: 15px;
+        }
+        .doc-place-name {
+          font: 20px $futura_bold;
+        }
+        .listing-description {
+          font-size: 18px;
+          padding-top: 30px;
+        }
+      }
+      .date-detail {
+        font: 20px $futura_bold;
+      }
+    }
+  }
+
+
+  .right-module {
+    background: #e9e9e9;
+    float: none;
+    padding: 40px 61px / 768px * 100% 70px;
+    margin: 45px auto 0;
+    max-width: 100%;
+  }
+  .right-module-inner {
+    background: #fff;
+    margin: 0 auto 0;
+    max-width: 643px;
+    width: 100%;
+  }
+  .right-module-main-heading {
+    font: 28px/75px $futura_bold;
+  }
+  .view-profile-box {
+    max-width: 135px;
+    .profile-btn {
+      font: 18px/36px $futura_bold;
+      padding: 0 15px;
+      margin-bottom: 15px;
+      @include border-radius(10px);
+    }
+    .currency-thumb {
+      max-height: 53px;
+    }
+    .clinic-points {
+      font: 32px/53px $futura_bold;
+    }
+  }
+  .clinic-img {
+    max-width: 65px;
+    max-height: 125px;
+    margin-right: 27px / 613px * 100%;
+    img {
+      max-width: 65px;
+      max-height: 125px;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .clinic-name {
+    font: 28px $futura_bold;
+  }
+  .clinic-address {
+    font: 32px $futura_medium;
+    margin-bottom: 10px;
+  }
+  .rating {
+    max-width: 224px;
+    .fullstar {
+      height: 33px;
+      width: 33px;
+      margin-right: 8px / 224px * 100%;
+    }
+  }
+
+}
+/*************** The-Buzz End **************/
+
+
+/*************** Doctor-Profile **************/
+@media (max-width: 1024px)and (min-width: 768px){
+
+}
+/*************** Doctor-Profile End **************/
+
+
+/*************** Practice-Profile **************/
+@media (max-width: 1024px)and (min-width: 768px){
+  .relevant-adjust {
+    margin: 0;
+    padding-top: 30px;
+  }
+  .relevant-header {
+    font: 26px $futura_medium;
+  }
+  .detials-info {
+    width: 480px/750px *100%;
+    max-width: 720px/1007px *100%;
+  }
+  .detials-info-all-text {
+    max-width: 205px;
+      width: 205px/480px *100%;
+  }
+  .detials-info-all-text-alt {
+    float: left;
+    max-width: 325px;
+    width: 325px / 498px * 100%;
+  }
+  .details-sub-info {
+    min-width: 140px;
+    text-align: left;
+  }
+  .thumb-likes {
+    display: inline-block;
+    margin-top: 6px;
+  }
+  .main-thumb {
+    max-width: 70px;
+  }
+  .main-thumb {
+    max-width: 100px;
+  }
+  .thumb-name {
+    font: 28px/normal $futura_bold;
+  }
+  .address-detials {
+    font: 20px $futura_medium;
+  }
+  .btn-listing {
+    display: none;
+  }
+  .main-buttons {
+    float: right;
+    margin-right: 45px/1007px *100%;
+    min-width: 230px;
+
+    a {
+      font: 14px/36px $futura_bold;
+      padding: 0 11px;
+
+      &:nth-child(4) {
+        padding: 0 33px 0;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .sub-details {
+    clear: both;
+    float: none;
+    width: 100%;
+  }
+  .sub-details-inner {
+    padding: 25px 14px 10px;
+  }
+  .top-5-chars {
+    margin-bottom: 10px;
+    padding-left: 10px;
+  }
+  .chars-listing {
+    font-size: 0;
+    li {
+      display: inline-block;
+      font: 16px/30px $futura_medium;
+      margin-bottom: 5px;
+      width: 130px;
+    }
+  }
+  .check-ins-heading {
+    color: $color4;
+    float: left;
+    font: 16px/16px $futura_medium;
+    width: 20%;
+
+    .check-ins-tooltip {
+      padding: 10px 2px;
+    }
+
+  }
+  .point-with-thumb {
+    display: block;
+  }
+  .check-ins-listing {
+    li {
+      width: 20%;
+      border-left: 1px solid $color4;
+      border-right: 0;
+      border-bottom: 0;
+      font: 16px $futura_medium;
+      padding: 0px 0 0 10px;
+      text-align: left;
+
+      .relevant-point,
+      .relevant-point-2nd {
+        font: 20px $futura_bold;
+        margin: 2px 0 1px;
+      }
+
+      &:nth-child(odd) {
+        border-right: 0;
+      }
+    }
+  }
+
+  .all-tabs-wrap {
+    width: 100%;
+    float: none;
+  }
+  .tab-rating {
+    display: inline-block;
+    position: relative;
+    top: 3px;
+
+      .fullstar {
+      height: 17px;
+      width: 17px;
+      margin-right: 0;
+      }
+  }
+  .rating-tab {
+    .rating-adjust {
+      display: inline-block;
+      position: relative;
+      top: 3px;
+
+      .fullstar {
+        height: 17px;
+        width: 17px;
+        margin-right: 0;
+      }
+    }
+  }
+
+  .r-tabs .r-tabs-tab .r-tabs-anchor {
+    font: 18px/40px $futura_bold;
+    padding: 0 10px;
+  }
+  .r-tabs-state-active a.r-tabs-anchor {
+    font: 18px/40px $futura_bold !important;
+
+  }
+
+}
+/*************** Practice-Profile End **************/
+

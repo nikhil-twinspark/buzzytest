@@ -1,0 +1,44 @@
+/* ===== Required fields error and field notes styling  ===== */
+
+label.error { color: #A73939; font-size: 11px; display: block; width: 100%; white-space: nowrap; float: none; margin: 8px 0 -8px 0; padding: 0!important; }
+.selector .error { margin-right: -220px; float: right; }
+.checker label.error, .radio label.error { display: inline; margin: 0; }
+.req { margin-left: 5px; color: #DB6464; }
+
+.formNote { display: block; text-align: left; font-size: 11px; padding-top: 5px; color: #939393; }
+.fix { clear: both; }
+
+/* ===== Required fields error and field notes styling  ===== */
+
+
+
+	/*JQUERY ERROR*/
+
+div.error_validate{
+	background: none repeat scroll 0 0 #202020;
+    border: 1px solid #000000;
+    border-radius: 2px 2px 2px 2px;
+    color: #FFFFFF;
+    font-size: 11px;
+    padding: 5px 10px;
+    position: absolute;
+	 width: 47%;
+	 top:23px;
+	 right:0%;
+    z-index: 5001;
+	font-family:arial;
+}
+
+.error_validate .formErrorArrow {
+	left: 11px;
+    margin: 7px 0 0 13px;
+    position: absolute;
+    bottom: -12px;
+    width: 15px;
+    z-index: 5006;
+	background: url(../img/tir.png) no-repeat;
+	
+}
+
+
+/*JQUERY ERROR*/

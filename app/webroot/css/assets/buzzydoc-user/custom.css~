@@ -1,0 +1,44 @@
+.navbar .navbar-nav > li > a {
+height: inherit;
+background-color: transparent;
+font-size: 16px;
+color: #ffffff;
+}
+.navbar-brand {
+float: left;
+ padding: 15px 12px; 
+font-size: 18px;
+line-height: none; 
+height: auto; 
+}
+.navbar .navbar-brand {
+color: #ffffff;
+font-size: 24px;
+text-shadow: none;
+padding: 40px;  
+padding-top: 0px; 
+padding-bottom: 0px; 
+}
+.navbar .navbar-nav > li{
+border:none;
+}
+.navbar  li a .header-point-icon {
+max-width: 26px;
+position: relative;
+top: -5px;
+vertical-align: middle;
+}
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+margin-left: -12px;
+height: 49px;
+text-align: center;
+padding-top: 5px;
+
+@media (min-width: 992px){
+	.navbar .navbar-nav > li > a {
+		height: 49px;
+		text-align: center;
+		padding-top: 13px;
+	}
+
+}

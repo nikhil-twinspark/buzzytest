@@ -1,0 +1,417 @@
+/*************** Common Header-n-Footer **************/
+@media (max-width: 767px){
+  .main-logo {
+    margin: 0 10px 0;
+    width: auto;
+  }
+  .menu-btn {
+    display: block;
+  }
+  .top-navigation {
+    clear: both;
+    background: rgba(47, 184, 137, 0.9);
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+    top: 53px;
+    li {
+      float: none;
+      width: 100%;
+      margin-top: 9px;
+      text-align: center;
+      a {
+        color: #fff;
+        display: block;
+        font: 18px/35px $futura_medium;
+
+        .point-header {
+          color: #fff;
+        }
+        &:hover {
+          background: #139468;
+          color: #fff;
+        }
+        .header-point-icon {
+          top: -2px;
+        }
+      }
+    }
+  }
+
+  .main-footer {
+    padding: 5px 0;
+  }
+  .footer-logo {
+    display: none;
+  }
+  .bottom-navigation {
+    li {
+      float: none;
+      width: 100%;
+      margin: 0;
+      text-align: center;
+      a {
+        font: 18px/35px $futura_medium;
+        &:hover {
+          background: #222;
+        }
+        .footer-point-icon {
+          top: -2px;
+        }
+      }
+    }
+  }
+
+}
+/*************** End Common Header-n-Footer **************/
+
+
+/*************** Common Elements **************/
+@media (max-width: 767px){
+  .two-cols-wrap .left-module .left-module-listing li:last-child {
+    margin-bottom: 10px;
+  }
+}
+/*************** End Common Elements **************/
+
+
+/*************** The Buzz **************/
+@media (max-width: 767px){
+  .top-buzz-bg {
+    padding: 40px 0 25px;
+    background: #dedede;
+  }
+
+
+  .left-module {
+    background: #fff;
+    padding: 0 10px 0;
+    max-width: 767px;
+    margin: 0 10px 0;
+    width: auto;
+  }
+  .modified-border-top {
+    border-width: 5px 0 0px 140px;
+  }
+  .modified-border-bottom {
+    border-width: 5px 140px 0 0;
+    padding-bottom: 30px;
+  }
+  .left-module-title-heading {
+    font: 16px/22px $futura_bold;
+    padding: 0 40px 0 10px;
+  }
+  .left-module-listing {
+    li {
+      margin-bottom: 5px;
+      .listing-point {
+        font: 18px/56px $futura_bold;
+        max-width: 70px;
+        width: 100%;
+        .point-num {
+          font: 14px/16px $futura_bold;
+          margin-top: 5px;
+        }
+        .point-word {
+          font: 14px/14px $futura_medium;
+        }
+        .badgeImg {
+          width: 36px / 70px * 100%;
+        }
+      }
+      .date-detail {
+        padding: 0 0 2px;
+        font-size: 12px;
+      }
+      .data-container {
+        background: url("../images/listing_bg.png") no-repeat bottom;
+        background-size: cover;
+        width: 100%;
+        .doc-place-name {
+          font-size: 14px;
+        }
+        .listing-description {
+          font-size: 14px;
+          padding-top: 25px;
+        }
+      }
+      &:last-child {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+
+
+  .right-module {
+    margin: 25px 10px 0;
+    padding: 0;
+    max-width: 767px;
+    width: auto;
+
+  }
+  .right-module-inner {
+    margin: 0;
+    max-width: 767px;
+  }
+  .right-module-main-heading {
+    padding: 10px;
+    font: 16px/22px $futura_bold;
+  }
+  .right-module-listing {
+    padding: 0;
+    li {
+      padding: 10px;
+    }
+  }
+  .clinic-img {
+    max-width: 30px;
+    margin-right: 5px/263px * 100%;
+  }
+  .clinic-name {
+    font-size: 12px;
+    margin: 0 0 3px;
+  }
+  .clinic-address {
+    font-size: 12px;
+    margin: 0 0 7px;
+  }
+  .rating {
+    .fullstar {
+      height: 15px;
+      width: 15px;
+      margin-right: 0;
+    }
+  }
+  .view-profile-box {
+    max-width: 78px;
+    .profile-btn {
+      padding: 0 5px;
+      font: 12px/22px $futura_bold;
+      margin-bottom: 10px;
+    }
+    .currency-thumb {
+      max-width: 25px;
+    }
+    .clinic-points {
+      font: 20px/25px $futura_bold;
+    }
+  }
+
+}
+/*************** The Buzz End **************/
+
+
+/*************** Doctor Profile & Practice Profile **************/
+@media (max-width: 767px){
+  .relevant-adjust {
+    max-width: 767px;
+    margin: 0 10px 0;
+    padding-top: 20px;
+    width: auto;
+  }
+  .relevant-header {
+    border-width: 5px;
+    font-size: 22px;
+    padding: 7px 10px 7px;
+  }
+  .detials-info {
+    float: none;
+    width: 100%;
+    margin: 0 0 20px;
+    text-align: center;
+  }
+  .main-details {
+    float: none;
+    width: 100%;
+  }
+  .main-thumb {
+    float: none;
+    margin: 0 auto;
+    max-width: 70px;
+    width: 100%;
+  }
+  .detials-info-all-text {
+    float: none;
+    max-width: 100%;
+    width: auto;
+    text-align: center;
+  }
+
+  .details-sub-info {
+    display: none;
+  }
+  .detials-text {
+    text-align: center;
+  }
+  .thumb-name {
+    font-size: 20px;
+  }
+  .likes-toggle {
+    display: block;
+    margin: 0 auto 5px;
+  }
+  .main-buttons {
+    float: none;
+    margin: 0 auto 20px;
+    max-width: 240px;
+    width: 100%;
+  }
+  .sub-details {
+    float: none;
+    max-width: 240px;
+    width: 100%;
+    margin: 0 auto 25px;
+    text-align: center;
+  }
+  .sub-details-inner {
+    padding: 0;
+  }
+  .chars-listing li {
+    width: 236px;
+    margin-left: 0;
+  }
+  .all-tabs-wrap {
+    clear: none;
+    float: none;
+    width: 100%;
+  }
+  .all-tabs-container {
+    margin: 0 10px 0;
+  }
+
+
+  .rating-tab {
+    .rate-out-of {
+      font: 16px $futura_bold;
+    }
+  }
+
+  .overview-tab {
+    .main-text{
+      margin-bottom: 15px;
+    }
+    .point-heading {
+      font: 18px $futura_bold;
+      margin-bottom: 10px;
+    }
+    .point-listing li {
+      display: block;
+      width: auto;
+      font-size: 16px;
+      padding-left: 25px;
+    }
+  }
+
+  .other-chars-tab {
+    .other-chars-listing {
+      width: 240px;
+      margin: 0 auto;
+      li {
+      display: block;
+      font: 16px/30px $futura_medium;
+      margin: 0 0 10px;
+      width: auto;
+
+        &:last-child {
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+
+  .promotions-tab {
+
+  }
+
+  .reviews-tab {
+    .review-txt-n-img-wrap {
+      margin-bottom: 15px;
+    }
+    .review-txt-wrap {
+      width: 100%;
+      padding-bottom: 10px;
+      border-bottom: 1px dashed $color4;
+    }
+    .reviewer-picture-wrap {
+      display: none;
+    }
+    .view-more-wrap {
+      margin-bottom: 15px;
+    }
+  }
+
+  .doctors-tab {
+    .all-doctors-list {
+      > li {
+        margin-bottom: 10px;
+        border-bottom: 1px dashed $color4;
+
+        .doctor-img-wrap {
+          float: none;
+          margin: 0 auto;
+          max-width: 75px;
+        }
+        .doctor-details-wrap {
+          float: none;
+          text-align: center;
+        }
+
+        &:last-child {
+          margin-bottom: 0px;
+          border-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .offices-tab {
+    .offices-tab-heading {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .location-info-n-map {
+      float: none;
+      width: 100%;
+      text-align: center;
+    }
+    .location-info {
+      float: none;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+
+      .map-pointer {
+        float: none;
+        width: 100%;
+        text-align: center;
+      }
+      .location-info-text {
+        float: none;
+        width: 100%;
+        text-align: center;
+
+      }
+    }
+    .google-map {
+      float: none;
+      width: 100%;
+      height: 200px;
+      text-align: center;
+      border: 0;
+      box-shadow: none;
+    }
+  }
+
+
+
+  .r-tabs .r-tabs-panel {
+    font: 16px $futura_medium;
+    padding: 10px 5px;
+  }
+
+
+}
+/*************** End Doctor Profile & Practice Profile **************/
+

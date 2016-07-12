@@ -1,0 +1,10 @@
+
+
+				<div class="grid_100 left welcome_screen" style="min-height: 90px;">
+				<div class="content_left home_breathing_room">
+				<div class="section_header content_left">Welcome <?=$_SESSION['patient']['customer_info']['customer'][0]['first_name']?> <?=$_SESSION['patient']['customer_info']['customer'][0]['last_name']?> to your<br>Rewards personal page</div>
+				<div class="big content_left"><b>Check your Activity page to make sure you received all the points you earned on your last visit and your Rewards page to see what you're capable of earning if you redeemed your points today.</b></div>
+				</div>
+				</div>
+	
+		

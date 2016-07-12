@@ -1,0 +1,20 @@
+{
+    "name": "somesh-mukherjee/authorizenet",
+    "require": {
+        "authorizenet/authorizenet": "~1.8",
+	"sourcefuse/tangocard":"*"
+    },
+    "authors": [
+        {
+            "name": "somesh",
+            "email": "somesh.mukherjee@sourcefuse.com"
+        }
+    ],
+    "repositories":[
+        {
+            "type": "vcs",
+            "url": "https://github.com/sourcefuse/TangoCardPHPSDK"
+        }
+    ],
+    "minimum-stability": "stable"
+}

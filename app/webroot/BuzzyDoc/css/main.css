@@ -1,0 +1,2261 @@
+@import url("https://fast.fonts.net/t/1.css?apiType=css&projectid=81e6310d-a4fa-45af-a573-5c86d47cddc9");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: "FuturaW01-MediumCondens";
+  src: url("../fonts/c9bb15b9-5c4a-477b-8e2d-1924c3ef942d.eot?#iefix");
+  src: url("../fonts/c9bb15b9-5c4a-477b-8e2d-1924c3ef942d.eot?#iefix") format("eot"), url("../fonts/286ca836-0e48-43ba-9f12-8ba861fafeda.woff") format("woff"), url("Fonts/40e2893b-b4c0-4b91-aa42-4ab0be867d25.ttf") format("truetype"), url("Fonts/275744c1-8dd1-40d7-ae52-17728b66a3dc.svg#275744c1-8dd1-40d7-ae52-17728b66a3dc") format("svg");
+}
+@font-face {
+  font-family: "FuturaW01-ExtraBoldCond_774896";
+  src: url("../fonts/bec66ca3-753a-469a-b153-fdd9e3ea7ce4.eot?#iefix");
+  src: url("../fonts/bec66ca3-753a-469a-b153-fdd9e3ea7ce4.eot?#iefix") format("eot"), url("../fonts/04733668-9f3f-4f2f-a534-14fb44683f83.woff") format("woff"), url("Fonts/1f9bced0-1224-4785-9553-68fcbac00914.ttf") format("truetype"), url("Fonts/23d05127-305c-4753-8f3a-16d8109db5ca.svg#23d05127-305c-4753-8f3a-16d8109db5ca") format("svg");
+}
+/*= Common Styles
+------------------------------------------------------------------------*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'FuturaW01-MediumCondens';
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  outline: none;
+}
+a:active {
+  text-decoration: none;
+  outline: none;
+}
+a:focus {
+  text-decoration: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+.left {
+  float: left !important;
+}
+
+.right {
+  float: right !important;
+}
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.clear {
+  clear: both;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  filter: chroma(color=#000000);
+}
+
+.transition {
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.row {
+  max-width: 1226px;
+  margin: 0 auto;
+}
+
+/*************** Variables **************/
+/* Green */
+/* Blue */
+/* Navy-Blue */
+/* Grey */
+/* Grey */
+/* Green background */
+/* Blue background */
+/* Navy-Blue background */
+/* Dark-grey background */
+/*************** Variables Ends **************/
+/*************** Common Dropdown **************/
+.dropdown-wrap {
+  width: 100%;
+  height: inherit;
+  line-height: inherit;
+  position: relative;
+}
+
+.dropdown-wrap .dropdown-value {
+  background: url("../images/dropdown_bg.png") no-repeat 0 0;
+  background-size: contain;
+  display: block;
+  width: inherit;
+  height: inherit;
+  font-size: inherit;
+  position: absolute;
+  line-height: inherit;
+  right: 0;
+  top: 0;
+  text-indent: 12px;
+  z-index: 1;
+}
+
+.dropdown-wrap select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  font-family: "FuturaW01-ExtraBoldCond_774896";
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  line-height: inherit;
+  opacity: 0;
+  padding: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.dropdown-wrap select option {
+  font-size: inherit;
+  font-family: "FuturaW01-MediumCondens";
+}
+
+/*************** Common Dropdown End **************/
+/*************** The Buzz **************/
+.main-header {
+  background: #2fb889;
+  padding: 6px 0 7px;
+}
+
+.main-logo {
+  float: left;
+  margin-right: 2.77325%;
+  margin-left: 6.03589%;
+  width: 14.68189%;
+}
+.main-logo img {
+  display: block;
+  width: 100%;
+}
+
+.menu-btn {
+  background: url("../images/menu_icon2x.png") no-repeat 0px 0px;
+  background-size: contain;
+  cursor: pointer;
+  display: none;
+  float: right;
+  margin-right: 10px;
+  height: 40px;
+  width: 40px;
+}
+
+.top-navigation li {
+  float: left;
+  margin-top: 9px;
+  margin-right: 1.49254%;
+}
+.top-navigation li a {
+  color: #fff;
+  display: block;
+  font: 18px "FuturaW01-MediumCondens";
+  -moz-transition: linear 0.3s 0s;
+  -o-transition: linear 0.3s 0s;
+  -webkit-transition: linear 0.3s;
+  -webkit-transition-delay: 0s;
+  transition: linear 0.3s 0s;
+}
+.top-navigation li a .header-point-icon {
+  max-width: 26px;
+  position: relative;
+  top: -5px;
+  vertical-align: middle;
+}
+.top-navigation li a .point-header {
+  display: inline-block;
+  font: 18px "FuturaW01-ExtraBoldCond_774896";
+  color: #435464;
+}
+.top-navigation li a:hover {
+  color: #435464;
+}
+.top-navigation li:last-child {
+  margin-right: 0;
+}
+
+.search-box {
+  background: #fff url("../images/magnifying_glass.png") no-repeat 98% 8px;
+  background-size: 21px;
+  border: none;
+  color: #a7a7a7;
+  float: right;
+  font: 18px "FuturaW01-MediumCondens";
+  padding-right: 26px;
+  padding-left: 46px;
+  margin-right: 6.03589%;
+  width: 251px;
+  height: 39px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+.search-box:focus {
+  outline: none;
+}
+
+.search-box[placeholder] {
+  text-overflow: ellipsis;
+}
+
+.search-box::-moz-placeholder {
+  text-overflow: ellipsis;
+}
+
+/* firefox 19+ */
+.search-box:-moz-placeholder {
+  text-overflow: ellipsis;
+}
+
+.top-buzz-bg {
+  background: url("../images/the_buzz_bg.png") no-repeat;
+  background-size: cover;
+  padding: 77px 0 39px;
+}
+
+.left-module {
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.45);
+  float: left;
+  position: relative;
+  padding: 0 5.28771% 0 3.42146%;
+  margin-right: 3.42577%;
+  margin-left: 6.03589%;
+  max-width: 643px;
+  width: 52.44698%;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.left-module-heading {
+  position: relative;
+  margin-top: -20px;
+}
+
+.modified-border-top {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 0 0px 196px;
+  border-color: transparent transparent transparent #2fb888;
+  content: "";
+  text-indent: -9999px;
+  -moz-transform: scale(0.9999);
+}
+
+.modified-border-bottom {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 196px 0 0;
+  border-color: #2fb888 transparent transparent transparent;
+  content: "";
+  background: url("../images/feed_header_bg.png") no-repeat 0px -5px;
+  background-size: cover;
+  padding-bottom: 40px;
+  text-indent: -9999px;
+  -moz-transform: scale(0.9999);
+}
+
+.left-module-title-heading {
+  padding: 0 30px 0 12px;
+  font: 26px/40px "FuturaW01-ExtraBoldCond_774896";
+  color: #fff;
+  float: left;
+  background: #2fb889;
+}
+
+.left-module-listing li {
+  float: left;
+  margin-bottom: 35px;
+  width: 100%;
+}
+.left-module-listing li .listing-point {
+  color: #2fb889;
+  float: right;
+  font: 32px/56px "FuturaW01-ExtraBoldCond_774896";
+  text-align: right;
+  width: 21.8894%;
+}
+.left-module-listing li .listing-point .badgeImg {
+  width: 57.89474%;
+  float: right;
+  line-height: normal;
+}
+.left-module-listing li .listing-point .badgeImg img {
+  max-height: 100%;
+  width: 100%;
+}
+.left-module-listing li .listing-point .point-num {
+  color: inherit;
+  font: 16px/14px "FuturaW01-ExtraBoldCond_774896";
+  text-align: left;
+  margin-top: 12px;
+  padding: 0;
+}
+.left-module-listing li .listing-point .point-word {
+  color: inherit;
+  font: 16px/16px "FuturaW01-MediumCondens";
+  text-align: left;
+  padding: 0;
+}
+.left-module-listing li .data-container {
+  background: url("../images/listing_bg.png") no-repeat;
+  background-size: contain;
+  float: left;
+  padding: 6px 10px 17px;
+  width: 77.51278%;
+}
+.left-module-listing li .data-container .doc-small-img {
+  min-width: 40px;
+  max-height: 40px;
+  margin-right: 5px;
+  float: left;
+  text-align: center;
+}
+.left-module-listing li .data-container .doc-small-img img {
+  max-height: 40px;
+}
+.left-module-listing li .data-container .doc-place-name {
+  float: left;
+  font: 18px "FuturaW01-ExtraBoldCond_774896";
+  color: #00aaf7;
+}
+.left-module-listing li .data-container .listing-description {
+  padding-top: 25px;
+  text-align: center;
+}
+.left-module-listing li .date-detail {
+  color: #00aaf7;
+  float: right;
+  font: 18px "FuturaW01-ExtraBoldCond_774896";
+  padding-top: 20px;
+}
+.left-module-listing li:last-child {
+  margin-bottom: 49px;
+}
+
+.right-module {
+  float: right;
+  margin-right: 6.03589%;
+  max-width: 31.56607%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 2px 4px 5px 0px rgba(33, 33, 33, 0.45);
+}
+
+.right-module-main-heading {
+  background: #435464;
+  color: #fff;
+  font: 16px/45px "FuturaW01-ExtraBoldCond_774896";
+  text-align: center;
+}
+
+.right-module-listing li {
+  padding: 22px 15px;
+  border-bottom: 1px solid #3d3d3d;
+}
+.right-module-listing li:last-child {
+  border-bottom: none;
+}
+
+.clinic-img {
+  max-width: 40px;
+  max-height: 75px;
+  float: left;
+  margin-right: 7.56303%;
+}
+.clinic-img img {
+  max-width: 40px;
+}
+
+.clinic-info {
+  float: left;
+  width: 50.42017%;
+}
+
+.clinic-name {
+  color: #435464;
+  font: 16px "FuturaW01-ExtraBoldCond_774896";
+  margin-top: 5px;
+}
+
+.clinic-address {
+  color: #a7a7a7;
+  font: 18px "FuturaW01-MediumCondens";
+  margin-bottom: 10px;
+}
+
+.rating {
+  max-width: 135px;
+}
+.rating .fullstar {
+  background: url("../images/fullstar.png") no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+.rating .fullstar:last-child {
+  margin-right: 0;
+}
+
+.view-profile-box {
+  float: right;
+  max-width: 95px;
+}
+.view-profile-box .profile-btn {
+  display: inline-block;
+  background: #2fb889;
+  color: #fff;
+  font: 13px/24px "FuturaW01-ExtraBoldCond_774896";
+  padding: 0 10px;
+  margin-bottom: 15px;
+  box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.45);
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  -moz-transition: linear 0.3s 0s;
+  -o-transition: linear 0.3s 0s;
+  -webkit-transition: linear 0.3s;
+  -webkit-transition-delay: 0s;
+  transition: linear 0.3s 0s;
+}
+.view-profile-box .profile-btn:hover {
+  background: #435464;
+  color: #fff;
+}
+.view-profile-box .profile-btn:active {
+  box-shadow: none;
+}
+.view-profile-box .currency-thumb {
+  max-height: 32px;
+}
+.view-profile-box .clinic-points {
+  color: #fecc09;
+  float: right;
+  font: 22px/32px "FuturaW01-ExtraBoldCond_774896";
+}
+
+/***** End The Buzz *****/
+/***** Doctor Profile & Practice Profile *****/
+.relevant-details {
+  background: #dedede;
+}
+
+.relevant-adjust {
+  margin: 0 6.03589% 0;
+  padding-top: 43px;
+}
+
+.details-wrap {
+  background: #fff;
+  padding: 0 0 25px;
+  -moz-box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.45);
+  box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.45);
+}
+
+.relevant-header {
+  background: #435464;
+  border-bottom: 8px solid #2fb889;
+  color: #fff;
+  margin-bottom: 25px;
+  padding: 10px 28px;
+  font: 26px "FuturaW01-MediumCondens";
+  text-transform: uppercase;
+}
+
+.detials-info {
+  float: left;
+  width: 46.19666%;
+  margin-right: 0.46382%;
+}
+
+.main-thumb {
+  max-width: 20.08032%;
+  margin: 0 5.02008%;
+  float: left;
+}
+
+.thumb-picture {
+  width: 100%;
+}
+
+.detials-info-all-text {
+  float: left;
+  width: 44.17671%;
+}
+
+.detials-info-all-text-alt {
+  float: left;
+  width: 65.26104%;
+}
+
+.thumb-name {
+  font: 28px "FuturaW01-ExtraBoldCond_774896";
+  color: #435464;
+  margin-bottom: 3px;
+}
+
+.likes-toggle {
+  display: none;
+}
+
+.thumb-info {
+  font-size: 0;
+}
+.thumb-info li {
+  border-right: 1px solid #a7a7a7;
+  padding: 0 8px;
+  color: #a7a7a7;
+  display: inline-block;
+  font: 20px "FuturaW01-MediumCondens";
+  margin-bottom: 3px;
+}
+.thumb-info li:first-child {
+  padding-left: 0;
+}
+.thumb-info li:last-child {
+  padding-right: 0;
+  border-right: 0;
+}
+
+.address-heading {
+  font: 20px "FuturaW01-ExtraBoldCond_774896";
+  color: #435464;
+  margin-bottom: 3px;
+}
+
+.address-detials {
+  font: 20px "FuturaW01-MediumCondens";
+  color: #a7a7a7;
+}
+
+.address-details-phone,
+.address-details-fax {
+  font: 20px "FuturaW01-MediumCondens";
+  color: #a7a7a7;
+}
+.address-details-phone .legend,
+.address-details-fax .legend {
+  font: 20px "FuturaW01-ExtraBoldCond_774896";
+  color: #2fb889;
+}
+
+.address-direction {
+  font: 20px "FuturaW01-MediumCondens";
+  color: #435464;
+  text-decoration: underline;
+}
+.address-direction:hover {
+  text-decoration: none;
+}
+
+.details-sub-info {
+  float: left;
+  min-width: 140px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.thumb-likes {
+  font: 18px "FuturaW01-ExtraBoldCond_774896";
+  color: #2fb889;
+}
+.thumb-likes .tumb-likes-num {
+  font: 18px "FuturaW01-MediumCondens";
+  color: #a7a7a7;
+}
+
+.btn-listing li {
+  text-align: center;
+}
+.btn-listing li a {
+  display: inline-block;
+  color: #00aaf7;
+  font: 14px/22px "FuturaW01-ExtraBoldCond_774896";
+  text-decoration: underline;
+}
+.btn-listing li a:hover {
+  text-decoration: none;
+}
+
+.main-buttons {
+  float: left;
+  min-width: 238px;
+  width: 22.07792%;
+  /*margin-right: 80px/1078px * 100%;*/
+}
+.main-buttons a {
+  background: #2fb889;
+  color: #fff;
+  display: inline-block;
+  font: 14px/35px "FuturaW01-ExtraBoldCond_774896";
+  padding: 0 10px;
+  margin: 0 15px 15px 0;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.45);
+  box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.45);
+  -moz-transition: linear 0.3s 0s;
+  -o-transition: linear 0.3s 0s;
+  -webkit-transition: linear 0.3s;
+  -webkit-transition-delay: 0s;
+  transition: linear 0.3s 0s;
+}
+.main-buttons a:hover {
+  background: #435464;
+}
+.main-buttons a:active {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.main-buttons a:nth-child(3), .main-buttons a:nth-child(4) {
+  margin-right: 0;
+}
+.main-buttons .main-btn-4 {
+  padding: 0 35px;
+}
+.main-buttons .main-social-icons {
+  font-size: 0;
+  max-width: 165px;
+  margin: auto;
+}
+.main-buttons .main-social-icons li {
+  font-size: 16px;
+  display: inline-block;
+  margin-right: 10px;
+}
+.main-buttons .main-social-icons li a {
+  background: none;
+  display: block;
+  line-height: 10px;
+  margin: 0;
+  max-width: 25px;
+  padding: 0;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.main-buttons .main-social-icons li a img {
+  width: 100%;
+}
+.main-buttons .main-social-icons li:last-child {
+  margin-right: 0;
+}
+
+.sub-details {
+  float: right;
+  min-width: 215px;
+  width: 23.65492%;
+}
+.sub-details .top-5-chars {
+  font: 20px "FuturaW01-ExtraBoldCond_774896";
+  color: #435464;
+  margin-bottom: 15px;
+}
+
+.sub-details-inner {
+  padding-right: 11.76471%;
+}
+
+.check-ins-heading {
+  color: #2fb889;
+  font: 22px/32px "FuturaW01-ExtraBoldCond_774896";
+  margin-bottom: 10px;
+  position: relative;
+  text-align: center;
+}
+.check-ins-heading .check-ins-tooltip {
+  background: #00aaf7;
+  color: #fff;
+  font: 15px/14px "FuturaW01-MediumCondens";
+  opacity: 0;
+  padding: 3px 40px 3px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  -moz-transition: linear 0.4s 0s;
+  -o-transition: linear 0.4s 0s;
+  -webkit-transition: linear 0.4s;
+  -webkit-transition-delay: 0s;
+  transition: linear 0.4s 0s;
+}
+.check-ins-heading:hover .check-ins-tooltip {
+  opacity: 1;
+}
+
+.point-with-thumb {
+  display: inline-block;
+  line-height: 18px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.point-thumb {
+  max-width: 30px;
+}
+
+.points-number {
+  color: #fecc09;
+  display: inline-block;
+  vertical-align: top;
+  font: 22px/32px "FuturaW01-ExtraBoldCond_774896";
+}
+
+.check-ins-listing {
+  font-size: 0;
+}
+.check-ins-listing li {
+  color: #a7a7a7;
+  display: inline-block;
+  vertical-align: top;
+  font: 20px "FuturaW01-MediumCondens";
+  width: 50%;
+  border-bottom: 1px solid #a7a7a7;
+  text-align: center;
+  padding-top: 25px;
+}
+.check-ins-listing li .relevant-point,
+.check-ins-listing li .relevant-point-2nd {
+  display: block;
+  color: #435464;
+  font: 26px "FuturaW01-ExtraBoldCond_774896";
+  margin: 5px 0 10px;
+}
+.check-ins-listing li .relevant-point-2nd {
+  color: #2fb889;
+}
+.check-ins-listing li:nth-child(odd) {
+  border-right: 1px solid #a7a7a7;
+}
+.check-ins-listing li:nth-last-of-type(-n+2) {
+  border-bottom: 0;
+}
+
+.all-tabs-wrap {
+  clear: left;
+  float: left;
+  width: 75.5102%;
+}
+
+.all-tabs-container {
+  margin: 15px 20px 0;
+}
+
+.chars-listing li {
+  background: #b1b1b1;
+  color: #fff;
+  line-height: 30px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  text-align: center;
+  width: 170px;
+  -moz-border-radius: 0px 10px 10px 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px 10px 10px 0px;
+  -moz-box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.5);
+}
+.chars-listing li .relevant-point {
+  background: #00aaf7;
+  text-align: center;
+  float: left;
+  font: 16px/30px "FuturaW01-ExtraBoldCond_774896";
+  display: inline-block;
+  width: 30px;
+  transform: scale(0.998, 0.999);
+  text-shadow: 1px 2px 2px rgba(33, 33, 33, 0.45);
+}
+.chars-listing li:after, .chars-listing li:before {
+  content: " ";
+  display: table;
+}
+.chars-listing li:after {
+  clear: both;
+}
+
+.rating-tab .rating-overview {
+  margin-bottom: 10px;
+}
+.rating-tab .rating-n-rate-wrap .rating-adjust {
+  float: left;
+  margin-top: 10px;
+  margin-right: 25px;
+}
+.rating-tab .rate-out-of {
+  color: #2fb889;
+  font: 18px "FuturaW01-ExtraBoldCond_774896";
+}
+.rating-tab .rate-doctor {
+  background: #2fb889;
+  color: #fff;
+  display: inline-block;
+  font: 14px/35px "FuturaW01-ExtraBoldCond_774896";
+  padding: 0 10px;
+  margin: 0 0 15px 0;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.45);
+  box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.45);
+  -moz-transition: linear 0.3s 0s;
+  -o-transition: linear 0.3s 0s;
+  -webkit-transition: linear 0.3s;
+  -webkit-transition-delay: 0s;
+  transition: linear 0.3s 0s;
+}
+.rating-tab .rate-doctor:hover {
+  background: #435464;
+}
+.rating-tab .rate-doctor:active {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.overview-tab .main-text {
+  color: #a7a7a7;
+  margin-bottom: 30px;
+}
+.overview-tab .point-heading {
+  color: #435464;
+  font: 20px "FuturaW01-ExtraBoldCond_774896";
+  margin-bottom: 8px;
+}
+.overview-tab .point-listing {
+  font-size: 0;
+  margin-bottom: 15px;
+}
+.overview-tab .point-listing li {
+  background: url("../images/tick.png") no-repeat 0 5px;
+  background-size: 15px;
+  color: #a7a7a7;
+  display: inline-block;
+  font: 18px "FuturaW01-MediumCondens";
+  margin-bottom: 5px;
+  padding-left: 34px;
+  width: 33.33%;
+}
+
+.other-chars-tab .other-chars-listing {
+  font-size: 0;
+}
+.other-chars-tab .other-chars-listing li {
+  background: #b1b1b1;
+  color: #fff;
+  display: inline-block;
+  font: 16px "FuturaW01-MediumCondens";
+  line-height: 30px;
+  margin-bottom: 25px;
+  margin-left: 10px;
+  text-align: center;
+  width: 22%;
+  -moz-border-radius: 0px 10px 10px 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px 10px 10px 0px;
+  -moz-box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.5);
+}
+.other-chars-tab .other-chars-listing li .relevant-point {
+  background: #00aaf7;
+  text-align: center;
+  float: left;
+  font: 16px/30px "FuturaW01-ExtraBoldCond_774896";
+  display: inline-block;
+  width: 30px;
+  transform: scale(0.998, 0.999);
+  text-shadow: 1px 2px 2px rgba(33, 33, 33, 0.45);
+}
+.other-chars-tab .other-chars-listing li:after, .other-chars-tab .other-chars-listing li:before {
+  content: " ";
+  display: table;
+}
+.other-chars-tab .other-chars-listing li:after {
+  clear: both;
+}
+.other-chars-tab .other-chars-listing li:first-child, .other-chars-tab .other-chars-listing li:nth-child(5n+5) {
+  margin-left: 0;
+}
+
+.promotions-tab {
+  color: #a7a7a7;
+  font: 18px "FuturaW01-MediumCondens";
+}
+
+.reviews-tab .reviewer-heading {
+  color: #435464;
+  font: 20px "FuturaW01-ExtraBoldCond_774896";
+  margin-bottom: 8px;
+}
+.reviews-tab .review-txt-n-img-wrap {
+  margin-bottom: 25px;
+}
+.reviews-tab .review-txt-wrap {
+  float: left;
+  border-bottom: 1px solid #a7a7a7;
+  padding-bottom: 25px;
+  width: 87.44993%;
+}
+.reviews-tab .reviewer-picture-wrap {
+  float: right;
+  padding: 10px;
+  max-width: 80px;
+}
+.reviews-tab .reviewer-picture {
+  width: 100%;
+}
+.reviews-tab .view-more-wrap {
+  text-align: center;
+}
+.reviews-tab .view-more {
+  color: #fff;
+  display: inline-block;
+  background: #2fb889;
+  font: 16px/35px "FuturaW01-ExtraBoldCond_774896";
+  padding: 0 30px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.45);
+  box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.45);
+  -moz-transition: linear 0.3s 0s;
+  -o-transition: linear 0.3s 0s;
+  -webkit-transition: linear 0.3s;
+  -webkit-transition-delay: 0s;
+  transition: linear 0.3s 0s;
+}
+.reviews-tab .view-more:hover {
+  background: #435464;
+}
+.reviews-tab .view-more:active {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.doctors-tab .all-doctors-list li {
+  padding: 10px 0 10px;
+}
+.doctors-tab .all-doctors-list .doctor-img-wrap {
+  max-width: 75px;
+  float: left;
+  margin-right: 20px;
+}
+.doctors-tab .all-doctors-list .doctor-img-wrap .doctor-img {
+  width: 100%;
+}
+.doctors-tab .all-doctors-list .doctor-details-wrap {
+  float: left;
+}
+.doctors-tab .all-doctors-list .doctor-name {
+  color: #435464;
+  font: 20px/normal "FuturaW01-ExtraBoldCond_774896";
+  margin-bottom: 5px;
+}
+.doctors-tab .all-doctors-list .doctor-short-info {
+  font-size: 0;
+  margin-bottom: 5px;
+}
+.doctors-tab .all-doctors-list .doctor-short-info li {
+  border-right: 1px solid #a7a7a7;
+  display: inline-block;
+  font: 14px "FuturaW01-MediumCondens";
+  padding: 0 5px;
+}
+.doctors-tab .all-doctors-list .doctor-short-info li:first-child {
+  padding-left: 0;
+}
+.doctors-tab .all-doctors-list .doctor-short-info li:last-child {
+  border-right: 0;
+}
+.doctors-tab .all-doctors-list .view-full-profile {
+  clear: both;
+  color: #00aaf7;
+  display: inline-block;
+  font: 16px "FuturaW01-ExtraBoldCond_774896";
+  text-decoration: underline;
+  -moz-transition: linear 0.3s 0s;
+  -o-transition: linear 0.3s 0s;
+  -webkit-transition: linear 0.3s;
+  -webkit-transition-delay: 0s;
+  transition: linear 0.3s 0s;
+}
+.doctors-tab .all-doctors-list .view-full-profile:hover {
+  text-decoration: none;
+}
+
+.offices-tab {
+  font: 20px "FuturaW01-MediumCondens";
+}
+.offices-tab .offices-tab-heading {
+  font: 20px "FuturaW01-ExtraBoldCond_774896";
+  color: #435464;
+  margin-bottom: 30px;
+}
+.offices-tab .location-info {
+  float: left;
+  width: 28.57143%;
+}
+.offices-tab .location-info .map-pointer {
+  max-width: 30px;
+  margin-right: 20px;
+  float: left;
+}
+.offices-tab .location-info .location-info-text {
+  float: left;
+}
+.offices-tab .location-info .location-name {
+  color: #00aaf7;
+  font: 20px "FuturaW01-MediumCondens";
+}
+.offices-tab .location-info .location-address {
+  font: 16px "FuturaW01-MediumCondens";
+}
+.offices-tab .location-info .location-phone {
+  font: 16px "FuturaW01-MediumCondens";
+}
+.offices-tab .location-info .phone-legend {
+  color: #2fb889;
+  font: 16px "FuturaW01-ExtraBoldCond_774896";
+}
+.offices-tab .location-info .location-fax {
+  font: 16px "FuturaW01-MediumCondens";
+}
+.offices-tab .location-info .fax-legend {
+  color: #2fb889;
+  font: 16px "FuturaW01-ExtraBoldCond_774896";
+}
+.offices-tab .location-info .location-direction {
+  color: #00aaf7;
+  font: 16px "FuturaW01-MediumCondens";
+}
+.offices-tab .google-map {
+  float: left;
+  height: 260px;
+  width: 320px;
+  border: 3px solid #2fb889;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -moz-box-shadow: 5px 9px 10px 0px rgba(33, 33, 33, 0.45);
+  -webkit-box-shadow: 5px 9px 10px 0px rgba(33, 33, 33, 0.45);
+  box-shadow: 5px 9px 10px 0px rgba(33, 33, 33, 0.45);
+}
+
+.tab-rating {
+  display: inline-block;
+  position: relative;
+  top: 3px;
+}
+
+.alternate-txt {
+  display: none;
+}
+
+.tab-menu-listing {
+  font-size: 0;
+}
+.tab-menu-listing li {
+  display: inline-block;
+}
+.tab-menu-listing li a {
+  border: 1px solid #a7a7a7;
+  border-right: 0;
+  font: 20px/40px "FuturaW01-ExtraBoldCond_774896";
+  color: #2fb889;
+  padding: 0 10px;
+  display: block;
+  -moz-transition: linear 0.3s 0s;
+  -o-transition: linear 0.3s 0s;
+  -webkit-transition: linear 0.3s;
+  -webkit-transition-delay: 0s;
+  transition: linear 0.3s 0s;
+}
+.tab-menu-listing li a:active {
+  background: #435464;
+  color: #fff;
+  font: 20px/40px "FuturaW01-ExtraBoldCond_774896";
+}
+.tab-menu-listing li:last-child {
+  border-right: 0;
+  border-right: 1px solid #a7a7a7;
+}
+
+.tab-container {
+  color: #a7a7a7;
+  font: 16px "FuturaW01-MediumCondens";
+  padding: 15px 10px;
+}
+
+.r-tabs {
+  margin: 15px 20px 0;
+}
+
+.r-tabs .r-tabs-nav {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.r-tabs .r-tabs-tab {
+  display: inline-block;
+  margin: 0;
+  list-style: none;
+}
+.r-tabs .r-tabs-tab .r-tabs-anchor {
+  border: 1px solid #a7a7a7;
+  border-right: 0;
+  font: 20px/40px "FuturaW01-ExtraBoldCond_774896";
+  color: #2fb889;
+  padding: 0 10px;
+  display: block;
+}
+.r-tabs .r-tabs-tab:last-child {
+  border-right: 0;
+  border-right: 1px solid #a7a7a7;
+}
+
+.tab-sub-txt {
+  color: #a7a7a7;
+  display: inline-block;
+  font-family: "FuturaW01-MediumCondens";
+  font-size: inherit;
+  line-height: normal;
+}
+
+.r-tabs .r-tabs-panel {
+  padding: 15px 10px;
+  display: none;
+  color: #a7a7a7;
+  font: 18px "FuturaW01-MediumCondens";
+}
+
+.r-tabs .r-tabs-accordion-title {
+  display: none;
+}
+
+.r-tabs .r-tabs-panel.r-tabs-state-active {
+  display: block;
+}
+
+.r-tabs-state-active {
+  border: 0 !important;
+}
+.r-tabs-state-active a.r-tabs-anchor {
+  background: #435464;
+  color: #fff !important;
+  display: block !important;
+  line-height: 40px !important;
+}
+.r-tabs-state-active a.r-tabs-anchor .tab-sub-txt {
+  color: #fff;
+  display: inline-block;
+  font-family: "FuturaW01-MediumCondens";
+  font-size: inherit;
+  line-height: normal;
+}
+
+.r-tabs-state-disabled {
+  /*border: 1px solid $color4 !important;
+  border-right: 0 !important; */
+}
+.r-tabs-state-disabled a.r-tabs-anchor {
+  background: #fff;
+  color: #fff !important;
+  line-height: 40px !important;
+}
+
+.alternate-tab-class {
+  background-color: #fff !important;
+  font: 20px/40px "FuturaW01-ExtraBoldCond_774896" !important;
+  border: 1px solid #a7a7a7;
+  border-right: 0;
+}
+
+.two-cols-wrap {
+  margin-top: 50px;
+  padding-bottom: 25px;
+  /*  .left-module,
+  .right-module {
+    background-color: #fff;
+}*/
+}
+.two-cols-wrap .left-module .left-module-listing li:last-child {
+  margin-bottom: 35px;
+}
+
+/* Accordion responsive breakpoint */
+@media only screen and (max-width: 767px) {
+  .r-tabs {
+    border-bottom: 1px solid #a7a7a7;
+  }
+
+  .r-tabs .r-tabs-nav {
+    display: none;
+  }
+
+  .r-tabs .r-tabs-accordion-title {
+    display: block;
+  }
+  .r-tabs .r-tabs-accordion-title .r-tabs-anchor {
+    border: 1px solid #a7a7a7;
+    border-bottom: 0;
+    display: block;
+    text-align: center;
+    color: #2fb889;
+    font: 18px/40px "FuturaW01-ExtraBoldCond_774896";
+  }
+
+  .r-tabs-state-active a.r-tabs-anchor {
+    border: 0 !important;
+    line-height: 42px !important;
+  }
+
+  .r-tabs-panel {
+    border-left: 1px solid #a7a7a7 !important;
+    border-right: 1px solid #a7a7a7 !important;
+  }
+}
+/***** End Doctor Profile & Practice Profile *****/
+/***** Main Footer *****/
+.main-footer {
+  background: #3d3d3d;
+  padding: 30px 0 30px;
+}
+
+.footer-logo {
+  float: left;
+  margin-right: 2.77325%;
+  margin-left: 6.03589%;
+  width: 14.68189%;
+}
+.footer-logo img {
+  display: block;
+  width: 100%;
+}
+
+.bottom-navigation li {
+  float: left;
+  margin-top: 9px;
+  margin-right: 1.49254%;
+}
+.bottom-navigation li a {
+  color: #fff;
+  display: block;
+  font: 18px "FuturaW01-MediumCondens";
+  -moz-transition: linear 0.3s 0s;
+  -o-transition: linear 0.3s 0s;
+  -webkit-transition: linear 0.3s;
+  -webkit-transition-delay: 0s;
+  transition: linear 0.3s 0s;
+}
+.bottom-navigation li a .footer-point-icon {
+  max-width: 26px;
+  position: relative;
+  top: -5px;
+  vertical-align: middle;
+}
+.bottom-navigation li a .point-footer {
+  display: inline-block;
+  font: 18px "FuturaW01-ExtraBoldCond_774896";
+  color: #2fb889;
+}
+.bottom-navigation li a:hover {
+  color: #2fb889;
+}
+.bottom-navigation li:last-child {
+  margin-right: 0;
+}
+
+/***** Main Footer End *****/
+/* Desktop to tablet media quaries width 1226px to 1025px */
+/*************** The-Buzz **************/
+@media (max-width: 1145px) {
+  .left-module-listing li .listing-point {
+    font: 30px/50px "FuturaW01-ExtraBoldCond_774896";
+  }
+  .left-module-listing li .listing-point .point-num {
+    font: 14px/12px "FuturaW01-ExtraBoldCond_774896";
+  }
+  .left-module-listing li .listing-point .point-word {
+    font: 14px/14px "FuturaW01-MediumCondens";
+  }
+  .left-module-listing li .data-container .doc-place-name {
+    font: 16px "FuturaW01-ExtraBoldCond_774896";
+  }
+  .left-module-listing li .data-container .listing-description {
+    font-size: 14px;
+  }
+  .left-module-listing li .date-detail {
+    font: 16px "FuturaW01-ExtraBoldCond_774896";
+  }
+
+  .right-module-main-heading {
+    font: 14px/45px "FuturaW01-ExtraBoldCond_774896";
+  }
+
+  .clinic-img {
+    max-height: 65px;
+  }
+  .clinic-img img {
+    max-height: 65px;
+  }
+
+  .clinic-name {
+    font: 14px "FuturaW01-ExtraBoldCond_774896";
+  }
+
+  .clinic-address {
+    font: 16px "FuturaW01-MediumCondens";
+  }
+
+  .view-profile-box {
+    max-width: 85px;
+  }
+  .view-profile-box .profile-btn {
+    font: 12px/24px "FuturaW01-ExtraBoldCond_774896";
+    padding: 0 7px;
+  }
+  .view-profile-box .currency-thumb {
+    max-height: 28px;
+  }
+  .view-profile-box .clinic-points {
+    font: 20px/28px "FuturaW01-ExtraBoldCond_774896";
+  }
+
+  .rating .fullstar {
+    height: 17px;
+    width: 17px;
+  }
+}
+/*************** The-Buzz End **************/
+/*************** Doctor-Profile **************/
+@media (min-width: 768px) and (max-width: 1180px) {
+  .detials-info {
+    width: 48.2%;
+  }
+
+  .thumb-name {
+    font: 22px "FuturaW01-ExtraBoldCond_774896";
+  }
+
+  .address-detials,
+  .address-details-phone,
+  .address-details-fax,
+  .address-direction {
+    font: 18px "FuturaW01-MediumCondens";
+  }
+
+  .address-details-phone .legend,
+  .address-details-fax .legend {
+    font: 18px "FuturaW01-ExtraBoldCond_774896";
+  }
+
+  .detials-info-all-text {
+    width: 38%;
+  }
+
+  .detials-info-all-text-alt {
+    float: left;
+    width: 65.26104%;
+  }
+
+  .details-sub-info {
+    padding-top: 6px;
+  }
+
+  .thumb-likes {
+    font: 16px "FuturaW01-ExtraBoldCond_774896";
+  }
+  .thumb-likes .tumb-likes-num {
+    font: 16px "FuturaW01-MediumCondens";
+  }
+
+  .btn-listing li a {
+    font: 12px "FuturaW01-ExtraBoldCond_774896";
+  }
+
+  .main-buttons {
+    min-width: 205px;
+  }
+  .main-buttons .main-btn-4 {
+    padding: 0 32px;
+  }
+
+  .main-buttons a {
+    font: 12px/35px "FuturaW01-ExtraBoldCond_774896";
+    margin: 0 10px 15px 0;
+  }
+
+  .check-ins-heading {
+    font: 18px/22px "FuturaW01-ExtraBoldCond_774896";
+    margin-bottom: 20px;
+  }
+  .check-ins-heading .check-ins-tooltip {
+    padding: 3px 10px 3px;
+  }
+
+  .point-thumb {
+    max-width: 20px;
+  }
+
+  .points-number {
+    font: 18px/22px "FuturaW01-ExtraBoldCond_774896";
+  }
+
+  .check-ins-listing li {
+    font: 18px "FuturaW01-MediumCondens";
+    padding-top: 15px;
+  }
+  .check-ins-listing li .relevant-point {
+    font: 22px "FuturaW01-ExtraBoldCond_774896";
+  }
+
+  .rating-tab .rate-out-of {
+    font-size: 16px;
+  }
+  .rating-tab .rate-doctor {
+    font: 12px/30px "FuturaW01-ExtraBoldCond_774896";
+  }
+
+  .overview-tab .main-text {
+    margin-bottom: 15px;
+  }
+  .overview-tab .point-heading {
+    font-size: 16px;
+  }
+  .overview-tab .point-listing li {
+    font-size: 16px;
+    padding-left: 30px;
+  }
+
+  .reviews-tab .reviewer-heading {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .reviews-tab .review-txt-wrap {
+    width: 85.38588%;
+  }
+  .reviews-tab .view-more {
+    font: 12px/30px "FuturaW01-ExtraBoldCond_774896";
+    padding: 0 20px;
+  }
+
+  .doctors-tab .all-doctors-list .doctor-img-wrap {
+    max-width: 60px;
+  }
+  .doctors-tab .all-doctors-list .doctor-name {
+    font-size: 16px;
+  }
+  .doctors-tab .all-doctors-list .view-full-profile {
+    font-size: 16px;
+  }
+
+  .r-tabs .r-tabs-tab .r-tabs-anchor {
+    font: 16px/32px "FuturaW01-ExtraBoldCond_774896";
+  }
+
+  .r-tabs-state-active a.r-tabs-anchor {
+    line-height: 32px !important;
+  }
+
+  .tab-container,
+  .r-tabs .r-tabs-panel {
+    font: 16px "FuturaW01-MediumCondens";
+  }
+}
+/*************** Doctor-Profile End **************/
+/* End Desktop to tablet media quaries */
+/* Tablet media quaries */
+/*************** Common Header-n-Footer **************/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main-logo,
+  .footer-logo {
+    width: auto;
+  }
+}
+/*************** End Common Header-n-Footer **************/
+/*************** The-Buzz **************/
+@media (max-width: 1024px) {
+  .top-buzz-bg {
+    padding: 77px 0 0px;
+  }
+
+  .search-box {
+    display: none;
+  }
+
+  .left-module:before,
+  .left-module:after {
+    content: " ";
+    display: table;
+  }
+
+  .left-module:after {
+    clear: both;
+  }
+
+  .left-module {
+    float: none;
+    margin: 0 auto 0;
+    max-width: 643px;
+    width: 83.72396%;
+  }
+
+  .left-module-listing li {
+    margin-bottom: 35px;
+  }
+  .left-module-listing li .listing-point {
+    font: 32px/56px "FuturaW01-ExtraBoldCond_774896";
+  }
+  .left-module-listing li .listing-point .point-num {
+    font: 18px/20px "FuturaW01-ExtraBoldCond_774896";
+  }
+  .left-module-listing li .listing-point .point-word {
+    font: 18px/20px "FuturaW01-MediumCondens";
+  }
+  .left-module-listing li .data-container .doc-small-img {
+    margin-top: 15px;
+  }
+  .left-module-listing li .data-container .doc-place-name {
+    font: 20px "FuturaW01-ExtraBoldCond_774896";
+  }
+  .left-module-listing li .data-container .listing-description {
+    font-size: 18px;
+    padding-top: 30px;
+  }
+  .left-module-listing li .date-detail {
+    font: 20px "FuturaW01-ExtraBoldCond_774896";
+  }
+
+  .right-module {
+    background: #e9e9e9;
+    float: none;
+    padding: 40px 7.94271% 70px;
+    margin: 45px auto 0;
+    max-width: 100%;
+  }
+
+  .right-module-inner {
+    background: #fff;
+    margin: 0 auto 0;
+    max-width: 643px;
+    width: 100%;
+  }
+
+  .right-module-main-heading {
+    font: 28px/75px "FuturaW01-ExtraBoldCond_774896";
+  }
+
+  .view-profile-box {
+    max-width: 135px;
+  }
+  .view-profile-box .profile-btn {
+    font: 18px/36px "FuturaW01-ExtraBoldCond_774896";
+    padding: 0 15px;
+    margin-bottom: 15px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+  }
+  .view-profile-box .currency-thumb {
+    max-height: 53px;
+  }
+  .view-profile-box .clinic-points {
+    font: 32px/53px "FuturaW01-ExtraBoldCond_774896";
+  }
+
+  .clinic-img {
+    max-width: 65px;
+    max-height: 125px;
+    margin-right: 4.40457%;
+  }
+  .clinic-img img {
+    max-width: 65px;
+    max-height: 125px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .clinic-name {
+    font: 28px "FuturaW01-ExtraBoldCond_774896";
+  }
+
+  .clinic-address {
+    font: 32px "FuturaW01-MediumCondens";
+    margin-bottom: 10px;
+  }
+
+  .rating {
+    max-width: 224px;
+  }
+  .rating .fullstar {
+    height: 33px;
+    width: 33px;
+    margin-right: 3.57143%;
+  }
+}
+/*************** The-Buzz End **************/
+/*************** Doctor-Profile **************/
+/*************** Doctor-Profile End **************/
+/*************** Practice-Profile **************/
+@media (max-width: 1024px) and (min-width: 768px) {
+  .relevant-adjust {
+    margin: 0;
+    padding-top: 30px;
+  }
+
+  .relevant-header {
+    font: 26px "FuturaW01-MediumCondens";
+  }
+
+  .detials-info {
+    width: 64%;
+    max-width: 71.4995%;
+  }
+
+  .detials-info-all-text {
+    max-width: 205px;
+    width: 42.70833%;
+  }
+
+  .detials-info-all-text-alt {
+    float: left;
+    max-width: 325px;
+    width: 65.26104%;
+  }
+
+  .details-sub-info {
+    min-width: 140px;
+    text-align: left;
+  }
+
+  .thumb-likes {
+    display: inline-block;
+    margin-top: 6px;
+  }
+
+  .main-thumb {
+    max-width: 70px;
+  }
+
+  .main-thumb {
+    max-width: 100px;
+  }
+
+  .thumb-name {
+    font: 28px/normal "FuturaW01-ExtraBoldCond_774896";
+  }
+
+  .address-detials {
+    font: 20px "FuturaW01-MediumCondens";
+  }
+
+  .btn-listing {
+    display: none;
+  }
+
+  .main-buttons {
+    float: right;
+    margin-right: 4.46872%;
+    min-width: 230px;
+  }
+  .main-buttons a {
+    font: 14px/36px "FuturaW01-ExtraBoldCond_774896";
+    padding: 0 11px;
+  }
+  .main-buttons a:nth-child(4) {
+    padding: 0 33px 0;
+    margin-bottom: 20px;
+  }
+
+  .sub-details {
+    clear: both;
+    float: none;
+    width: 100%;
+  }
+
+  .sub-details-inner {
+    padding: 25px 14px 10px;
+  }
+
+  .top-5-chars {
+    margin-bottom: 10px;
+    padding-left: 10px;
+  }
+
+  .chars-listing {
+    font-size: 0;
+  }
+  .chars-listing li {
+    display: inline-block;
+    font: 16px/30px "FuturaW01-MediumCondens";
+    margin-bottom: 5px;
+    width: 130px;
+  }
+
+  .check-ins-heading {
+    color: #a7a7a7;
+    float: left;
+    font: 16px/16px "FuturaW01-MediumCondens";
+    width: 20%;
+  }
+  .check-ins-heading .check-ins-tooltip {
+    padding: 10px 2px;
+  }
+
+  .point-with-thumb {
+    display: block;
+  }
+
+  .check-ins-listing li {
+    width: 20%;
+    border-left: 1px solid #a7a7a7;
+    border-right: 0;
+    border-bottom: 0;
+    font: 16px "FuturaW01-MediumCondens";
+    padding: 0px 0 0 10px;
+    text-align: left;
+  }
+  .check-ins-listing li .relevant-point,
+  .check-ins-listing li .relevant-point-2nd {
+    font: 20px "FuturaW01-ExtraBoldCond_774896";
+    margin: 2px 0 1px;
+  }
+  .check-ins-listing li:nth-child(odd) {
+    border-right: 0;
+  }
+
+  .all-tabs-wrap {
+    width: 100%;
+    float: none;
+  }
+
+  .tab-rating {
+    display: inline-block;
+    position: relative;
+    top: 3px;
+  }
+  .tab-rating .fullstar {
+    height: 17px;
+    width: 17px;
+    margin-right: 0;
+  }
+
+  .rating-tab .rating-adjust {
+    display: inline-block;
+    position: relative;
+    top: 3px;
+  }
+  .rating-tab .rating-adjust .fullstar {
+    height: 17px;
+    width: 17px;
+    margin-right: 0;
+  }
+
+  .r-tabs .r-tabs-tab .r-tabs-anchor {
+    font: 18px/40px "FuturaW01-ExtraBoldCond_774896";
+    padding: 0 10px;
+  }
+
+  .r-tabs-state-active a.r-tabs-anchor {
+    font: 18px/40px "FuturaW01-ExtraBoldCond_774896" !important;
+  }
+}
+/*************** Practice-Profile End **************/
+/*************** Common Header-n-Footer **************/
+@media (max-width: 767px) {
+  .main-logo {
+    margin: 0 10px 0;
+    width: auto;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .top-navigation {
+    clear: both;
+    background: rgba(47, 184, 137, 0.9);
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+    top: 53px;
+  }
+  .top-navigation li {
+    float: none;
+    width: 100%;
+    margin-top: 9px;
+    text-align: center;
+  }
+  .top-navigation li a {
+    color: #fff;
+    display: block;
+    font: 18px/35px "FuturaW01-MediumCondens";
+  }
+  .top-navigation li a .point-header {
+    color: #fff;
+  }
+  .top-navigation li a:hover {
+    background: #139468;
+    color: #fff;
+  }
+  .top-navigation li a .header-point-icon {
+    top: -2px;
+  }
+
+  .main-footer {
+    padding: 5px 0;
+  }
+
+  .footer-logo {
+    display: none;
+  }
+
+  .bottom-navigation li {
+    float: none;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+  .bottom-navigation li a {
+    font: 18px/35px "FuturaW01-MediumCondens";
+  }
+  .bottom-navigation li a:hover {
+    background: #222;
+  }
+  .bottom-navigation li a .footer-point-icon {
+    top: -2px;
+  }
+}
+/*************** End Common Header-n-Footer **************/
+/*************** Common Elements **************/
+@media (max-width: 767px) {
+  .two-cols-wrap .left-module .left-module-listing li:last-child {
+    margin-bottom: 10px;
+  }
+}
+/*************** End Common Elements **************/
+/*************** The Buzz **************/
+@media (max-width: 767px) {
+  .top-buzz-bg {
+    padding: 40px 0 25px;
+    background: #dedede;
+  }
+
+  .left-module {
+    background: #fff;
+    padding: 0 10px 0;
+    max-width: 767px;
+    margin: 0 10px 0;
+    width: auto;
+  }
+
+  .modified-border-top {
+    border-width: 5px 0 0px 140px;
+  }
+
+  .modified-border-bottom {
+    border-width: 5px 140px 0 0;
+    padding-bottom: 30px;
+  }
+
+  .left-module-title-heading {
+    font: 16px/22px "FuturaW01-ExtraBoldCond_774896";
+    padding: 0 40px 0 10px;
+  }
+
+  .left-module-listing li {
+    margin-bottom: 5px;
+  }
+  .left-module-listing li .listing-point {
+    font: 18px/56px "FuturaW01-ExtraBoldCond_774896";
+    max-width: 70px;
+    width: 100%;
+  }
+  .left-module-listing li .listing-point .point-num {
+    font: 14px/16px "FuturaW01-ExtraBoldCond_774896";
+    margin-top: 5px;
+  }
+  .left-module-listing li .listing-point .point-word {
+    font: 14px/14px "FuturaW01-MediumCondens";
+  }
+  .left-module-listing li .listing-point .badgeImg {
+    width: 51.42857%;
+  }
+  .left-module-listing li .date-detail {
+    padding: 0 0 2px;
+    font-size: 12px;
+  }
+  .left-module-listing li .data-container {
+    background: url("../images/listing_bg.png") no-repeat bottom;
+    background-size: cover;
+    width: 100%;
+  }
+  .left-module-listing li .data-container .doc-place-name {
+    font-size: 14px;
+  }
+  .left-module-listing li .data-container .listing-description {
+    font-size: 14px;
+    padding-top: 25px;
+  }
+  .left-module-listing li:last-child {
+    margin-bottom: 10px;
+  }
+
+  .right-module {
+    margin: 25px 10px 0;
+    padding: 0;
+    max-width: 767px;
+    width: auto;
+  }
+
+  .right-module-inner {
+    margin: 0;
+    max-width: 767px;
+  }
+
+  .right-module-main-heading {
+    padding: 10px;
+    font: 16px/22px "FuturaW01-ExtraBoldCond_774896";
+  }
+
+  .right-module-listing {
+    padding: 0;
+  }
+  .right-module-listing li {
+    padding: 10px;
+  }
+
+  .clinic-img {
+    max-width: 30px;
+    margin-right: 1.90114%;
+  }
+
+  .clinic-name {
+    font-size: 12px;
+    margin: 0 0 3px;
+  }
+
+  .clinic-address {
+    font-size: 12px;
+    margin: 0 0 7px;
+  }
+
+  .rating .fullstar {
+    height: 15px;
+    width: 15px;
+    margin-right: 0;
+  }
+
+  .view-profile-box {
+    max-width: 78px;
+  }
+  .view-profile-box .profile-btn {
+    padding: 0 5px;
+    font: 12px/22px "FuturaW01-ExtraBoldCond_774896";
+    margin-bottom: 10px;
+  }
+  .view-profile-box .currency-thumb {
+    max-width: 25px;
+  }
+  .view-profile-box .clinic-points {
+    font: 20px/25px "FuturaW01-ExtraBoldCond_774896";
+  }
+}
+/*************** The Buzz End **************/
+/*************** Doctor Profile & Practice Profile **************/
+@media (max-width: 767px) {
+  .relevant-adjust {
+    max-width: 767px;
+    margin: 0 10px 0;
+    padding-top: 20px;
+    width: auto;
+  }
+
+  .relevant-header {
+    border-width: 5px;
+    font-size: 22px;
+    padding: 7px 10px 7px;
+  }
+
+  .detials-info {
+    float: none;
+    width: 100%;
+    margin: 0 0 20px;
+    text-align: center;
+  }
+
+  .main-details {
+    float: none;
+    width: 100%;
+  }
+
+  .main-thumb {
+    float: none;
+    margin: 0 auto;
+    max-width: 70px;
+    width: 100%;
+  }
+
+  .detials-info-all-text {
+    float: none;
+    max-width: 100%;
+    width: auto;
+    text-align: center;
+  }
+
+  .details-sub-info {
+    display: none;
+  }
+
+  .detials-text {
+    text-align: center;
+  }
+
+  .thumb-name {
+    font-size: 20px;
+  }
+
+  .likes-toggle {
+    display: block;
+    margin: 0 auto 5px;
+  }
+
+  .main-buttons {
+    float: none;
+    margin: 0 auto 20px;
+    max-width: 240px;
+    width: 100%;
+  }
+
+  .sub-details {
+    float: none;
+    max-width: 240px;
+    width: 100%;
+    margin: 0 auto 25px;
+    text-align: center;
+  }
+
+  .sub-details-inner {
+    padding: 0;
+  }
+
+  .chars-listing li {
+    width: 236px;
+    margin-left: 0;
+  }
+
+  .all-tabs-wrap {
+    clear: none;
+    float: none;
+    width: 100%;
+  }
+
+  .all-tabs-container {
+    margin: 0 10px 0;
+  }
+
+  .rating-tab .rate-out-of {
+    font: 16px "FuturaW01-ExtraBoldCond_774896";
+  }
+
+  .overview-tab .main-text {
+    margin-bottom: 15px;
+  }
+  .overview-tab .point-heading {
+    font: 18px "FuturaW01-ExtraBoldCond_774896";
+    margin-bottom: 10px;
+  }
+  .overview-tab .point-listing li {
+    display: block;
+    width: auto;
+    font-size: 16px;
+    padding-left: 25px;
+  }
+
+  .other-chars-tab .other-chars-listing {
+    width: 240px;
+    margin: 0 auto;
+  }
+  .other-chars-tab .other-chars-listing li {
+    display: block;
+    font: 16px/30px "FuturaW01-MediumCondens";
+    margin: 0 0 10px;
+    width: auto;
+  }
+  .other-chars-tab .other-chars-listing li:last-child {
+    margin-bottom: 5px;
+  }
+
+  .reviews-tab .review-txt-n-img-wrap {
+    margin-bottom: 15px;
+  }
+  .reviews-tab .review-txt-wrap {
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #a7a7a7;
+  }
+  .reviews-tab .reviewer-picture-wrap {
+    display: none;
+  }
+  .reviews-tab .view-more-wrap {
+    margin-bottom: 15px;
+  }
+
+  .doctors-tab .all-doctors-list > li {
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #a7a7a7;
+  }
+  .doctors-tab .all-doctors-list > li .doctor-img-wrap {
+    float: none;
+    margin: 0 auto;
+    max-width: 75px;
+  }
+  .doctors-tab .all-doctors-list > li .doctor-details-wrap {
+    float: none;
+    text-align: center;
+  }
+  .doctors-tab .all-doctors-list > li:last-child {
+    margin-bottom: 0px;
+    border-bottom: 0;
+  }
+
+  .offices-tab .offices-tab-heading {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .offices-tab .location-info-n-map {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .offices-tab .location-info {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .offices-tab .location-info .map-pointer {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .offices-tab .location-info .location-info-text {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .offices-tab .google-map {
+    float: none;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    border: 0;
+    box-shadow: none;
+  }
+
+  .r-tabs .r-tabs-panel {
+    font: 16px "FuturaW01-MediumCondens";
+    padding: 10px 5px;
+  }
+}
+/*************** End Doctor Profile & Practice Profile **************/

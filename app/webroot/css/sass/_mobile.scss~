@@ -1,0 +1,1133 @@
+@media (max-width: 767px){
+
+}
+
+/*************** First section **************/
+@media (max-width: 767px) {
+  .buzzy-doc {
+    .connect-n-search {
+      .signup-section {
+        padding: 25px 0;
+        .signin-heading {
+          font-size: 24px;
+          margin-top: 25px;
+        }
+        .signup-container {
+          max-width: 480px;
+          .signup-btn {
+            font: 32px/51px $futura_bold;
+            padding: 0 40px;
+          }
+          .or {
+            font: 22px/40px $futura_bold;
+            width: 40px;
+          }
+          .fb-signup-btn {
+            width: 187px;
+            height: 56px;
+          }
+        }
+      }
+      .search-doctors {
+        padding: 20px 0 35px;
+        .doctors-dropdown {
+          width: 206px;
+          height: 60px;
+          font: 14px/60px $futura_bold;
+        }
+        .doctor-search-box {
+          background-size: 30px;
+          width: 170px;
+          height: 50px;
+          font-size: 20px;
+          padding-left: 38px;
+        }
+        .search-container {
+          max-width: 395px;
+        }
+        .doctors-list {
+          margin: 20px 5.4% 0;
+          a {
+            .doctor-detials {
+              .doctor-image {
+                img {
+                  width: 100%;
+                }
+              }
+              .doctor-name {
+                h3 {
+                  font-size: 20px;
+                }
+                .rating {
+                  max-width: 140px;
+                  .fullstar {
+                    height: 25px;
+                  }
+                }
+              }
+              .doctor-address {
+                h4 {
+                  font-size: 18px;
+                }
+                p {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .main-header {
+      .top-button {
+        margin-bottom: 80px;
+      }
+      .logo {
+        margin: 0px auto 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .buzzy-doc {
+    .connect-n-search {
+      .signup-section {
+        padding: 25px 0;
+        .signin-heading {
+          font-size: 20px;
+          margin-top: 15px;
+        }
+        .signup-container {
+          max-width: 340px;
+          .signup-btn {
+            font: 24px/39px $futura_bold;
+            padding: 0 30px;
+          }
+          .or {
+            font: 18px/32px $futura_bold;
+            width: 32px;
+          }
+          .fb-signup-btn {
+            width: 142px;
+            height: 39px;
+          }
+        }
+      }
+      .search-doctors {
+        padding: 20px 0 35px;
+        .doctors-dropdown {
+          width: 150px;
+          height: 44px;
+          font: 10px/44px $futura_bold;
+        }
+        .doctor-search-box {
+          background-size: 18px;
+          width: 130px;
+          height: 36px;
+          font: 16px/36px $futura_medium;
+          padding-left: 25px;
+        }
+        .search-container {
+          max-width: 300px;
+        }
+        .doctors-list {
+          margin: 20px 5.4% 0;
+          a {
+            .doctor-detials {
+              .doctor-name {
+                h3 {
+                  font-size: 16px;
+                  margin-bottom: 5px;
+                }
+                .rating {
+                  max-width: 120px;
+                  .fullstar {
+                    height: 20px;
+                  }
+                }
+              }
+              .doctor-address {
+                h4 {
+                  font-size: 14px;
+                  margin-top: 5px;
+                }
+                p {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .main-header {
+      .top-button {
+        margin-bottom: 25px;
+        font: 14px/30px $futura_bold;
+      }
+      .logo {
+        margin: 0px auto 20px;
+        img {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 540px) {
+  .buzzy-doc {
+    .connect-n-search {
+      .signup-section {
+        padding: 20px 0;
+        .signin-heading {
+          font-size: 18px;
+          margin-top: 15px;
+        }
+        .signup-container {
+          max-width: 340px;
+          .signup-btn {
+            font: 20px/35px $futura_bold;
+            padding: 0 30px;
+          }
+          .or {
+            font: 14px/28px $futura_bold;
+            width: 28px;
+          }
+          .fb-signup-btn {
+            width: 126px;
+            height: 36px;
+          }
+        }
+      }
+      .search-doctors {
+        padding: 15px 0 30px;
+        .doctors-dropdown {
+          width: 130px;
+          height: 38px;
+          font: 8px/38px $futura_bold;
+        }
+        .doctor-search-box {
+          background-size: 18px;
+          width: 120px;
+          height: 34px;
+          font: 12px/30px $futura_medium;
+          padding-left: 25px;
+        }
+        .search-container {
+          max-width: 270px;
+        }
+        .doctors-list {
+          a {
+            .doctor-detials {
+              .doctor-name {
+                h3 {
+                  font-size: 14px;
+                  margin-bottom: 3px;
+                }
+                .rating {
+                  max-width: 115px;
+                  .fullstar {
+                    height: 18px;
+                  }
+                }
+              }
+              .doctor-address {
+                h4 {
+                  font-size: 12px;
+                  margin-top: 3px;
+                }
+                p {
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .main-header {
+      .top-button {
+        margin-bottom: 25px;
+        font: 14px/30px $futura_bold;
+      }
+      .logo {
+        margin: 0px auto 20px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 445px) {
+  .buzzy-doc {
+    .main-header {
+      margin-top: 7px;
+      .top-button {
+        padding: 0 8px;
+        font: 10px/16px $futura_bold;
+        border-width: 1px;
+      }
+      .logo {
+        margin: 0px auto 13px;
+      }
+    }
+    .connect-n-search {
+      .signup-section {
+        padding: 10px 0;
+        .signin-heading {
+          font-size: 16px;
+          margin-top: 10px;
+        }
+        .signup-container {
+          max-width: 265px;
+          .signup-btn {
+            font: 16px/27px $futura_bold;
+            padding: 0 24px;
+          }
+          .or {
+            font: 14px/20px $futura_bold;
+            width: 24px;
+            padding: 0 4px;
+          }
+          .fb-signup-btn {
+            width: 95px;
+            height: 27px;
+          }
+        }
+      }
+      .search-doctors {
+        padding: 15px 0 20px;
+        .doctors-dropdown {
+          width: 122px;
+          height: 35px;
+          font: 8px/35px $futura_bold;
+          option {
+            font-size: 10px !important;
+          }
+        }
+        .doctor-search-box {
+          background-size: 15px;
+          background-position-y: 3px;
+          width: 112px;
+          height: 28px;
+          font: 12px/28px $futura_medium;
+          padding-left: 20px;
+        }
+        .search-container {
+          max-width: 255px;
+        }
+        .doctors-list {
+          a {
+            padding: 4px;
+            .doctor-detials {
+              .doctor-image {
+                min-width: 25px;
+              }
+              .doctor-name {
+                h3 {
+                  font-size: 10px;
+                  margin-bottom: 3px;
+                }
+                .rating {
+                  max-width: 76px;
+                  .fullstar {
+                    height: 12px;
+                    margin-right: 0;
+                  }
+                }
+              }
+              .doctor-address {
+                max-width: 92px;
+                h4 {
+                  font-size: 10px;
+                  margin-top: 3px;
+                }
+                p {
+                  font-size: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*************** First section End **************/
+
+/*************** Second section **************/
+@media (max-width: 690px){
+  .overview-n-points {
+    .overview-points {
+      .main-points {
+        li {
+          div {
+            h4 {
+              font-size: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px){
+  .overview-n-points {
+    .overview-points {
+      .main-points {
+        li {
+          div {
+            line-height: 80px;
+            img {
+              width: 80px;
+            }
+            span {
+              font-size: 50px;
+              line-height: inherit;
+            }
+            h4 {
+              font-size: 26px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px){
+  .overview-n-points {
+    .overview-points {
+      .main-points {
+        li {
+          div {
+            line-height: 80px;
+            img {
+              width: 80px;
+            }
+            span {
+              font-size: 50px;
+              line-height: inherit;
+            }
+            h4 {
+              font-size: 26px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 440px){
+  .overview-n-points {
+    .overview-points {
+      .main-points {
+        li {
+          div {
+            line-height: 40px;
+            img {
+              width: 40px;
+            }
+            span {
+              font-size: 24px;
+              line-height: inherit;
+            }
+            h4 {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*************** Second section End **************/
+
+/*************** Third section **************/
+@media (max-width: 800px){
+  .doctor-in-area {
+    .doctor-info {
+      .doctor-content {
+        margin-top: 50px;
+        font: 20px $futura_bold;
+        .address-n-point {
+          padding-top: 10px;
+          .place-name {
+            padding-left: 10px;
+            h5 {
+
+            }
+            h6 {
+              font: 22px $futura_medium;
+            }
+          }
+          .points-of-doctor {
+            padding: 0 10px;
+            .number-points {
+              font: 30px/28px $futura_bold;
+            }
+            .point-text {
+              font: 20px/24px $futura_medium;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 570px){
+  .doctor-in-area {
+    h1 {
+      font-size: 28px;
+    }
+    .doctor-info {
+      .doctor-content {
+        margin-top: 50px;
+        font: 16px $futura_bold;
+        .address-n-point {
+          padding-top: 5px;
+          .place-name {
+            padding-left: 10px;
+            h5 {
+
+            }
+            h6 {
+              font: 16px $futura_medium;
+            }
+          }
+          .points-of-doctor {
+            padding: 0 10px;
+            .number-points {
+              font: 22px/20px $futura_bold;
+            }
+            .point-text {
+              font: 18px/18px $futura_medium;
+            }
+          }
+        }
+      }
+      .img-wrap {
+        img {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 440px){
+  .doctor-in-area {
+    h1 {
+      font-size: 20px;
+    }
+    .doctor-info {
+      .doctor-content {
+        margin-top: 35px;
+        font: 14px $futura_bold;
+        .address-n-point {
+          padding-top: 5px;
+          .place-name {
+            padding-left: 5px;
+            h5 {
+
+            }
+            h6 {
+              font: 14px $futura_medium;
+            }
+          }
+          .points-of-doctor {
+            padding: 0 10px;
+            .number-points {
+              font: 18px/20px $futura_bold;
+            }
+            .point-text {
+              font: 14px/14px $futura_medium;
+            }
+          }
+        }
+      }
+      .fullstar {
+        height: 15px;
+      }
+      .img-wrap {
+        img {
+          width: 85%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 355px){
+  .doctor-in-area {
+    h1 {
+      font-size: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .doctor-info {
+      margin-top: 20px;
+      .doctor-content {
+        margin-top: 35px;
+        font: 12px $futura_bold;
+        .address-n-point {
+          padding-top: 5px;
+          .place-name {
+            padding-left: 5px;
+            h5 {
+
+            }
+            h6 {
+              font: 12px $futura_medium;
+            }
+          }
+          .points-of-doctor {
+            padding: 0 5px;
+            .number-points {
+              font: 16px/16px $futura_bold;
+            }
+            .point-text {
+              font: 14px/12px $futura_medium;
+            }
+          }
+        }
+      }
+      .fullstar {
+        height: 15px;
+      }
+      .img-wrap {
+        img {
+          width: 85%;
+        }
+      }
+    }
+    .map-info-warp {
+      margin: 0 5px;
+      padding-top: 11px;
+      .map-info {
+        margin: 0 auto 22px;
+      }
+    }
+  }
+}
+
+@media (max-width: 395px){
+  .doctor-in-area {
+    h1 {
+      font-size: 18px;
+    }
+    .doctor-info {
+      margin-top: 15px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      .doctor-content {
+        font-size: 11px;
+        margin-top: 15px;
+        .first-line {
+          font: 11px/20px $futura_bold;
+          span {
+            font-size: 20px;
+            margin-left: 0;
+          }
+        }
+        .second-line {
+          margin-top: -8px;
+          span {
+            margin-left: 12px;
+          }
+        }
+      }
+      .rating {
+        max-width: 62px;
+      }
+      .fullstar {
+        height: 15px;
+      }
+      .img-wrap {
+        img {
+          width: 85%;
+        }
+      }
+    }
+    .map-info-warp {
+      margin: 0 5px;
+      padding-top: 11px;
+      .map-info {
+        margin: 0 auto 22px;
+      }
+    }
+  }
+}
+/*************** Third section End **************/
+
+/*************** Fourth section **************/
+@media (max-width: 740px){
+  .for-great-patients {
+    .earn-points {
+      .highlights {
+        h1 {
+          font-size: 40px;
+        }
+        ul {
+          li {
+            font-size: 34px;
+            p {
+              background: url("..../img/images_buzzy/tick.png") no-repeat 0px 6px;
+              background-size: 34px;
+              padding-left: 50px;
+            }
+          }
+        }
+      }
+    }
+    .my-activity-feeds {
+      .activityWrap {
+        .activity {
+          margin: 30px auto;
+          .activity-feed-header {
+            .modified-border-top {
+              border-width: 10px 0 0px 238px;
+            }
+            h4 {
+              font: 26px/46px $futura_bold;
+            }
+            .modified-border-bottom {
+              border-width: 10px 238px 0 0;
+            }
+          }
+          .activity-feeds {
+            ul {
+              li {
+                background-size: 100% 80px;
+                padding: 5px 10px 10px 10px;
+                .user-small-img {
+                  img {
+                    height: 40px;
+                  }
+                }
+                .userName {
+                  font-size: 18px;
+                }
+                p {
+                  font: 18px/64px $futura_medium;
+                }
+                .points {
+                  font: 36px/64px $futura_bold;
+                  .point-num {
+                    font: 18px/18px $futura_bold;
+                    margin-top: 15px;
+                  }
+                  .point-word {
+                    font: 18px/18px $futura_medium;
+                  }
+                  img {
+                    max-width: 55%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .redeem {
+        a {
+          .heading {
+            font-size: 26px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 605px){
+  .for-great-patients {
+    padding: 25px 0;
+  .earn-points {
+    .highlights {
+      h1 {
+        font-size: 32px;
+      }
+      ul {
+        max-width: 370px;
+        li {
+          font-size: 28px;
+          p {
+            background: url("..../img/images_buzzy/tick.png") no-repeat 0px 6px;
+            background-size: 28px;
+            padding-left: 40px;
+            margin-bottom: 25px;
+          }
+        }
+      }
+    }
+  }
+  .my-activity-feeds {
+    .activityWrap {
+      .activity {
+        margin: 15px auto 25px;
+        .activity-feed-header {
+          .modified-border-top {
+            border-width: 10px 0 0px 193px;
+          }
+          h4 {
+            font: 20px/28px $futura_bold;
+          }
+          .modified-border-bottom {
+            border-width: 10px 193px 0 0;
+          }
+        }
+        .activity-feeds {
+          ul {
+            li {
+              background-size: 100% 60px;
+              padding: 5px 10px 10px 10px;
+              .user-small-img {
+                img {
+                  height: 30px;
+                }
+              }
+              .userName {
+                font-size: 14px;
+              }
+              p {
+                font: 14px/48px $futura_medium;
+              }
+              .points {
+                font: 26px/48px $futura_bold;
+                .point-num {
+                  font: 14px/14px $futura_bold;
+                  margin-top: 8px;
+                }
+                .point-word {
+                  font: 14px/14px $futura_medium;
+                }
+                img {
+                  max-width: 55%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .redeem {
+      a {
+        .heading {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  }
+}
+
+@media (max-width: 480px){
+  .for-great-patients {
+    padding: 20px 0;
+    .earn-points {
+      .highlights {
+        h1 {
+          font-size: 24px;
+          margin-bottom: 20px;
+        }
+        ul {
+          max-width: 270px;
+          li {
+            font-size: 22px;
+            p {
+              background: url("..../img/images_buzzy/tick.png") no-repeat 0px 6px;
+              background-size: 22px;
+              padding-left: 35px;
+              margin-bottom: 20px;
+            }
+          }
+        }
+      }
+    }
+    .my-activity-feeds {
+      padding: 1px 4.5% 0;
+      .activityWrap {
+        .activity {
+          margin: 15px auto 20px;
+          padding-bottom: 0;
+          .activity-feed-header {
+            .modified-border-top {
+              border-width: 5px 0 0px 167px;
+            }
+            h4 {
+              font: 16px/26px $futura_bold;
+            }
+            .modified-border-bottom {
+              border-width: 5px 167px 0 0;
+              background-size: cover;
+            }
+          }
+          .activity-feeds {
+            position: relative;
+            top: -15px;
+            ul {
+              li {
+                background-size: 100% 48px;
+                padding: 5px 5px 10px 3px;
+                .user-small-img {
+                  min-width: 20px;
+                  img {
+                    height: 20px;
+                  }
+                }
+                .userName {
+                  font-size: 12px;
+                  margin-right: 3px;
+                }
+                p {
+                  font: 9px/32px $futura_medium;
+                }
+                .points {
+                  font: 14px/32px $futura_bold;
+                  .point-num {
+                    font: 10px/10px $futura_bold;
+                    margin-top: 2px;
+                  }
+                  .point-word {
+                    font: 10px/10px $futura_medium;
+                  }
+                  img {
+                    max-width: 55%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .redeem {
+        a {
+          .heading {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+/*************** Fourth section End **************/
+
+/*************** Fifth section **************/
+@media (max-width: 720px){
+  .connect-us {
+      .connect {
+        .connect-links {
+          max-width: 480px;
+          .signUp {
+            font: 30px/52px $futura_bold;
+            padding: 0 44px;
+          }
+          .mid {
+            padding: 0 7px;
+            font: 22px/40px $futura_bold;
+            width: 40px;
+          }
+          .fbConnect {
+            height: 52px;
+            width: 190px;
+          }
+        }
+        .heading {
+          font-size: 30px;
+        }
+      }
+  }
+}
+@media (max-width: 510px){
+  .connect-us {
+    .connect {
+        .connect-links {
+          max-width: 380px;
+          .signUp {
+            font: 24px/40px $futura_bold;
+            padding: 0 34px;
+          }
+          .mid {
+            padding: 0 7px;
+            font: 18px/30px $futura_bold;
+            width: 30px;
+          }
+          .fbConnect {
+            height: 40px;
+            width: 146px;
+          }
+        }
+        .heading {
+          font-size: 24px;
+          padding-top: 15px;
+        }
+      }
+    }
+}
+@media (max-width: 420px){
+  .connect-us {
+    .connect {
+        .connect-links {
+          max-width: 310px;
+          .signUp {
+            font: 18px/27px $futura_bold;
+            padding: 0 20px;
+          }
+          .mid {
+            padding: 0 7px;
+            font: 14px/22px $futura_bold;
+            width: 28px;
+            margin-top: 3px;
+          }
+          .fbConnect {
+            height: 27px;
+            width: 100px;
+          }
+        }
+        .heading {
+          font-size: 18px;
+          padding-top: 15px;
+        }
+      }
+  }
+}
+/*************** Fifth section End **************/
+
+
+/*************** Sixth section **************/
+@media (max-width: 480px) {
+  .analysis-n-points {
+    padding: 55px 0 0;
+    .doctor-advise-points {
+      width: 100%;
+      float: none;
+      .doctors-points {
+        max-width: 342px;
+        width: 100%;
+        margin: 0 auto 0;
+        h4 {
+          font-size: 42px;
+          margin-bottom: 15px;
+        }
+        a {
+          font-size: 22px;
+          margin-bottom: 20px;
+        }
+        h6 {
+
+        }
+        ul {
+          li {
+            font-size: 20px;
+            margin-bottom: 15px;
+            background: url("..../img/images_buzzy/arrow_bullet_point.png") no-repeat left 5px;
+            background-size: 12px;
+            padding-left: 30px;
+          }
+        }
+      }
+    }
+    .analysis-imaging {
+      .img-wrap {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+@media (max-width: 400px) {
+  .analysis-n-points {
+    padding: 20px 0 0;
+    .doctor-advise-points {
+      width: 100%;
+      float: none;
+      .doctors-points {
+        max-width: 200px;
+        width: 100%;
+        margin: 0 auto 0;
+        h4 {
+          font-size: 22px;
+          margin-bottom: 10px;
+        }
+        a {
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+        h6 {
+          font: 14px $futura_medium;
+          margin-bottom: 5px;
+        }
+        ul {
+          li {
+            font-size: 14px;
+            margin-bottom: 10px;
+            background: url("..../img/images_buzzy/arrow_bullet_point.png") no-repeat left 3px;
+            background-size: 8px;
+            padding-left: 20px;
+          }
+        }
+      }
+    }
+    .analysis-imaging {
+      .img-wrap {
+        margin-top: 5px;
+      }
+    }
+  }
+}
+/*************** Sixth section End **************/
+
+/*************** Footer section **************/
+@media (max-width:765px) {
+  .main-footer-section {
+    .main-footer {
+      padding: 25px 30px;
+      ul {
+        margin-top: 5px;
+        li {
+          font: 14px $futura_medium;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
+@media (max-width:620px) {
+  .main-footer-section {
+    .main-footer {
+      padding: 15px;
+      .footer-logo {
+        width: 30%;
+      }
+      ul {
+        margin-top: 5px;
+        li {
+          font: 12px/18px $futura_medium;
+          margin-top: 0;
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}
+@media (max-width:420px) {
+  .main-footer-section {
+    .main-footer {
+      padding: 12px;
+      ul {
+        margin-top: 0px;
+        li {
+          font: 10px/24px $futura_medium;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+/*************** Footer section End **************/

@@ -1,0 +1,4 @@
+.ie_8_left{  max-width:400px;}
+.ie_8_right{  max-width:500px;}
+.transactionform form.formBox .formGroup .promo_check input {width:5%!important;
+height: 100%; padding:10px;}

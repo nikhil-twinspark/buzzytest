@@ -1,0 +1,9 @@
+<?php
+class global_redeem extends AppModel {
+	var $name = 'global_redeem';
+
+	var $displayField = 'id';
+	//The Associations below have been created with all possible keys, those that are not needed can be removed
+
+}
+?>
