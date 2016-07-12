@@ -6,9 +6,9 @@ class DATABASE_CONFIG {
 		'driver' => 'mysql',
 		'persistent' => false,
 		'host' => 'localhost',
-		'login' => 'root',
-		'password' => '1234',
-		'database' => 'integrateortho',
+		'login' => 'bdtwinsp_devuser',
+		'password' => 'BuzzyBuzzy@123',
+		'database' => 'bdtwinsp_dev',
 	);
 }
 

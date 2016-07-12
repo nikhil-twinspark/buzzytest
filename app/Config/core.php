@@ -389,9 +389,9 @@ Cache::config('_cake_model_', array(
 ));
            
 //local domain
-define('Domain_Name','local.buzzydoc.com');
-define('Buzzy_Name','http://my.local.buzzydoc.com/');   
-define('Buzzy','my');                               
+define('Domain_Name','bd.twinspark.co');
+define('Buzzy_Name','http://bd.twinspark.co/buzzytest/');   
+define('Buzzy','bd');                               
 define('Staff_Name','/');
 //local key
 define('Facebook_APP_ID','1042211419137673');
